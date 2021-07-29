@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.MVBelepes;
 import pages.LoggedInHomePage;
+import utils.Hash;
 
 import java.util.HashMap;
 
@@ -30,7 +31,7 @@ public class LoginTests extends BaseTests{
         //wait.until(ExpectedConditions.elementToBeClickable(homePage.MVBelepesLink));
         mvBelepes = homePage.clickMVBelepesLink();
         mvBelepes.setEmail(userData.get("email"));
-        mvBelepes.setPassword(userData.get("password"));
+        mvBelepes.setPassword(Hash.psw(userData.get("password")));
         loggedInHomePage = mvBelepes.clickLogInButton();
         //Thread.sleep(5000);
 
