@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class FileUtils {
+public class FileUtils extends Hash{
     public HashMap<String, String> userData() {
         HashMap<String, String> userData = new HashMap<String, String>();
         try {
@@ -26,9 +26,9 @@ public class FileUtils {
     }
 
 
-    public String writeToFile(String title, String paragraph) {
+    public String writeToFile(String fileName, String title, String paragraph) {
         try {
-            FileWriter textFile = new FileWriter("searchResults.txt");
+            FileWriter textFile = new FileWriter(fileName);
 
             textFile.append(title + " : \n  " + paragraph + "\n");
 
