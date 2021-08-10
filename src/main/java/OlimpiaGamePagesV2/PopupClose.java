@@ -3,11 +3,11 @@ package OlimpiaGamePagesV2;
 import org.openqa.selenium.WebDriver;
 
 public class PopupClose {
-    WebDriver webDriver;
+    WebDriver driver;
 
     public boolean IsAlertPresent(WebDriver webDriver)
     {
-        this.webDriver = webDriver;
+        this.driver = webDriver;
         try
         {
             webDriver.switchTo().alert();

@@ -3,7 +3,7 @@ package ProfessionPages;
 import org.openqa.selenium.WebDriver;
 
 public class DetailedSearchHU extends PageHeaderMenuHU {
-    public DetailedSearchHU(WebDriver webDriver) {
+    public DetailedSearchHU(WebDriver driver) {
         super();
     }
 

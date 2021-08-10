@@ -7,8 +7,8 @@ public class LoggedInHomePageHU {
     private WebDriver webDriver;
     private By employeeMenuDropdownTrigger = By.xpath("//*[@id=\"employeeMenuDropdownTrigger\"]/span/text()");
 
-    public LoggedInHomePageHU(WebDriver webDriver) {
-        this.webDriver = webDriver;
+    public LoggedInHomePageHU(WebDriver driver) {
+        this.webDriver = driver;
     }
 
     public String getEmployeeMenuDropdownTrigger(){

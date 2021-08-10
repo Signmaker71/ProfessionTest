@@ -5,10 +5,11 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePageHU extends PageHeaderMenuHU {
 
-    private WebDriver webDriver;
+    //public WebDriver driver;
 
-    public HomePageHU(WebDriver webDriver) {
-        super();
+    public HomePageHU(WebDriver driver) {
+        this.driver = driver;
+
     }
     public  By SearchByKeywordField = By.id("header_keyword");
     public  By SearchLocationField = By.id("header_location");
@@ -17,21 +18,21 @@ public class HomePageHU extends PageHeaderMenuHU {
 
 
     public void fillSearchByKeywordField(String position){
-        webDriver.findElement(SearchByKeywordField).sendKeys(position);
+        driver.findElement(SearchByKeywordField).sendKeys(position);
     }
 
     public void fillSearchLocationField(String location){
-        webDriver.findElement(SearchLocationField).sendKeys(location);
+        driver.findElement(SearchLocationField).sendKeys(location);
     }
 
     public JobsPageHU clickSearchButton(){
-        webDriver.findElement(SearchButton).click();
-        return  new JobsPageHU(webDriver);
+        driver.findElement(SearchButton).click();
+        return  new JobsPageHU(driver);
     }
 
     public DetailedSearchHU clickSearchDetailedButton(){
-        webDriver.findElement(SearchDetailedButton).click();
-        return  new DetailedSearchHU(webDriver);
+        driver.findElement(SearchDetailedButton).click();
+        return  new DetailedSearchHU(driver);
     }
 
 }

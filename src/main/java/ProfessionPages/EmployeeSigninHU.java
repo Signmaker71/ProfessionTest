@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class EmployeeSigninHU extends PageHeaderMenuHU {
 
-    private WebDriver webDriver;
+    private WebDriver driver;
     private final By userEmailField = By.id("email");
     private final By passwordField = By.id("password_id");
     private final By nameField = By.id("name");
@@ -23,24 +23,24 @@ public class EmployeeSigninHU extends PageHeaderMenuHU {
 
     private final By registrationButton = By.xpath("//*[@id=\"registration_form\"]/div[12]/input");
 
-    public EmployeeSigninHU(WebDriver webDriver) {
-        this.webDriver = webDriver;
+    public EmployeeSigninHU(WebDriver driver) {
+        this.driver = driver;
     }
 
 
     public void setEmail(String userName) {
-        webDriver.findElement(userEmailField).sendKeys(userName);
+        driver.findElement(userEmailField).sendKeys(userName);
     }
 
     public void setPassword(String password) {
-        webDriver.findElement(passwordField).sendKeys(password);
+        driver.findElement(passwordField).sendKeys(password);
     }
 
-    public void setName(String name) { webDriver.findElement(nameField).sendKeys(name); }
+    public void setName(String name) { driver.findElement(nameField).sendKeys(name); }
 
-    public void setCity(String city) { webDriver.findElement(cityField).sendKeys(city); }
+    public void setCity(String city) { driver.findElement(cityField).sendKeys(city); }
 
-    public void setPosition(String position) { webDriver.findElement(positionField).sendKeys(position); }
+    public void setPosition(String position) { driver.findElement(positionField).sendKeys(position); }
 
     public void selectWorkingStatus(String workingStatus) {
         findWorkingStatusDropdown().selectByValue(workingStatus);
@@ -54,18 +54,18 @@ public class EmployeeSigninHU extends PageHeaderMenuHU {
     }
 
     private Select findWorkingStatusDropdown(){
-        return new Select(webDriver.findElement(workingStatusField));
+        return new Select(driver.findElement(workingStatusField));
     }
 
-    public void setDataAcceptCheckbox() { webDriver.findElement(dataAcceptCheckbox).click(); }
+    public void setDataAcceptCheckbox() { driver.findElement(dataAcceptCheckbox).click(); }
 
-    public void getDataManagementRegulations() { webDriver.findElement(dataManagementRegulations).click(); }
+    public void getDataManagementRegulations() { driver.findElement(dataManagementRegulations).click(); }
 
-    public void setEDMCheckbox() { webDriver.findElement(eDMCheckbox).click(); }
+    public void setEDMCheckbox() { driver.findElement(eDMCheckbox).click(); }
 
     public LoggedInHomePageHU clickLogInButton() {
-        webDriver.findElement(registrationButton).click();
-        return new LoggedInHomePageHU(webDriver);
+        driver.findElement(registrationButton).click();
+        return new LoggedInHomePageHU(driver);
     }
 
 }

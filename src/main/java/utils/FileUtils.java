@@ -8,10 +8,10 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class FileUtils extends Hash{
-    public HashMap<String, String> userData() {
+    public HashMap<String, String> userData(String filename) {
         HashMap<String, String> userData = new HashMap<String, String>();
         try {
-            File myUser = new File("User.txt");
+            File myUser = new File(filename);
             Scanner scanner = new Scanner(myUser);
             while (scanner.hasNextLine()) {
                 String data = scanner.nextLine();

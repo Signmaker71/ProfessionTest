@@ -47,7 +47,7 @@ public class SignInTest extends BaseTests {
         wait.until(ExpectedConditions.elementToBeClickable(allasErtesitoDenied)).click();
 
         //Assertions.assertEquals("Teszter Retesz", loggedInHomePage.getEmployeeMenuDropdownTrigger(), "Error 01");
-        Assertions.assertTrue( webDriver.getPageSource().contains("Teszter Retesz"),"Error 02");
+        Assertions.assertTrue( driver.getPageSource().contains("Teszter Retesz"),"Error 02");
     }
 
     @Test
@@ -81,7 +81,7 @@ public class SignInTest extends BaseTests {
         //}
 
         //Assertions.assertEquals("Teszter Retesz", loggedInHomePage.getEmployeeMenuDropdownTrigger(), "Error 01");
-        Assertions.assertTrue( webDriver.getPageSource().contains("Teszter Retesz"),"Error 02");
+        Assertions.assertTrue( driver.getPageSource().contains("Teszter Retesz"),"Error 02");
     }
 
 

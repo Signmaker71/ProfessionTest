@@ -38,7 +38,7 @@ public class PLoginTests extends BaseTests{
         wait.until(ExpectedConditions.elementToBeClickable(allasErtesitoDenied)).click();
 
         //Assertions.assertEquals("Teszter Retesz", loggedInHomePage.getEmployeeMenuDropdownTrigger(), "Error 01");
-        Assertions.assertTrue( webDriver.getPageSource().contains("Teszter Retesz"),"Error 02");
+        Assertions.assertTrue( driver.getPageSource().contains("Teszter Retesz"),"Error 02");
     }
 
     @Test
@@ -64,6 +64,6 @@ public class PLoginTests extends BaseTests{
         //Assertions.assertEquals("Teszter Retesz", loggedInHomePage.getEmployeeMenuDropdownTrigger(), "Error 01");
         Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(emailFailMessage));
-        Assertions.assertTrue( webDriver.getPageSource().contains("Sajnos a megadott email és jelszó kombinációval"),"Error 02");
+        Assertions.assertTrue( driver.getPageSource().contains("Sajnos a megadott email és jelszó kombinációval"),"Error 02");
     }
 }
