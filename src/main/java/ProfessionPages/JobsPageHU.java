@@ -21,6 +21,8 @@ public class JobsPageHU extends HomePageHU {
     private final By JOBS_COUNT = By.xpath("//*[@id=\"content\"]/div/div[1]/div[1]/div");
     private final By JOBS_ELEMENTS = By.xpath("//*[@class=\"job-cards\"]/li");
     private final By JOB_CARD_TITLE = By.xpath("./div[1]/div[1]/div[2]/div/h2/a");
+    private final By JOB_CARD_COMPANY = By.xpath("./div[1]/div[1]/div[2]/div/div[1]/a");
+    private final By JOB_CARD_ADDRESS = By.xpath("./div[1]/div[1]/div[2]/div/div[2]");
     private final By JOB_CARD_TEXT = By.xpath("./div[1]/div[2]/div[1]");
 //*[@id="content"]/div/div/div[1]/ul/li[1]/div[1]/div[2]/div[1]
 
@@ -100,7 +102,9 @@ public class JobsPageHU extends HomePageHU {
         boolean thereIsNextPage = false;
         Popups popUps = new Popups(driver);
         String cardTitle = "";
-        String cartText = "";
+        String cardCompany = "";
+        String cardText = "";
+        String reportText = "";
         job = job.toLowerCase();
         do {
             Thread.sleep(1000);
@@ -109,14 +113,17 @@ public class JobsPageHU extends HomePageHU {
 
             for (WebElement card : JobsCardElements) {
                 cardTitle = card.findElement(JOB_CARD_TITLE).getText().toLowerCase();
-                cartText = card.findElement(JOB_CARD_TEXT).getText().toLowerCase(Locale.ROOT);
-                if (cardTitle.contains(job) || cartText.contains(job)) {
+                cardCompany = card.findElement(JOB_CARD_COMPANY).getText().toLowerCase();
+                cardText = card.findElement(JOB_CARD_TEXT).getText().toLowerCase(Locale.ROOT);
+                if (cardTitle.contains(job) || cardText.contains(job) || cardCompany.contains(job)) {
                     result++;
                 } else {
-                    System.out.println(job + " is missing from this card:");
-                    System.out.println("Adverise ID: " + card.getAttribute("data-prof-id"));
-                    System.out.println("Title: " + cardTitle);
-                    System.out.println("Text: " + cartText);
+                    reportText += job + " is missing from this card:\n";
+                    reportText += "Adverise ID: " + card.getAttribute("data-prof-id");
+                    reportText += "Title: " + cardTitle + "\n";
+                    reportText += "Address: " + cardCompany + "\n";
+                    reportText += "Text: " + cardText + "\n";
+                    utils.generateReport("TC02", reportText);
                 }
             }
 

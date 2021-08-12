@@ -15,6 +15,7 @@ public class Q020HasJob {
     public final By HAVE_JOB_BUTTON = By.xpath("//*[@id=\"first\"]/div[1]/div/div/div[3]/div[2]/a[1]");
     public final By HAVE_NO_JOB_BUTTON = By.xpath("//*[@id=\"first\"]/div[1]/div/div/div[3]/div[2]/a[2]");
 
+
     public Q031HaveAJob clickHaveJobButton(){
         Methods.clickButton(driver,HAVE_JOB_BUTTON);
         return new Q031HaveAJob(driver);

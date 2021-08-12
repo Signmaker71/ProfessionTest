@@ -1,0 +1,16 @@
+BUG0001 :
+ Ez itt egy
+ teszt hibajegy.
+
+BUG0002 :
+  ács is missing from this card:
+Adverise ID: 1-1673168Title: cnc-marós
+Address: leier monolit kft.
+Text: gép önálló kezelése, napi karbantartások elvégzése szerszámok összerakása, mérése, korrekciója munkadarab bemérése tapintóval/mérőórával
+
+BUG0003 : 
+  ács is missing from this card:
+Adverise ID: 1-1673168Title: cnc-marós
+Address: leier monolit kft.
+Text: gép önálló kezelése, napi karbantartások elvégzése szerszámok összerakása, mérése, korrekciója munkadarab bemérése tapintóval/mérőórával
+
