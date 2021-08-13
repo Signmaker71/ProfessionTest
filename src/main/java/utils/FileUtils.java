@@ -12,11 +12,12 @@ import java.util.Scanner;
 public class FileUtils extends Hash{
 
     public static void main(String[] args) {
-        generateReport("TC08", "Ez itt egy \n ordenáré nagy hiba.\n");
+       // try to run some methods
+
     }
 
 
-
+    // get user datas to a HashMap variable
     public HashMap<String, String> userData(String fileName) {
         HashMap<String, String> userData = new HashMap<String, String>();
         try {
@@ -36,6 +37,21 @@ public class FileUtils extends Hash{
     }
 
 
+    // append to a file method, 2 parameters
+    public static String appendToFile(String fileName, String text) {
+        try {
+            FileWriter textFile = new FileWriter(fileName,true);
+
+            textFile.append(text + "\n");
+
+            textFile.close();
+            return "OK";
+        } catch (IOException e) {
+            return e.getMessage();
+        }
+    }
+
+    // append to a file method, 3 parameters
     public static String appendToFile(String fileName, String title, String text) {
         try {
             FileWriter textFile = new FileWriter(fileName,true);
@@ -50,21 +66,7 @@ public class FileUtils extends Hash{
 
     }
 
-    public static String appendToFile(String fileName, String text) {
-    try {
-            FileWriter textFile = new FileWriter(fileName,true);
-
-            textFile.append(text + "\n");
-
-            textFile.close();
-            return "OK";
-        } catch (IOException e) {
-            return e.getMessage();
-        }
-
-}
-
-
+    // get the last line from a file
     public static String getLastRecord(String fileName){
         String result ="";
         try {
@@ -81,6 +83,7 @@ public class FileUtils extends Hash{
         return result;
     }
 
+    // generate the Bug report string uses a new ID and other informations from getted parameters
     public static String generateReport(String tcID, String logText){
         String reportID ="";
         String logId = generateNewID();
@@ -89,14 +92,12 @@ public class FileUtils extends Hash{
 
         logNumber = logDateTime + " " + logId + " " + tcID;
         appendToFile("logIndex.txt", logNumber );
-
         appendToFile("logRecords.txt", logId, logText );
-
-
 
         return reportID;
     }
 
+    // generate and formatting a new ID by read the last ID and increase it by 1
     private static String generateNewID() {
         String newLogID;
         int newIdNumber;
@@ -109,6 +110,7 @@ public class FileUtils extends Hash{
         return newLogID;
     }
 
+    // gives the actual date and time in a formatted string
     public static String getLocalDateTime(){
             LocalDateTime now = LocalDateTime.now();
             DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy.MM.dd. HH:mm:ss");

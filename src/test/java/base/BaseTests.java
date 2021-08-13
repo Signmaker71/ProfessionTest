@@ -41,8 +41,9 @@ public class BaseTests {
         //System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
-        //options.addArguments("--no-sandbox");
-        //options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
         driver.get(URL);
