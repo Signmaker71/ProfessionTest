@@ -19,20 +19,15 @@ public class BaseTests {
 
     protected WebDriver driver;
     protected HomePageHU homePage;
-    /*WebDriverManager.firefoxdriver().setup();
-    WebDriverManager.edgedriver().setup();
-    WebDriverManager.operadriver().setup();
-    WebDriverManager.phantomjs().setup();
-    WebDriverManager.iedriver().setup();
-    WebDriverManager.chromiumdriver().setup();*/
+
     String URL = "https://www.professionjatekok.hu/v2/main#";
     //String URL = "https://test.dev.profession.hu/";
     //String URL = "https://profession.hu/";
+
     public static WebDriverWait wait;
     FileUtils utils = new FileUtils();
     public HashMap<String, String> userData = utils.userData("user1.txt");
     protected Popups popups = new Popups(driver);
-
 
 
     @BeforeEach
