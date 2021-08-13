@@ -1,0 +1,16 @@
+username = Teszter Retesz
+email = ÛßÜÑã¼áæÉ»ÙÑÞ´¦²àÏÐÍåvÈÛÙ
+password = ÉØÐÝæ¼ ¤
+test1 = ÌÕÛ
+test2 = ÕÆØÕÖ¸Ý
+choosenPrice = Decathlon
+name = Teszter Retesz
+city = Nagykovácsi
+workingStatus = reentrant
+position = ács
+language1 = angol
+languageLevel1 = középfok
+bornDate = 1971
+phone = +36305555555
+dreamPosition = automata tesztelő
+drivingLicence = A,B
