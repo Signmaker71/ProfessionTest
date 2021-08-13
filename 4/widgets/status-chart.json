@@ -1,0 +1,111 @@
+[ {
+  "uid" : "55c4b25068c01e1a",
+  "name" : "TCJ01 Testing to count Job cards",
+  "time" : {
+    "start" : 1628851245384,
+    "stop" : 1628851245545,
+    "duration" : 161
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "201e2296a65cc213",
+  "name" : "testSuccessfulSignin()",
+  "time" : {
+    "start" : 1628851245755,
+    "stop" : 1628851245910,
+    "duration" : 155
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2ad74a4e08922d6c",
+  "name" : "testSigninWithIncorrectEmail()",
+  "time" : {
+    "start" : 1628851245570,
+    "stop" : 1628851245749,
+    "duration" : 179
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2ed67688a39ddfda",
+  "name" : "TCG01 Testing to successful login",
+  "time" : {
+    "start" : 1628851246694,
+    "stop" : 1628851246861,
+    "duration" : 167
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1a8631365e59e912",
+  "name" : "TCG02 Testing try to login without accept terms and conditions",
+  "time" : {
+    "start" : 1628851246865,
+    "stop" : 1628851247006,
+    "duration" : 141
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "90324b40ba5e4edc",
+  "name" : "testSelectWorkingStatus()",
+  "time" : {
+    "start" : 1628851246294,
+    "stop" : 1628851246510,
+    "duration" : 216
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5f145268d3b426a8",
+  "name" : "testSuccessfulLogin()",
+  "time" : {
+    "start" : 1628851246126,
+    "stop" : 1628851246270,
+    "duration" : 144
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "923a30fecb5f4d66",
+  "name" : "TCG03 Testing try to login with invalid e-mail format",
+  "time" : {
+    "start" : 1628851246527,
+    "stop" : 1628851246690,
+    "duration" : 163
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "152c4722b08f66ca",
+  "name" : "testLoginWithInvalidEmailaddress()",
+  "time" : {
+    "start" : 1628851245916,
+    "stop" : 1628851246121,
+    "duration" : 205
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "fe3fbab967b8cfe",
+  "name" : "TCJ02 Testing to count Valid Job cards",
+  "time" : {
+    "start" : 1628851236515,
+    "stop" : 1628851245271,
+    "duration" : 8756
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3c69f915de27e0e6",
+  "name" : "TCG04 Testing to read terms and conditions",
+  "time" : {
+    "start" : 1628851247010,
+    "stop" : 1628851247196,
+    "duration" : 186
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
