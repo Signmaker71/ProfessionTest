@@ -1,0 +1,172 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "Search.SearchTest",
+    "children" : [ {
+      "name" : "testCardsContent",
+      "uid" : "708150efac09a1aa",
+      "parentUid" : "64c81698148b58714974320eab8faf23",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628855080374,
+        "stop" : 1628855083067,
+        "duration" : 2693
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testSimpleSearch",
+      "uid" : "e8c4910afe900649",
+      "parentUid" : "64c81698148b58714974320eab8faf23",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628855083133,
+        "stop" : 1628855083281,
+        "duration" : 148
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "Search.SearchTest"
+  }, {
+    "name" : "login",
+    "children" : [ {
+      "name" : "SignInTest",
+      "children" : [ {
+        "name" : "testSigninWithIncorrectEmail",
+        "uid" : "9486b62bf0163b09",
+        "parentUid" : "166928495609aa366044a4931eec6d23",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855083304,
+          "stop" : 1628855092882,
+          "duration" : 9578
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulSignin",
+        "uid" : "f8d9c6a2de937b97",
+        "parentUid" : "166928495609aa366044a4931eec6d23",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855092886,
+          "stop" : 1628855102961,
+          "duration" : 10075
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "166928495609aa366044a4931eec6d23"
+    }, {
+      "name" : "PLoginTests",
+      "children" : [ {
+        "name" : "testLoginWithInvalidEmailaddress",
+        "uid" : "b174ca6e4e74d4c5",
+        "parentUid" : "ff9d679707b59ef746e0c3498892b186",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855102970,
+          "stop" : 1628855109703,
+          "duration" : 6733
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulLogin",
+        "uid" : "3dd1332bcc7b90ac",
+        "parentUid" : "ff9d679707b59ef746e0c3498892b186",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855109708,
+          "stop" : 1628855118645,
+          "duration" : 8937
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ff9d679707b59ef746e0c3498892b186"
+    }, {
+      "name" : "DropdownTest",
+      "children" : [ {
+        "name" : "testSelectWorkingStatus",
+        "uid" : "5c281d5475424e5c",
+        "parentUid" : "a7001c0e0641a133dd6f2b38a0dc8d4f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855118652,
+          "stop" : 1628855126681,
+          "duration" : 8029
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a7001c0e0641a133dd6f2b38a0dc8d4f"
+    } ],
+    "uid" : "75d811c673dc5e97a5ea7e2a442ebd1a"
+  }, {
+    "name" : "gameTest.GLoginTest",
+    "children" : [ {
+      "name" : "testLoginWithInvalidEmailFormat",
+      "uid" : "6a16b7df1beacc0a",
+      "parentUid" : "60ea567150d12f4b65f2f1af45e54c25",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628855126697,
+        "stop" : 1628855126839,
+        "duration" : 142
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testSuccessfullLogin",
+      "uid" : "9cc1aa1b9c2816d1",
+      "parentUid" : "60ea567150d12f4b65f2f1af45e54c25",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628855126842,
+        "stop" : 1628855126977,
+        "duration" : 135
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginWithoutCheckboxClicked",
+      "uid" : "99e4abc278194277",
+      "parentUid" : "60ea567150d12f4b65f2f1af45e54c25",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628855126981,
+        "stop" : 1628855127119,
+        "duration" : 138
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginDocument01Exists",
+      "uid" : "5e2463f56969290b",
+      "parentUid" : "60ea567150d12f4b65f2f1af45e54c25",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628855127123,
+        "stop" : 1628855127257,
+        "duration" : 134
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "gameTest.GLoginTest"
+  } ],
+  "name" : "packages"
+}

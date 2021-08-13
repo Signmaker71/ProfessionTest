@@ -1,0 +1,196 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55ad40169a63 <unknown>\n#1 0x55ad3fede458 <unknown>\n#2 0x55ad3ff012e3 <unknown>\n#3 0x55ad3fefce9f <unknown>\n#4 0x55ad3ff36b72 <unknown>\n#5 0x55ad3ff30fd3 <unknown>\n#6 0x55ad3ff07514 <unknown>\n#7 0x55ad3ff08505 <unknown>\n#8 0x55ad40195e2e <unknown>\n#9 0x55ad401ab886 <unknown>\n#10 0x55ad40196d75 <unknown>\n#11 0x55ad401acd94 <unknown>\n#12 0x55ad4018d8eb <unknown>\n#13 0x55ad401c7cd8 <unknown>\n#14 0x55ad401c7e58 <unknown>\n#15 0x55ad401e1dfd <unknown>\n#16 0x7f15ffe21609 start_thread\n",
+      "children" : [ {
+        "name" : "TCJ02 Testing to count Valid Job cards",
+        "uid" : "708150efac09a1aa",
+        "parentUid" : "67a79966ccfed0e117d5f0fe2b439f74",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855080374,
+          "stop" : 1628855083067,
+          "duration" : 2693
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "67a79966ccfed0e117d5f0fe2b439f74"
+    }, {
+      "name" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x563beed84a63 <unknown>\n#1 0x563beeaf9458 <unknown>\n#2 0x563beeb1c2e3 <unknown>\n#3 0x563beeb17e9f <unknown>\n#4 0x563beeb51b72 <unknown>\n#5 0x563beeb4bfd3 <unknown>\n#6 0x563beeb22514 <unknown>\n#7 0x563beeb23505 <unknown>\n#8 0x563beedb0e2e <unknown>\n#9 0x563beedc6886 <unknown>\n#10 0x563beedb1d75 <unknown>\n#11 0x563beedc7d94 <unknown>\n#12 0x563beeda88eb <unknown>\n#13 0x563beede2cd8 <unknown>\n#14 0x563beede2e58 <unknown>\n#15 0x563beedfcdfd <unknown>\n#16 0x7ff128a44609 start_thread\n",
+      "children" : [ {
+        "name" : "TCJ01 Testing to count Job cards",
+        "uid" : "e8c4910afe900649",
+        "parentUid" : "f344e87e171b990831fcec21bead65cf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855083133,
+          "stop" : 1628855083281,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f344e87e171b990831fcec21bead65cf"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[3]/a\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.U1M2B2}, goog:chromeOptions: {debuggerAddress: localhost:43975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dce8e6607b1f849888041ddd7671d58e\n*** Element info: {Using=xpath, value=//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[3]/a}",
+      "children" : [ {
+        "name" : "testSigninWithIncorrectEmail()",
+        "uid" : "9486b62bf0163b09",
+        "parentUid" : "51602afae22e45af73f894045efa22d5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855083304,
+          "stop" : 1628855092882,
+          "duration" : 9578
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "51602afae22e45af73f894045efa22d5"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[3]/a\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.c3ExYI}, goog:chromeOptions: {debuggerAddress: localhost:45461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ecee522fbed7fcc6eb75306d110ddeaa\n*** Element info: {Using=xpath, value=//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[3]/a}",
+      "children" : [ {
+        "name" : "testSuccessfulSignin()",
+        "uid" : "f8d9c6a2de937b97",
+        "parentUid" : "75a4436df19ba739240eaf81771197af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855092886,
+          "stop" : 1628855102961,
+          "duration" : 10075
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "75a4436df19ba739240eaf81771197af"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.eb6Vh9}, goog:chromeOptions: {debuggerAddress: localhost:42105}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f36408bd0ee6696a9cbfb57e5ab95e76\n*** Element info: {Using=xpath, value=//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a}",
+      "children" : [ {
+        "name" : "testLoginWithInvalidEmailaddress()",
+        "uid" : "b174ca6e4e74d4c5",
+        "parentUid" : "fe08b5273bfc05690b7b8ae2d649df1d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855102970,
+          "stop" : 1628855109703,
+          "duration" : 6733
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fe08b5273bfc05690b7b8ae2d649df1d"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.hi2lOZ}, goog:chromeOptions: {debuggerAddress: localhost:33705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2400e5a43dbbbb44033888aa1ce00b91\n*** Element info: {Using=xpath, value=//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a}",
+      "children" : [ {
+        "name" : "testSuccessfulLogin()",
+        "uid" : "3dd1332bcc7b90ac",
+        "parentUid" : "728312ed8411b4f2a6fbaba8a4d0616f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855109708,
+          "stop" : 1628855118645,
+          "duration" : 8937
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "728312ed8411b4f2a6fbaba8a4d0616f"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[3]/a\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.4tevpC}, goog:chromeOptions: {debuggerAddress: localhost:34187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bc7404d2be18733e56ee5578575e0932\n*** Element info: {Using=xpath, value=//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[3]/a}",
+      "children" : [ {
+        "name" : "testSelectWorkingStatus()",
+        "uid" : "5c281d5475424e5c",
+        "parentUid" : "075201fcae2b62f9acd691bbec1ccf94",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855118652,
+          "stop" : 1628855126681,
+          "duration" : 8029
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "075201fcae2b62f9acd691bbec1ccf94"
+    }, {
+      "name" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55dc2cc4fa63 <unknown>\n#1 0x55dc2c9c4458 <unknown>\n#2 0x55dc2c9e72e3 <unknown>\n#3 0x55dc2c9e2e9f <unknown>\n#4 0x55dc2ca1cb72 <unknown>\n#5 0x55dc2ca16fd3 <unknown>\n#6 0x55dc2c9ed514 <unknown>\n#7 0x55dc2c9ee505 <unknown>\n#8 0x55dc2cc7be2e <unknown>\n#9 0x55dc2cc91886 <unknown>\n#10 0x55dc2cc7cd75 <unknown>\n#11 0x55dc2cc92d94 <unknown>\n#12 0x55dc2cc738eb <unknown>\n#13 0x55dc2ccadcd8 <unknown>\n#14 0x55dc2ccade58 <unknown>\n#15 0x55dc2ccc7dfd <unknown>\n#16 0x7f1db6147609 start_thread\n",
+      "children" : [ {
+        "name" : "TCG03 Testing try to login with invalid e-mail format",
+        "uid" : "6a16b7df1beacc0a",
+        "parentUid" : "020a2ab7ad2eb8cb2ca3368075333931",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855126697,
+          "stop" : 1628855126839,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "020a2ab7ad2eb8cb2ca3368075333931"
+    }, {
+      "name" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x556cd3d4ea63 <unknown>\n#1 0x556cd3ac3458 <unknown>\n#2 0x556cd3ae62e3 <unknown>\n#3 0x556cd3ae1e9f <unknown>\n#4 0x556cd3b1bb72 <unknown>\n#5 0x556cd3b15fd3 <unknown>\n#6 0x556cd3aec514 <unknown>\n#7 0x556cd3aed505 <unknown>\n#8 0x556cd3d7ae2e <unknown>\n#9 0x556cd3d90886 <unknown>\n#10 0x556cd3d7bd75 <unknown>\n#11 0x556cd3d91d94 <unknown>\n#12 0x556cd3d728eb <unknown>\n#13 0x556cd3daccd8 <unknown>\n#14 0x556cd3dace58 <unknown>\n#15 0x556cd3dc6dfd <unknown>\n#16 0x7f769d1e1609 start_thread\n",
+      "children" : [ {
+        "name" : "TCG01 Testing to successful login",
+        "uid" : "9cc1aa1b9c2816d1",
+        "parentUid" : "da9e78f568abc88b72599155e917ea42",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855126842,
+          "stop" : 1628855126977,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "da9e78f568abc88b72599155e917ea42"
+    }, {
+      "name" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x561f608e1a63 <unknown>\n#1 0x561f60656458 <unknown>\n#2 0x561f606792e3 <unknown>\n#3 0x561f60674e9f <unknown>\n#4 0x561f606aeb72 <unknown>\n#5 0x561f606a8fd3 <unknown>\n#6 0x561f6067f514 <unknown>\n#7 0x561f60680505 <unknown>\n#8 0x561f6090de2e <unknown>\n#9 0x561f60923886 <unknown>\n#10 0x561f6090ed75 <unknown>\n#11 0x561f60924d94 <unknown>\n#12 0x561f609058eb <unknown>\n#13 0x561f6093fcd8 <unknown>\n#14 0x561f6093fe58 <unknown>\n#15 0x561f60959dfd <unknown>\n#16 0x7fb2405e6609 start_thread\n",
+      "children" : [ {
+        "name" : "TCG02 Testing try to login without accept terms and conditions",
+        "uid" : "99e4abc278194277",
+        "parentUid" : "758ea637cc65748b78892ce40ad84d49",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855126981,
+          "stop" : 1628855127119,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "758ea637cc65748b78892ce40ad84d49"
+    }, {
+      "name" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55b05f32ba63 <unknown>\n#1 0x55b05f0a0458 <unknown>\n#2 0x55b05f0c32e3 <unknown>\n#3 0x55b05f0bee9f <unknown>\n#4 0x55b05f0f8b72 <unknown>\n#5 0x55b05f0f2fd3 <unknown>\n#6 0x55b05f0c9514 <unknown>\n#7 0x55b05f0ca505 <unknown>\n#8 0x55b05f357e2e <unknown>\n#9 0x55b05f36d886 <unknown>\n#10 0x55b05f358d75 <unknown>\n#11 0x55b05f36ed94 <unknown>\n#12 0x55b05f34f8eb <unknown>\n#13 0x55b05f389cd8 <unknown>\n#14 0x55b05f389e58 <unknown>\n#15 0x55b05f3a3dfd <unknown>\n#16 0x7fd3a61e5609 start_thread\n",
+      "children" : [ {
+        "name" : "TCG04 Testing to read terms and conditions",
+        "uid" : "5e2463f56969290b",
+        "parentUid" : "6fc7f7dd09c3b0f40583088aa9ca2363",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628855127123,
+          "stop" : 1628855127257,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6fc7f7dd09c3b0f40583088aa9ca2363"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
