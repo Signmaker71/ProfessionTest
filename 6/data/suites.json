@@ -1,0 +1,168 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "login.SignInTest",
+    "children" : [ {
+      "name" : "testSigninWithIncorrectEmail()",
+      "uid" : "26adba5edfd2d469",
+      "parentUid" : "2004a2f1091604db52146ecb2e13dcf2",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856163138,
+        "stop" : 1628856179294,
+        "duration" : 16156
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testSuccessfulSignin()",
+      "uid" : "d339395f23ec5e6c",
+      "parentUid" : "2004a2f1091604db52146ecb2e13dcf2",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856179380,
+        "stop" : 1628856186424,
+        "duration" : 7044
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2004a2f1091604db52146ecb2e13dcf2"
+  }, {
+    "name" : "Search.SearchTest",
+    "children" : [ {
+      "name" : "TCJ02 Testing to count Valid Job cards",
+      "uid" : "3a07300a7cf918b1",
+      "parentUid" : "853ee794088d69585d3ff98cf0f9e8c9",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856163157,
+        "stop" : 1628856168916,
+        "duration" : 5759
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCJ01 Testing to count Job cards",
+      "uid" : "2eb929373dfacf74",
+      "parentUid" : "853ee794088d69585d3ff98cf0f9e8c9",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856169013,
+        "stop" : 1628856169155,
+        "duration" : 142
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "853ee794088d69585d3ff98cf0f9e8c9"
+  }, {
+    "name" : "login.PLoginTests",
+    "children" : [ {
+      "name" : "testLoginWithInvalidEmailaddress()",
+      "uid" : "a05ec2f4c6e32d3c",
+      "parentUid" : "66e069f418eb493b39a38992943b9244",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856169191,
+        "stop" : 1628856179579,
+        "duration" : 10388
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testSuccessfulLogin()",
+      "uid" : "f23011af91a93b28",
+      "parentUid" : "66e069f418eb493b39a38992943b9244",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856179583,
+        "stop" : 1628856186631,
+        "duration" : 7048
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "66e069f418eb493b39a38992943b9244"
+  }, {
+    "name" : "login.DropdownTest",
+    "children" : [ {
+      "name" : "testSelectWorkingStatus()",
+      "uid" : "4cfc33e7997ca814",
+      "parentUid" : "972375ec6b63176149d3f9afa4a4c41e",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856186642,
+        "stop" : 1628856194827,
+        "duration" : 8185
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "972375ec6b63176149d3f9afa4a4c41e"
+  }, {
+    "name" : "gameTest.GLoginTest",
+    "children" : [ {
+      "name" : "TCG03 Testing try to login with invalid e-mail format",
+      "uid" : "ae92b48f07f5047f",
+      "parentUid" : "670691dcc44668ff43d0594d352c9fa8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856194837,
+        "stop" : 1628856194973,
+        "duration" : 136
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG01 Testing to successful login",
+      "uid" : "81d2d1c221d6a536",
+      "parentUid" : "670691dcc44668ff43d0594d352c9fa8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856194978,
+        "stop" : 1628856195120,
+        "duration" : 142
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG02 Testing try to login without accept terms and conditions",
+      "uid" : "5d3c5fa074df14a3",
+      "parentUid" : "670691dcc44668ff43d0594d352c9fa8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856195124,
+        "stop" : 1628856195260,
+        "duration" : 136
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG04 Testing to read terms and conditions",
+      "uid" : "6a7ec00e4d057d41",
+      "parentUid" : "670691dcc44668ff43d0594d352c9fa8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628856195267,
+        "stop" : 1628856195402,
+        "duration" : 135
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "670691dcc44668ff43d0594d352c9fa8"
+  } ],
+  "name" : "suites"
+}
