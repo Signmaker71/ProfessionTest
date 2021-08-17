@@ -1,0 +1,125 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Search.SearchTest",
+    "children" : [ {
+      "name" : "TCJ02 Testing to count Valid Job cards",
+      "uid" : "b1c1a44f895ebb2d",
+      "parentUid" : "853ee794088d69585d3ff98cf0f9e8c9",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629228999685,
+        "stop" : 1629229006223,
+        "duration" : 6538
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCJ01 Testing to count Job cards",
+      "uid" : "5cf3c7ac189b1386",
+      "parentUid" : "853ee794088d69585d3ff98cf0f9e8c9",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629229006301,
+        "stop" : 1629229006461,
+        "duration" : 160
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "853ee794088d69585d3ff98cf0f9e8c9"
+  }, {
+    "name" : "login.SignInTest",
+    "children" : [ {
+      "name" : "testSigninWithIncorrectEmail()",
+      "uid" : "c710c530fd314ca3",
+      "parentUid" : "2004a2f1091604db52146ecb2e13dcf2",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629229006471,
+        "stop" : 1629229006650,
+        "duration" : 179
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testSuccessfulSignin()",
+      "uid" : "8a31a111c40b8ddf",
+      "parentUid" : "2004a2f1091604db52146ecb2e13dcf2",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629229006657,
+        "stop" : 1629229006797,
+        "duration" : 140
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2004a2f1091604db52146ecb2e13dcf2"
+  }, {
+    "name" : "login.PLoginTests",
+    "children" : [ {
+      "name" : "testLoginWithInvalidEmailaddress()",
+      "uid" : "4bd61b08e3020b70",
+      "parentUid" : "66e069f418eb493b39a38992943b9244",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629229006811,
+        "stop" : 1629229006968,
+        "duration" : 157
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testSuccessfulLogin()",
+      "uid" : "fe959ea3464c59c2",
+      "parentUid" : "66e069f418eb493b39a38992943b9244",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629229006973,
+        "stop" : 1629229007107,
+        "duration" : 134
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "66e069f418eb493b39a38992943b9244"
+  }, {
+    "name" : "gameTest.GLoginTest",
+    "children" : [ {
+      "name" : "TCG01 Testing to successful login",
+      "uid" : "eff68f4695e165d1",
+      "parentUid" : "670691dcc44668ff43d0594d352c9fa8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629229007124,
+        "stop" : 1629229007292,
+        "duration" : 168
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG04 Testing to read terms and conditions",
+      "uid" : "bdc7b44cc42d4007",
+      "parentUid" : "670691dcc44668ff43d0594d352c9fa8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1629229007296,
+        "stop" : 1629229007454,
+        "duration" : 158
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "670691dcc44668ff43d0594d352c9fa8"
+  } ],
+  "name" : "suites"
+}
