@@ -5,14 +5,18 @@ import org.openqa.selenium.WebDriver;
 import utils.Methods;
 
 public class Q040HasRegistration {
+
     private WebDriver driver;
-    public final By REGISTRED_BUTTON = By.xpath("//*[contains(text(),'megyek')]");
-    public final By NOT_REMEMBER_BUTTON = By.xpath("//*[contains(text(),'emlékszem')]");
-    public final By NOT_REGISTRED_BUTTON = By.xpath("//*[contains(text(),'Nincs')]");
+
+    private final By REGISTRED_BUTTON = By.xpath("//*[contains(text(),'megyek')]");
+    private final By NOT_REMEMBER_BUTTON = By.xpath("//*[contains(text(),'emlékszem')]");
+    private final By NOT_REGISTRED_BUTTON = By.xpath("//*[contains(text(),'Nincs')]");
 
     public Q040HasRegistration(WebDriver driver) {
         this.driver = driver;
     }
+
+
 
     public Q051Login clickHaveRegistrationButton() {
         Methods.clickButton(driver,REGISTRED_BUTTON);

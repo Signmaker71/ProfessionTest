@@ -1,16 +1,19 @@
 package utils;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.ByteArrayInputStream;
 
 public class Methods {
     private static WebDriver driver;
     private static WebDriverWait wait;
 
     public Methods(WebDriver driver) {
+
         this.driver = driver;
     }
 
@@ -19,53 +22,51 @@ public class Methods {
     }
 
     public static void clickLink(WebDriver driver, By link) {
-        wait = new WebDriverWait(Methods.driver, 3);
+        wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(link));
         wait.until(ExpectedConditions.elementToBeClickable(link));
         driver.findElement(link).click();
     }
 
     public static void clickCheckbox(WebDriver driver, By link) {
-        wait = new WebDriverWait(Methods.driver, 3);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(link));
-        wait.until(ExpectedConditions.elementToBeClickable(link));
-        driver.findElement(link).click();
+        waitForElementClickable(driver, link).click();
     }
-
-    public static boolean checkCheckbox(WebDriver driver, By link) {
-        wait = new WebDriverWait(Methods.driver, 3);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(link));
-        wait.until(ExpectedConditions.elementToBeClickable(link));
-        return driver.findElement(link).isSelected();
-    }
-
 
     public static void clickButton(WebDriver driver, By button) {
-        wait = new WebDriverWait(Methods.driver, 3);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(button));
-        wait.until(ExpectedConditions.elementToBeClickable(button));
-        driver.findElement(button).click();
+        waitForElementClickable(driver, button).click();
         try {
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(button));
+            waitForElementDisappear(driver, button);
+            //wait.until(ExpectedConditions.invisibilityOfElementLocated(button));
         } catch (Exception ignored) {
         }
     }
 
     public static void fillTextToField(WebDriver driver, By field, String text) {
-        wait = new WebDriverWait(Methods.driver, 3);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(field));
-        driver.findElement(field).sendKeys(text);
+
+        waitForElementFillable(driver, field).sendKeys(text);
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(field));
         } catch (Exception ignored) {
         }
     }
 
-    public static boolean waitFor(WebDriver driver, By value) {
-        wait = new WebDriverWait(driver, 3);
+    public static WebElement waitForElementFillable(WebDriver driver, By value) {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(value));
+        return driver.findElement(value);
+    }
+
+    public static WebElement waitForElementClickable(WebDriver driver, By value) {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(value));
         wait.until(ExpectedConditions.elementToBeClickable(value));
-        return driver.findElement(value).isDisplayed();
+        return driver.findElement(value);
+    }
+
+    public static WebElement waitForElementDisappear(WebDriver driver, By value) {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(value));
+        return driver.findElement(value);
     }
 
     public static String getAlertText(WebDriver driver) {
@@ -97,5 +98,11 @@ public class Methods {
         wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
+    }
+
+    @Step("TakeScreenshot")
+    public static void TakeScreenshot(WebDriver driver) {
+        Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+        System.out.println(driver.getCurrentUrl());
     }
 }

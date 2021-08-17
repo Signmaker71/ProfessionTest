@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
 public class Popups {
-    public WebDriverWait wait;
-    private WebDriver driver;
+    public static WebDriverWait wait;
+    private static WebDriver driver;
 
     public Popups(WebDriver driver) {
         this.driver = driver;
@@ -41,17 +41,15 @@ public class Popups {
         }*/
     }
 
-    public void popupClose() {
-        wait = new WebDriverWait(driver, 0);
-        int isPopupExist = 0;
-        boolean popupIsExist = false;
-        boolean searchPopupPresence;
+    public static void popupClose() {
+        //wait = new WebDriverWait(driver, 0);
+        boolean isPopupPresence;
 
         for (String popupSelector : popupCollection) {
             try {
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.MILLISECONDS);
-                searchPopupPresence = driver.findElement(By.cssSelector(popupSelector)).isDisplayed();
-                if (searchPopupPresence) {
+                isPopupPresence = driver.findElement(By.cssSelector(popupSelector)).isDisplayed();
+                if (isPopupPresence) {
                     wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(popupSelector)));
                     wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(popupSelector))).click();
                     driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -63,16 +61,6 @@ public class Popups {
         }
 
     }
-
-        /*if (webDriver.findElement(MODAL_DIALOG).isDisplayed()) {
-
-            wait.until(ExpectedConditions.visibilityOfElementLocated(MODAL_CLOSE));
-            wait.until(ExpectedConditions.elementToBeClickable(MODAL_CLOSE)).click();
-        }
-            if (webDriver.findElement(COOKIE_ACCEPT).isDisplayed()) {*/
-    //wait.until(ExpectedConditions.visibilityOfElementLocated(COOKIE_ACCEPT));
-    //wait.until(ExpectedConditions.elementToBeClickable(COOKIE_ACCEPT)).click();
-    //}
 
     public String getUrl() {
         wait = new WebDriverWait(driver, 10);

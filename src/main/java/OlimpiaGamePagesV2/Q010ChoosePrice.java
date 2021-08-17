@@ -10,37 +10,40 @@ import utils.Methods;
 import java.util.List;
 
 public class Q010ChoosePrice {
-    private WebDriver driver;
 
-    public Q010ChoosePrice(WebDriver driver) {
-        this.driver = driver;
-    }
+
+    // CONSTANSES
     // footer divs one by one
 
     //  footer menu
     public final By FOOTER_MENU = By.xpath("/html/body/footer/div/div/div[1]/a");
 
-    // choose-prize
-    public By TESCO = By.xpath("//*[@id=\"first\"]/div[1]/div/div/div[3]/div[1]/div[1]/div[1]/div");
+    // choose-prize page
+    public final By TESCO = By.xpath("//*[@id=\"first\"]/div[1]/div/div/div[3]/div[1]/div[1]/div[1]/div");
     public final By DECATHLON = By.xpath("//*[@id=\"first\"]/div[1]/div/div/div[3]/div[1]/div[1]/div[2]/div");
     public final By CHOOSE_PRICE_NEXT_BUTTON = By.id("check-voucher");
-    Methods methods;
 
+    Methods methods;
+    private WebDriver driver;
+
+
+    // CONSTRUCTOR
+    public Q010ChoosePrice(WebDriver driver) {
+        this.driver = driver;
+    }
+
+
+    // METHODS
     public void choosePrice(String selection) {
-        boolean result = false;
         if (selection.toLowerCase().contains("tes")) {
-            driver.findElement(TESCO).click();
-            result = true;
+            Methods.clickButton(driver, TESCO);
         } else if (selection.toLowerCase().contains("dec")) {
-            driver.findElement(DECATHLON).click();
-            result = true;
+            Methods.clickButton(driver, DECATHLON);
         }
     }
 
     public Q020HasJob clickNextButton() {
-        //wait = new WebDriverWait(driver, 0);
-        methods = new Methods(driver);
-        methods.clickButton(driver, CHOOSE_PRICE_NEXT_BUTTON);
+        Methods.clickButton(driver, CHOOSE_PRICE_NEXT_BUTTON);
         return new Q020HasJob(driver);
     }
 

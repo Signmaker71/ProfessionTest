@@ -20,34 +20,28 @@ public class BaseTests {
     protected WebDriver driver;
     protected HomePageHU homePage;
 
-    String URL = "https://www.professionjatekok.hu/v2/main#";
-    //String URL = "https://test.dev.profession.hu/";
-    //String URL = "https://profession.hu/";
+    final String URL = "https://www.professionjatekok.hu/v2/main#";
 
-    public static WebDriverWait wait;
+
+    public WebDriverWait wait;
     FileUtils utils = new FileUtils();
-    public HashMap<String, String> userData = utils.userData("user1.txt");
+    protected HashMap<String, String> userData = utils.userData("user1.txt");
     protected Popups popups = new Popups(driver);
-
 
     @BeforeEach
     public void setUp(){
         WebDriverManager.chromedriver().setup();
-        //System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
-        driver.get(URL);
-
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver,10);
-
+        wait = new WebDriverWait(driver,3);
         homePage = new HomePageHU(driver);
-        driver.manage().window().fullscreen();
+        driver.manage().window().maximize();
     }
 
     @AfterEach

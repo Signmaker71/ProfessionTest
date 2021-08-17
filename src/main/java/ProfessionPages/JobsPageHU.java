@@ -119,7 +119,7 @@ public class JobsPageHU extends HomePageHU {
                     result++;
                 } else {
                     reportText += job + " is missing from this card:\n";
-                    reportText += "Adverise ID: " + card.getAttribute("data-prof-id")+"\n";
+                    reportText += "Adverise ID: " + card.getAttribute("data-prof-id") + "\n";
                     reportText += "Title: " + cardTitle + "\n";
                     reportText += "Address: " + cardCompany + "\n";
                     reportText += "Text: " + cardText + "\n";

@@ -2,6 +2,7 @@ package Search;
 
 import ProfessionPages.HomePageHU;
 import ProfessionPages.JobsPageHU;
+import base.BaseTests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
@@ -11,23 +12,14 @@ import utils.FileUtils;
 import utils.Popups;
 
 
-public class SearchTest extends FileUtils{
+public class SearchTest extends BaseTests {
 
-    private HomePageHU homePage;
+    //private HomePageHU homePage;
+    //private Popups popups;
     private JobsPageHU jobsPageHU;
-    public WebDriver siteDriver;
+    
     private WebDriverWait wait;
     FileUtils utils = new FileUtils();
-    @BeforeEach
-    public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        siteDriver = new ChromeDriver(/*options*/);
-
-        siteDriver.manage().window().maximize();
-
-        siteDriver.get("https://profession.hu/allasok/");
-
-    }
 
     // count and check elements and their contents
 
@@ -35,11 +27,11 @@ public class SearchTest extends FileUtils{
     @DisplayName("TCJ01 Testing to count Job cards")
 
     public void testSimpleSearch() {
-        Popups popups = new Popups(siteDriver);
+        driver.get("https://profession.hu/allasok/");
 
-        System.out.println(siteDriver.getCurrentUrl());
-        JobsPageHU jobsPageHU = new JobsPageHU(siteDriver);
-        popups.popupClose();
+        jobsPageHU = new JobsPageHU(driver);
+        //popups = new Popups(driver);
+        Popups.popupClose();
         jobsPageHU.fillSearchByKeywordField(utils.userData("user1.txt").get("position"));
         jobsPageHU.clickSearchButton();
 
@@ -50,9 +42,7 @@ public class SearchTest extends FileUtils{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         Assertions.assertEquals(expextedJobsCount,actualJobsCount);
-
     }
 
     @Test
@@ -61,12 +51,13 @@ public class SearchTest extends FileUtils{
     // the location is not acceptable to contain the job's name
 
     public void testCardsContent() throws InterruptedException {
-        Popups popups = new Popups(siteDriver);
+        driver.get("https://profession.hu/allasok/");
+        //popups = new Popups(driver);
         String job = utils.userData("user1.txt").get("position");
 
-        System.out.println(siteDriver.getCurrentUrl());
-        JobsPageHU jobsPageHU = new JobsPageHU(siteDriver);
-        popups.popupClose();
+        System.out.println(driver.getCurrentUrl());
+        jobsPageHU = new JobsPageHU(driver);
+        Popups.popupClose();
         jobsPageHU.fillSearchByKeywordField(job);
         jobsPageHU.clickSearchButton();
 
@@ -77,8 +68,4 @@ public class SearchTest extends FileUtils{
         Assertions.assertEquals(jobsCount, validJobsCount);
     }
 
-    @AfterEach
-    public void tearDown() {
-         siteDriver.quit();
-    }
 }

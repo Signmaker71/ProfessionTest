@@ -18,7 +18,7 @@ public class FileUtils extends Hash{
 
 
     // get user datas to a HashMap variable
-    public HashMap<String, String> userData(String fileName) {
+    public static HashMap<String, String> userData(String fileName) {
         HashMap<String, String> userData = new HashMap<String, String>();
         try {
             File myUser = new File(fileName);

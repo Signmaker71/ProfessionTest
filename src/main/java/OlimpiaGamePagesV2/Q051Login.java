@@ -32,10 +32,16 @@ public class Q051Login {
         this.driver = driver;
     }
 
-
-    public void fillEmailField(String email) {
-        driver.findElement(PLAYER_EMAIL).sendKeys(email);
+    public void fillEmailField(String text) {
+        Methods.waitForElementFillable(driver, PLAYER_EMAIL);
+        Methods.fillTextToField(driver,PLAYER_EMAIL, text);
+        //driver.findElement(PLAYER_EMAIL).sendKeys(email);
     }
+
+
+    /*public void fillEmailField(String email) {
+        driver.findElement(PLAYER_EMAIL).sendKeys(email);
+    }*/
 
     public void fillPasswordField(String password) {
         Methods.fillTextToField(driver, PLAYER_PASSWORD, password);

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DropdownTest extends BaseTests {
     EmployeeSigninHU employeeSigninHU;
-    @Test
+    //@Test
     public void testSelectWorkingStatus() throws InterruptedException {
         EmployeeSigninHU employeeSigninHU = homePage.clickMVRegisztracioLink();
         employeeSigninHU.selectWorkingStatus(userData.get("workingStatus"));
