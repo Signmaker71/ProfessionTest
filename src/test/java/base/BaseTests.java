@@ -35,13 +35,14 @@ public class BaseTests {
         options.addArguments("--incognito");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--start-maximized");
         //options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver,3);
         homePage = new HomePageHU(driver);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
     }
 
     @AfterEach

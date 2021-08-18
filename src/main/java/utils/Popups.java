@@ -41,7 +41,7 @@ public class Popups {
         }*/
     }
 
-    public static void popupClose() {
+    public static void popupClose(WebDriver driver) {
         //wait = new WebDriverWait(driver, 0);
         boolean isPopupPresence;
 
@@ -50,11 +50,13 @@ public class Popups {
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.MILLISECONDS);
                 isPopupPresence = driver.findElement(By.cssSelector(popupSelector)).isDisplayed();
                 if (isPopupPresence) {
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(popupSelector)));
+                    Methods.waitForElementClickable(driver,By.cssSelector(popupSelector)).click();
+                    Methods.waitForElementDisappear(driver,By.cssSelector(popupSelector));
+                    /*wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(popupSelector)));
                     wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(popupSelector))).click();
                     driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
                     wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(popupSelector)));
-                }
+             */   }
             } catch (Exception ignored) {
             }
 

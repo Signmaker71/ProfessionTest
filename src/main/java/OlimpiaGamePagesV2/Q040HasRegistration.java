@@ -16,20 +16,30 @@ public class Q040HasRegistration {
         this.driver = driver;
     }
 
+    public By getLocator (String haveRegistration) {
+        By locator;
+        switch (haveRegistration) {
+            case "registred":
+                locator = REGISTRED_BUTTON;
+                break;
+            case "not remember":
+                locator = NOT_REMEMBER_BUTTON;
+                break;
+            case "not registred":
+                locator = NOT_REGISTRED_BUTTON;
+                break;
 
+            default:
+                locator = NOT_REGISTRED_BUTTON;
+        }
+        return locator;
 
-    public Q051Login clickHaveRegistrationButton() {
-        Methods.clickButton(driver,REGISTRED_BUTTON);
-        return new Q051Login(driver);
     }
-    public Q052DontRemember clickNotRememberButton() {
-        Methods.clickButton(driver,NOT_REMEMBER_BUTTON);
-        return new Q052DontRemember(driver);
+
+    public Q050LoginAndRegistration clickHaveRegistrationButton(String registred) {
+        Methods.clickButton(driver,getLocator(registred));
+        return new Q050LoginAndRegistration(driver);
     }
 
-    /*public Q053Registration clickNotRegistredButton() {
-        webDriver.findElement(NOT_REGISTRED_BUTTON).click();
-        return new Q053Registration(webDriver);
-    }*/
 
 }

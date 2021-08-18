@@ -21,14 +21,11 @@ public class Methods {
         driver.findElement(By.linkText(linkText)).click();
     }
 
-    public static void clickLink(WebDriver driver, By link) {
-        wait = new WebDriverWait(driver, 3);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(link));
-        wait.until(ExpectedConditions.elementToBeClickable(link));
-        driver.findElement(link).click();
+    public static void clickCheckbox(WebDriver driver, By link) {
+        waitForElementClickable(driver, link).click();
     }
 
-    public static void clickCheckbox(WebDriver driver, By link) {
+    public static void clickLink(WebDriver driver, By link) {
         waitForElementClickable(driver, link).click();
     }
 
@@ -36,13 +33,11 @@ public class Methods {
         waitForElementClickable(driver, button).click();
         try {
             waitForElementDisappear(driver, button);
-            //wait.until(ExpectedConditions.invisibilityOfElementLocated(button));
         } catch (Exception ignored) {
         }
     }
 
     public static void fillTextToField(WebDriver driver, By field, String text) {
-
         waitForElementFillable(driver, field).sendKeys(text);
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(field));
@@ -51,6 +46,11 @@ public class Methods {
     }
 
     public static WebElement waitForElementFillable(WebDriver driver, By value) {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(value));
+        return driver.findElement(value);
+    }
+public static WebElement waitForElement(WebDriver driver, By value) {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(value));
         return driver.findElement(value);
@@ -101,7 +101,7 @@ public class Methods {
     }
 
     @Step("TakeScreenshot")
-    public static void TakeScreenshot(WebDriver driver) {
+    public static void takeScreenshot(WebDriver driver) {
         Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         System.out.println(driver.getCurrentUrl());
     }

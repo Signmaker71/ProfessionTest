@@ -31,7 +31,7 @@ public class SearchTest extends BaseTests {
 
         jobsPageHU = new JobsPageHU(driver);
         //popups = new Popups(driver);
-        Popups.popupClose();
+        Popups.popupClose(driver);
         jobsPageHU.fillSearchByKeywordField(utils.userData("user1.txt").get("position"));
         jobsPageHU.clickSearchButton();
 
@@ -57,7 +57,7 @@ public class SearchTest extends BaseTests {
 
         System.out.println(driver.getCurrentUrl());
         jobsPageHU = new JobsPageHU(driver);
-        Popups.popupClose();
+        Popups.popupClose(driver);
         jobsPageHU.fillSearchByKeywordField(job);
         jobsPageHU.clickSearchButton();
 

@@ -22,9 +22,12 @@ public class Q020HasJob {
 
 
     // METHODS
-    public Q030WorkingStatus selectHaveJobButton(String selection) {
-        switch (selection) {
-            case "no":
+    public Q030WorkingStatus selectHaveJobButton(String workongStatus) {
+        switch (workongStatus) {
+            case "lost my job":
+            case "lost my workplace":
+            case "left my job":
+            case "job starter":
                 Methods.clickButton(driver, HAVE_NO_JOB_BUTTON);
                 break;
             default:
@@ -34,15 +37,5 @@ public class Q020HasJob {
 
     }
 
-
-    public Q031HaveAJob clickHaveJobButton() {
-        Methods.clickButton(driver, HAVE_JOB_BUTTON);
-        return new Q031HaveAJob(driver);
-    }
-
-    public Q032DontHave clickHaveNoJobButton() {
-        Methods.clickButton(driver, HAVE_NO_JOB_BUTTON);
-        return new Q032DontHave(driver);
-    }
 
 }

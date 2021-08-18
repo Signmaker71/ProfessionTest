@@ -5,6 +5,7 @@ import base.BaseTests;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import utils.FileUtils;
+import utils.Methods;
 import utils.Popups;
 import utils.Hash;
 
@@ -14,16 +15,67 @@ import java.util.List;
 
 
 public class GLoginTest extends BaseTests {
-    final String URL_GAME = "https://www.professionjatekok.hu/v2/main#";
+    final String URL_GAME = "https://www.professionjatekok.hu/v2/main";
     final String URL_TEST_DEV = "https://test.dev.profession.hu/";
     final String URL_PROF = "https://profession.hu/";
-    private final By COOKIE_ACCEPT = By.id("elfogad");
+    //private final By COOKIE_ACCEPT = By.id("elfogad");
     private Q010ChoosePrice choosePrice;
-    //public WebDriver driver;
-    //protected WebDriverWait wait;
     FileUtils utils = new FileUtils();
     HashMap<String, String> user = new HashMap<String, String>();
 
+    @Test
+    @DisplayName("TCG05	Sikertelen regisztráció hibás jelszó miatt")
+    public void testTermOfUseIsEnable() throws InterruptedException {
+        choosePrice = new Q010ChoosePrice(driver);
+        driver.navigate().to(URL_GAME);
+        user = utils.userData("user1.txt");
+        //Methods.takeScreenshot(driver);
+        choosePrice.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = choosePrice.clickNextButton();
+        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("haveJob"));
+        Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
+        Popups.popupClose(driver);
+        Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
+        login.clickCheckbox("RrsCheckbox");
+        login.clickCheckbox("RssCheckbox");
+        login.fill("Remail", user.get("email"));
+        login.clickButton("Rnext");
+        login.fill("Rpassword1", Hash.revert(user.get("password")));
+        login.fill("Rpassword2", (user.get("password")));
+
+        M01_step02 portrait = login.clickButton(driver,"Rsubmit");
+        String actualMessage = login.getAlertText();
+        String expectedMessage = "A két jelszó nem egyezik meg, vagy rövidebbek, mint 6 karakter, esetleg nem tartalmaz számot!";
+
+        Assertions.assertEquals(actualMessage, expectedMessage);
+    }
+
+    @Test
+    @DisplayName("TCG06	Sikeres AKTÍV álláskereső regisztráció")
+    public void testRegisterActiveEmployee() {
+        choosePrice = new Q010ChoosePrice(driver);
+        driver.navigate().to(URL_GAME);
+        user = utils.userData("user1.txt");
+        //Methods.takeScreenshot(driver);
+        choosePrice.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = choosePrice.clickNextButton();
+        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("haveJob"));
+        Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
+        Popups.popupClose(driver);
+        Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
+        login.clickCheckbox("RrsCheckbox");
+        login.clickCheckbox("RssCheckbox");
+        login.fill("Remail", user.get("email"));
+        login.clickButton("Rnext");
+        login.fill("Rpassword1", Hash.revert(user.get("password")));
+        login.fill("Rpassword2", Hash.revert(user.get("password")));
+
+        M01_step02 portrait = login.clickButton(driver,"Rsubmit");
+        String actualURL = portrait.getUrl();
+        String expectedURL = "m01_step02_nevezesi-lap";
+
+        Assertions.assertTrue(actualURL.contains(expectedURL));
+    }
     @Test
     @DisplayName("TCG01 Testing to successful login")
     // HappyPath
@@ -32,20 +84,20 @@ public class GLoginTest extends BaseTests {
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
         user = utils.userData("user1.txt");
-
+        //Methods.takeScreenshot(driver);
         choosePrice.choosePrice(user.get("choosenPrice"));
         Q020HasJob hasJob = choosePrice.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("haveJob"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
-        Popups.popupClose();
-        Q051Login login = hasRegistration.clickHaveRegistrationButton();
-        login.clickRegistrationStatementCheckbox();
-        login.clickSweepstakesStatementCheckbox();
-        login.fillEmailField(Hash.revert(user.get("email")));
-        login.clickNextButton();
-        login.fillPasswordField(Hash.revert(user.get("password")));
+        Popups.popupClose(driver);
+        Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton(user.get("registred"));
+        login.clickCheckbox("rsCheckbox");
+        login.clickCheckbox("ssCheckbox");
+        login.fill("email", Hash.revert(user.get("email")));
+        login.clickButton("next");
+        login.fill("password", Hash.revert(user.get("password")));
 
-        M01_step02 portrait = login.clickSubmitButton();
+        M01_step02 portrait = login.clickButton(driver,"submit");
         String actualName = portrait.getName();
         String expectedName = user.get("name");
 
@@ -103,7 +155,7 @@ public class GLoginTest extends BaseTests {
         Assertions.assertEquals(expectedAlertMessage, actualAlertMessage);
     }
 */
-    @Test
+   /* @Test
     @DisplayName("TCG04 Testing to read terms and conditions")
 
     // Beolvassa és ellenőrzi az adatkezelési szabályzatot (GDPR)
@@ -142,5 +194,5 @@ public class GLoginTest extends BaseTests {
         //Thread.sleep(5000);
 
     }
-
+*/
 }

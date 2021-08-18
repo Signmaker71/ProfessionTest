@@ -1,12 +1,12 @@
 username = Teszter Retesz
-email = ÛßÜÑã¼áæÉ»ÙÑÞ´¦²àÏÐÍåvÈÛÙ
+email = szpetertester+o1004@gmail.com
 password = ÉØÐÝæ¼ ¤
 test1 = ÌÕÛ
 test2 = ÕÆØÕÖ¸Ý
-choosenPrice = Decathlon
-haveJob = yes
-workingStatus = interested
-haveRegistration = yes
+choosenPrice = Tesco
+haveJob = no
+workingStatus = job starter
+registred = not registred
 name = Teszter Retesz
 city = Nagykovácsi
 workingStatus = reentrant

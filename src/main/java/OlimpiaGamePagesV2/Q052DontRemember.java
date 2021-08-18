@@ -11,6 +11,7 @@ public class Q052DontRemember {
     public Q052DontRemember(WebDriver driver) {
         this.driver = driver;
     }
+/*
 
     public Q031HaveAJob clickHaveJobButton() {
         return new Q031HaveAJob(driver);
@@ -18,5 +19,6 @@ public class Q052DontRemember {
     public Q032DontHave clickHaveNoJobButton() {
         return new Q032DontHave(driver);
     }
+*/
 
 }

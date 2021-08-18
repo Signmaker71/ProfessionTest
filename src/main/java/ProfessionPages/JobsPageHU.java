@@ -65,11 +65,11 @@ public class JobsPageHU extends HomePageHU {
         WebElement nextButton;
         actions = new Actions(driver);
         boolean thereIsNextPage = false;
-        Popups popUps = new Popups(driver);
+        //Popups popUps = new Popups(driver);
 
         do {
-            Thread.sleep(1000);
-            popUps.popupClose();
+            //Thread.sleep(1000);
+            Popups.popupClose(driver);
             List<WebElement> JobsCardElements = driver.findElements(JOBS_ELEMENTS);
             cardsOnPage = JobsCardElements.size();
             result += cardsOnPage;
@@ -100,7 +100,7 @@ public class JobsPageHU extends HomePageHU {
         WebElement nextButton;
         actions = new Actions(driver);
         boolean thereIsNextPage = false;
-        Popups popUps = new Popups(driver);
+        //Popups popUps = new Popups(driver);
         String cardTitle = "";
         String cardCompany = "";
         String cardText = "";
@@ -108,7 +108,7 @@ public class JobsPageHU extends HomePageHU {
         job = job.toLowerCase();
         do {
             Thread.sleep(1000);
-            popUps.popupClose();
+            Popups.popupClose(driver);
             List<WebElement> JobsCardElements = driver.findElements(JOBS_ELEMENTS);
 
             for (WebElement card : JobsCardElements) {
