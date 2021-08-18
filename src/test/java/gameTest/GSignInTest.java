@@ -169,7 +169,7 @@ public class GSignInTest extends BaseTests {
         M01_step02 portrait = login.clickButton(driver, "Rsubmit");
         String actualURL = portrait.getUrl();
         System.out.println(actualURL);
-        String expectedURL = "/munkavallalo/m01_step02_nevezesi-lap";
+        String expectedURL = "/allaskereso/m01_step02_nevezesi-lap";
 
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }
@@ -198,7 +198,7 @@ public class GSignInTest extends BaseTests {
 
         String actualURL = portrait.getUrl();
         System.out.println(actualURL);
-        String expectedURL = "m01_step02_nevezesi-lap";
+        String expectedURL = "/munkavallalo/m01_step02_nevezesi-lap";
         //portrait.
 
         Assertions.assertTrue(actualURL.contains(expectedURL));

@@ -9,7 +9,6 @@ workingStatus = job starter
 registred = not registred
 name = Teszter Retesz
 city = Nagykovácsi
-workingStatus = reentrant
 position = ács
 language1 = angol
 languageLevel1 = középfok
