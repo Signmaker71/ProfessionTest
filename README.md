@@ -17,6 +17,9 @@ Az adatok hibás tárolása, vagy nem megfelelő feldolgozása, hibás , azaz ne
   egy bizonyos szakaszig megy végig a tesztprogram, ebben a szakaszban kerülnek be, illetve módosulnak az önélerajzi adatok, 
   ezután a Profession.hu oldalon történik a további tesztelés.
 - Regisztált felhasználóként a játék ismételten elkezdhető, a módosítások az önéletrajzban meg kell hogy jelenjenek.
+- A regisztrációhoz, a mezők kitöltéséhez, gombok lekattintásához meghatározott txt file-okból olvassa a teszprogram az adatokat,
+  illetve az utoljára regisztrált e-mail címet módosítja és át is írja a program, ezzel biztosítva, hogy ugyanazzal az e-mail címmel 
+  már ne próbáljon újra regisztrálni.
 - Az önéletrajzban a bejelentkezett felhasználó ellenőrizheti és módosíthatja adatait.
 - Az állások listájában regisztráció nélkül is lehet az állásajánlatok között keresni, a keresés során lehetőség van 
   a hirdetésben szereplő kulcsszavak alapján, és/vagy lokáció alapján szűrni. Hibás eredménynek tekinthető, 
@@ -26,6 +29,9 @@ Az adatok hibás tárolása, vagy nem megfelelő feldolgozása, hibás , azaz ne
   - a logRecords.txt tartalmaz egy egyedi azonosítót, és a hibás hirdetés adatait.
   - az egyedi azonosítók egy külön listában is szerepelnek logIndex.txt, itt a hibajegy létrehozásának dátuma és 
     a hiba feltárásával kapcsolatos teszteset száma is megtalálható.
+    
+  
+- 
 
 Az automata tesztek elkészítéséhez POM struktúrában dolgoztam, a teszhez szükséges, de az oldalakkal kapcsolatos funkciók 
 az src/main/java mappa alatti package-ekben vannak, míg a tesztesetek az src/test/java alatti package-ekben találhatóak.
