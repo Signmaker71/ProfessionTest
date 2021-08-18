@@ -28,3 +28,7 @@ Title: cnc-marós
 Address: leier monolit kft.
 Text: gép önálló kezelése, napi karbantartások elvégzése szerszámok összerakása, mérése, korrekciója munkadarab bemérése tapintóval/mérőórával
 
+BUG0006 : 
+  AssertionFailedError: 
+Expected :Hibás formátumú e-mail cím lett megadva. Helyes formátum: nev@pelda.com.
+Actual   :Invalid value specified for `email`. Expecting email in `name@example.com` format

@@ -1,5 +1,6 @@
 package utils;
 
+import org.junit.runner.Description;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.io.File;
@@ -17,8 +18,8 @@ public class FileUtils extends Hash {
         // try to run some methods
         //System.out.println(upgradeUserEmail("User1RegistrableActive.txt"));
 
-
     }
+
 
     private static String getFileToString(String fileName) {
         String text = "";
@@ -37,6 +38,7 @@ public class FileUtils extends Hash {
         }
         return text;
     }
+
 
     public static String upgradeUserEmail(String fileName){
         String fullText = getFileToString(fileName);
@@ -141,7 +143,7 @@ public class FileUtils extends Hash {
     }
 
     // generate the Bug report string uses a new ID and other informations from getted parameters
-    public static String generateReport(String tcID, String logText) {
+ public static String generateReport(String tcID, String logText) {
         String reportID = "";
         String logId = generateNewID();
         String logDateTime = getLocalDateTime();

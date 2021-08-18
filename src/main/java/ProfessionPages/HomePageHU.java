@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.Methods;
+import utils.Popups;
 
 public class HomePageHU extends PageHeaderMenuHU {
 
@@ -22,7 +23,9 @@ public class HomePageHU extends PageHeaderMenuHU {
         Methods.waitForElement(driver, SearchByKeywordField).sendKeys(position);
     }
 
-    public void fillSearchLocationField(String location){
+
+
+    public void fillSearchLocationField(String location) {
         Methods.fillTextToField(driver, SearchLocationField, location);
         driver.findElement(SearchLocationField).sendKeys(location);
     }

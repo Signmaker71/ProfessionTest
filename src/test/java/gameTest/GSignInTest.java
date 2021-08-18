@@ -3,11 +3,12 @@ package gameTest;
 import OlimpiaGamePagesV2.*;
 import base.BaseTests;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
 import utils.FileUtils;
-import utils.Methods;
 import utils.Popups;
 import utils.Hash;
+
+import static org.junit.Assert.fail;
+
 
 import java.util.HashMap;
 
@@ -30,7 +31,6 @@ public class GSignInTest extends BaseTests {
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
         user = utils.userData(userFile);
-        System.out.println(utils.upgradeUserEmail(userFile));
 
         choosePrice.choosePrice(user.get("choosenPrice"));
         Q020HasJob hasJob = choosePrice.clickNextButton();
@@ -119,6 +119,9 @@ public class GSignInTest extends BaseTests {
         String expectedMessage = "Hibás formátumú e-mail cím lett megadva. Helyes formátum: nev@pelda.com.";
 
         Assertions.assertEquals(expectedMessage, actualMessage);
+
+        String report = "AssertionFailedError: \n" + "Expected :" + expectedMessage + "\n" + "Actual   :" + actualMessage;
+        utils.generateReport("TCG04", report);
     }
 
 
@@ -156,8 +159,8 @@ public class GSignInTest extends BaseTests {
         String userFile = "User1RegistrableActive.txt";
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
-        user = utils.userData(userFile);
         System.out.println(utils.upgradeUserEmail(userFile));
+        user = utils.userData(userFile);
 
         //Methods.takeScreenshot(driver);
         choosePrice.choosePrice(user.get("choosenPrice"));
@@ -189,8 +192,8 @@ public class GSignInTest extends BaseTests {
         String userFile = "User2RegistrablePassive.txt";
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
-        user = utils.userData(userFile);
         System.out.println(utils.upgradeUserEmail(userFile));
+        user = utils.userData(userFile);
 
         //Methods.takeScreenshot(driver);
         choosePrice.choosePrice(user.get("choosenPrice"));
@@ -211,7 +214,6 @@ public class GSignInTest extends BaseTests {
         String actualURL = portrait.getUrl();
         System.out.println(actualURL);
         String expectedURL = "/munkavallalo/m01_step02_nevezesi-lap";
-        //portrait.
 
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }

@@ -28,6 +28,7 @@ public class BaseTests {
     protected HashMap<String, String> userData;
     protected Popups popups = new Popups(driver);
 
+
     @BeforeEach
     public void setUp(){
         WebDriverManager.chromedriver().setup();
