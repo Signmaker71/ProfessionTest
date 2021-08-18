@@ -24,17 +24,15 @@ public class JobsPageHU extends HomePageHU {
     private final By JOB_CARD_COMPANY = By.xpath("./div[1]/div[1]/div[2]/div/div[1]/a");
     private final By JOB_CARD_ADDRESS = By.xpath("./div[1]/div[1]/div[2]/div/div[2]");
     private final By JOB_CARD_TEXT = By.xpath("./div[1]/div[2]/div[1]");
-//*[@id="content"]/div/div/div[1]/ul/li[1]/div[1]/div[2]/div[1]
 
     FileUtils utils = new FileUtils();
+    Actions actions;
+
 
     public JobsPageHU(WebDriver driver) {
         super(driver);
         this.driver = driver;
     }
-
-    Methods methods = new Methods(driver);
-    Actions actions;
 
     public int getJobsCount() {
         String[] jobsCountString = driver.findElement(JOBS_COUNT).getText().split(" ");
@@ -49,43 +47,35 @@ public class JobsPageHU extends HomePageHU {
     }
 
     public JobsPageHU clickNextButton() {
-        driver.findElement(NEXT_PAGE_OF_JOBS_BUTTON).click();
+        Methods.clickButton(driver, NEXT_PAGE_OF_JOBS_BUTTON);
         return new JobsPageHU(driver);
     }
 
-    public List<WebElement> getJobsCardsOnPage() {
-        List<WebElement> JobsCardElements = driver.findElements(JOBS_ELEMENTS);
-        List<String> jobs = new ArrayList<>();
-        return JobsCardElements;
-    }
 
-    public int getNumberOfJobCards() throws InterruptedException {
+    public int getNumberOfJobCards() {
         int result = 0;
         int cardsOnPage = 0;
         WebElement nextButton;
         actions = new Actions(driver);
         boolean thereIsNextPage = false;
-        //Popups popUps = new Popups(driver);
 
         do {
-            //Thread.sleep(1000);
             Popups.popupClose(driver);
             List<WebElement> JobsCardElements = driver.findElements(JOBS_ELEMENTS);
             cardsOnPage = JobsCardElements.size();
             result += cardsOnPage;
 
             try {
-                nextButton = driver.findElement(NEXT_PAGE_OF_JOBS_BUTTON);
+                nextButton = Methods.waitForElement(driver, NEXT_PAGE_OF_JOBS_BUTTON);
+                Popups.popupClose(driver);
                 actions.moveToElement(nextButton);
                 if (nextButton.isDisplayed()) {
                     thereIsNextPage = true;
-
                     Methods.clickButton(driver, NEXT_PAGE_OF_JOBS_BUTTON);
-                    //Thread.sleep(3000);
 
                 } else thereIsNextPage = false;
             } catch (Exception e) {
-                //System.out.println(e.getMessage());
+                System.out.println(e.getMessage());
                 thereIsNextPage = false;
             }
             ;
@@ -94,28 +84,31 @@ public class JobsPageHU extends HomePageHU {
         return result;
     }
 
-    public int getNumberOfValidJobCards(String job) throws InterruptedException {
+    public int getNumberOfValidJobCards(String job) {
         int result = 0;
-        int validCardsOnPage = 0;
         WebElement nextButton;
         actions = new Actions(driver);
         boolean thereIsNextPage = false;
-        //Popups popUps = new Popups(driver);
-        String cardTitle = "";
-        String cardCompany = "";
-        String cardText = "";
+        String cardTitle;
+        String advertiseID;
+        String cardCompany;
+        String cardText;
         String reportText = "";
         job = job.toLowerCase();
         do {
-            Thread.sleep(1000);
             Popups.popupClose(driver);
             List<WebElement> JobsCardElements = driver.findElements(JOBS_ELEMENTS);
 
             for (WebElement card : JobsCardElements) {
-                cardTitle = card.findElement(JOB_CARD_TITLE).getText().toLowerCase();
-                cardCompany = card.findElement(JOB_CARD_COMPANY).getText().toLowerCase();
-                cardText = card.findElement(JOB_CARD_TEXT).getText().toLowerCase(Locale.ROOT);
-                if (cardTitle.contains(job) || cardText.contains(job) || cardCompany.contains(job)) {
+                cardTitle = card.findElement(JOB_CARD_TITLE).getText();
+                advertiseID = card.getAttribute("data-prof-id");
+                cardCompany = card.findElement(JOB_CARD_COMPANY).getText();
+                cardText = card.findElement(JOB_CARD_TEXT).getText();
+
+                System.out.println(cardTitle + "    Adverise ID: " + advertiseID);
+                System.out.println(cardCompany);
+                System.out.println(cardText + "\n");
+                if (cardTitle.toLowerCase().contains(job) || cardText.toLowerCase().contains(job) || cardCompany.toLowerCase().contains(job)) {
                     result++;
                 } else {
                     reportText += job + " is missing from this card:\n";
@@ -123,27 +116,25 @@ public class JobsPageHU extends HomePageHU {
                     reportText += "Title: " + cardTitle + "\n";
                     reportText += "Address: " + cardCompany + "\n";
                     reportText += "Text: " + cardText + "\n";
-                    utils.generateReport("TC02", reportText);
+                    System.out.println(reportText);
+
+                    utils.generateReport("TCJ02", reportText);
                 }
             }
 
             try {
-                nextButton = driver.findElement(NEXT_PAGE_OF_JOBS_BUTTON);
+                nextButton = Methods.waitForElement(driver, NEXT_PAGE_OF_JOBS_BUTTON);
                 actions.moveToElement(nextButton);
+
                 if (nextButton.isDisplayed()) {
                     thereIsNextPage = true;
-
-                    Methods.clickButton(driver, NEXT_PAGE_OF_JOBS_BUTTON);
-
+                    Methods.waitForElementClickable(driver, NEXT_PAGE_OF_JOBS_BUTTON).click();
                 } else thereIsNextPage = false;
             } catch (Exception e) {
                 thereIsNextPage = false;
             }
-
         } while (thereIsNextPage);
 
         return result;
     }
-
-
 }

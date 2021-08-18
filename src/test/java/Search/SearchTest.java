@@ -14,15 +14,13 @@ import utils.Popups;
 
 public class SearchTest extends BaseTests {
 
-    //private HomePageHU homePage;
-    //private Popups popups;
     private JobsPageHU jobsPageHU;
-    
-    private WebDriverWait wait;
+
     FileUtils utils = new FileUtils();
+    String fileName = "User1RegistrableActive.txt";
+    String position = utils.userData(fileName).get("position");
 
     // count and check elements and their contents
-
     @Test
     @DisplayName("TCJ01 Testing to count Job cards")
 
@@ -30,22 +28,21 @@ public class SearchTest extends BaseTests {
         driver.get("https://profession.hu/allasok/");
 
         jobsPageHU = new JobsPageHU(driver);
-        //popups = new Popups(driver);
         Popups.popupClose(driver);
-        jobsPageHU.fillSearchByKeywordField(utils.userData("user1.txt").get("position"));
+        jobsPageHU.fillSearchByKeywordField(position);
         jobsPageHU.clickSearchButton();
 
         int expextedJobsCount = jobsPageHU.getJobsCount();
         int actualJobsCount = 0;
         try {
             actualJobsCount = jobsPageHU.getNumberOfJobCards();
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        Assertions.assertEquals(expextedJobsCount,actualJobsCount);
+        Assertions.assertEquals(expextedJobsCount, actualJobsCount);
     }
 
-    @Test
+    @Test //
     @DisplayName("TCJ02 Testing to count Valid Job cards")
     // tested job card's title or text must contain the job's name
     // the location is not acceptable to contain the job's name
@@ -53,7 +50,7 @@ public class SearchTest extends BaseTests {
     public void testCardsContent() throws InterruptedException {
         driver.get("https://profession.hu/allasok/");
         //popups = new Popups(driver);
-        String job = utils.userData("user1.txt").get("position");
+        String job = utils.userData("User1RegistrableActive.txt").get("position");
 
         System.out.println(driver.getCurrentUrl());
         jobsPageHU = new JobsPageHU(driver);
