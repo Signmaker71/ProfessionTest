@@ -1,0 +1,130 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az82-699",
+    "children" : [ {
+      "name" : "2979@fv-az82-699.ForkJoinPool-1-worker-1(12)",
+      "children" : [ {
+        "name" : "TCJ01 Testing to count Job cards",
+        "uid" : "72ec6342fcf7bb4d",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248947471,
+          "stop" : 1629248947643,
+          "duration" : 172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testLoginWithInvalidEmailaddress()",
+        "uid" : "ecbf3aa7c17f23c",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248948010,
+          "stop" : 1629248948155,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulSignin()",
+        "uid" : "331b414d2d7519be",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248947837,
+          "stop" : 1629248947988,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCJ02 Testing to count Valid Job cards",
+        "uid" : "ce811c127d4b2a95",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248945243,
+          "stop" : 1629248947384,
+          "duration" : 2141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSigninWithIncorrectEmail()",
+        "uid" : "841b7b11d7c2d6a1",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248947654,
+          "stop" : 1629248947827,
+          "duration" : 173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG01 Testing to successful login",
+        "uid" : "54d5a909774bce6c",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248948500,
+          "stop" : 1629248948640,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG05\tSikertelen regisztráció hibás jelszó miatt",
+        "uid" : "be39c3f60798d74b",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248948644,
+          "stop" : 1629248948788,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulLogin()",
+        "uid" : "6e7796fdc46572de",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248948161,
+          "stop" : 1629248948305,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+        "uid" : "2962db2e61f2f793",
+        "parentUid" : "34af8dd6dfdafa5b87d3a9cf461365d1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629248948326,
+          "stop" : 1629248948489,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "34af8dd6dfdafa5b87d3a9cf461365d1"
+    } ],
+    "uid" : "64bf0220b054506362904f3e6cee53e5"
+  } ],
+  "name" : "timeline"
+}

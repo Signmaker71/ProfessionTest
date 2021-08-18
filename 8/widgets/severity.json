@@ -1,0 +1,91 @@
+[ {
+  "uid" : "841b7b11d7c2d6a1",
+  "name" : "testSigninWithIncorrectEmail()",
+  "time" : {
+    "start" : 1629248947654,
+    "stop" : 1629248947827,
+    "duration" : 173
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "54d5a909774bce6c",
+  "name" : "TCG01 Testing to successful login",
+  "time" : {
+    "start" : 1629248948500,
+    "stop" : 1629248948640,
+    "duration" : 140
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "be39c3f60798d74b",
+  "name" : "TCG05\tSikertelen regisztráció hibás jelszó miatt",
+  "time" : {
+    "start" : 1629248948644,
+    "stop" : 1629248948788,
+    "duration" : 144
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6e7796fdc46572de",
+  "name" : "testSuccessfulLogin()",
+  "time" : {
+    "start" : 1629248948161,
+    "stop" : 1629248948305,
+    "duration" : 144
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2962db2e61f2f793",
+  "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+  "time" : {
+    "start" : 1629248948326,
+    "stop" : 1629248948489,
+    "duration" : 163
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "72ec6342fcf7bb4d",
+  "name" : "TCJ01 Testing to count Job cards",
+  "time" : {
+    "start" : 1629248947471,
+    "stop" : 1629248947643,
+    "duration" : 172
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "331b414d2d7519be",
+  "name" : "testSuccessfulSignin()",
+  "time" : {
+    "start" : 1629248947837,
+    "stop" : 1629248947988,
+    "duration" : 151
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ecbf3aa7c17f23c",
+  "name" : "testLoginWithInvalidEmailaddress()",
+  "time" : {
+    "start" : 1629248948010,
+    "stop" : 1629248948155,
+    "duration" : 145
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ce811c127d4b2a95",
+  "name" : "TCJ02 Testing to count Valid Job cards",
+  "time" : {
+    "start" : 1629248945243,
+    "stop" : 1629248947384,
+    "duration" : 2141
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
