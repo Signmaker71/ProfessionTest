@@ -1,0 +1,87 @@
+{
+  "uid" : "943832f6b7cfd1c7",
+  "name" : "TCP02\tSikeres kijelentkezés - Logout",
+  "fullName" : "professionPageTest.DropdownTest.testLogout",
+  "historyId" : "2ff7dc19061c6f9913acb8e90b5b65dc",
+  "time" : {
+    "start" : 1629328747247,
+    "stop" : 1629328766982,
+    "duration" : 19735
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629328747247,
+      "stop" : 1629328747398,
+      "duration" : 151
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629328766911,
+      "stop" : 1629328766982,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az72-270"
+  }, {
+    "name" : "thread",
+    "value" : "2886@fv-az72-270.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "professionPageTest.DropdownTest"
+  }, {
+    "name" : "testClass",
+    "value" : "professionPageTest.DropdownTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLogout"
+  }, {
+    "name" : "suite",
+    "value" : "professionPageTest.DropdownTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "943832f6b7cfd1c7.json",
+  "parameterValues" : [ ]
+}

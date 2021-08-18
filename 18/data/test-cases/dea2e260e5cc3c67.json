@@ -1,0 +1,87 @@
+{
+  "uid" : "dea2e260e5cc3c67",
+  "name" : "TCG02\tSikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt",
+  "fullName" : "gameTest.GSignInTest.testUnableToRegistringByMissingRSExpectation",
+  "historyId" : "2d260474bdda51f146c304a86e9e05f4",
+  "time" : {
+    "start" : 1629328826723,
+    "stop" : 1629328836041,
+    "duration" : 9318
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629328826724,
+      "stop" : 1629328826874,
+      "duration" : 150
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629328835969,
+      "stop" : 1629328836041,
+      "duration" : 72
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az72-270"
+  }, {
+    "name" : "thread",
+    "value" : "2886@fv-az72-270.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testUnableToRegistringByMissingRSExpectation"
+  }, {
+    "name" : "suite",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dea2e260e5cc3c67.json",
+  "parameterValues" : [ ]
+}

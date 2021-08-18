@@ -1,0 +1,87 @@
+{
+  "uid" : "65683e477d586518",
+  "name" : "TCG03\tSikertelen regisztráció Játékstabályzat elfogadás hiánya miatt",
+  "fullName" : "gameTest.GSignInTest.testUnableToRegistringByMissingSSxpectation",
+  "historyId" : "b9f44d13f11d884ccad921da7cc4a88a",
+  "time" : {
+    "start" : 1629328817297,
+    "stop" : 1629328826721,
+    "duration" : 9424
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629328817298,
+      "stop" : 1629328817437,
+      "duration" : 139
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629328826651,
+      "stop" : 1629328826721,
+      "duration" : 70
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az72-270"
+  }, {
+    "name" : "thread",
+    "value" : "2886@fv-az72-270.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testUnableToRegistringByMissingSSxpectation"
+  }, {
+    "name" : "suite",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "65683e477d586518.json",
+  "parameterValues" : [ ]
+}
