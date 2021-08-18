@@ -1,4 +1,4 @@
-email = szpetertester+o1014@gmail.com
+email = szpetertester+o1015@gmail.com
 username = Teszt Passzív Pál
 password = ÉØÐÝæ¼ ¤
 choosenPrice = Tesco

@@ -1,9 +1,9 @@
-email = szpetertester+o2017@gmail.com
-username = Teszt Aktív Anna
+email = szpetertester+o1010@gmail.com
+username = Teszt Passzív Pál
 password = ÉØÐÝæ¼ ¤
-choosenPrice = DECATHLON
-haveJob = yes
-workingStatus = not open
+choosenPrice = Tesco
+haveJob = no
+workingStatus = job starter
 registred = not registred
 city = Nagykovácsi
 position = ács

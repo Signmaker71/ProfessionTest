@@ -43,7 +43,7 @@ public class Methods {
 
 
 public static WebElement waitForElement(WebDriver driver, By value) {
-        WebDriverWait wait = new WebDriverWait(driver, 3);
+        WebDriverWait wait = new WebDriverWait(driver, 2);
         wait.until(ExpectedConditions.visibilityOfElementLocated(value));
         return driver.findElement(value);
     }
