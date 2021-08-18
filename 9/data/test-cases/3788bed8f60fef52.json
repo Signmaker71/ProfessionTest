@@ -1,0 +1,164 @@
+{
+  "uid" : "3788bed8f60fef52",
+  "name" : "TCJ01 Testing to count Job cards",
+  "fullName" : "Search.SearchTest.testSimpleSearch",
+  "historyId" : "88903b984e0d13365b3cc550b3ce61ba",
+  "time" : {
+    "start" : 1629277827637,
+    "stop" : 1629277831907,
+    "duration" : 4270
+  },
+  "description" : "",
+  "status" : "broken",
+  "statusMessage" : "Keys to send should be a not null CharSequence",
+  "statusTrace" : "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\n\tat ProfessionPages.HomePageHU.fillSearchByKeywordField(HomePageHU.java:23)\n\tat Search.SearchTest.testSimpleSearch(SearchTest.java:35)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\n\tat org.junit.jupiter.api.extension.InvocationInterceptor.interceptTestMethod(InvocationInterceptor.java:117)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeNonConcurrentTasks(ForkJoinPoolHierarchicalTestExecutorService.java:155)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeNonConcurrentTasks(ForkJoinPoolHierarchicalTestExecutorService.java:155)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:135)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\n\tat org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:185)\n\tat java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)\n\tat java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)\n\tat java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)\n\tat java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)\n\tat java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629277827637,
+      "stop" : 1629277827812,
+      "duration" : 175
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629277831832,
+      "stop" : 1629277831906,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-628"
+  }, {
+    "name" : "thread",
+    "value" : "2851@fv-az47-628.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSimpleSearch"
+  }, {
+    "name" : "suite",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "72ec6342fcf7bb4d",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/8//#testresult/72ec6342fcf7bb4d",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.37', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55ec53537a63 <unknown>\n#1 0x55ec532ac458 <unknown>\n#2 0x55ec532cf2e3 <unknown>\n#3 0x55ec532cae9f <unknown>\n#4 0x55ec53304b72 <unknown>\n#5 0x55ec532fefd3 <unknown>\n#6 0x55ec532d5514 <unknown>\n#7 0x55ec532d6505 <unknown>\n#8 0x55ec53563e2e <unknown>\n#9 0x55ec53579886 <unknown>\n#10 0x55ec53564d75 <unknown>\n#11 0x55ec5357ad94 <unknown>\n#12 0x55ec5355b8eb <unknown>\n#13 0x55ec53595cd8 <unknown>\n#14 0x55ec53595e58 <unknown>\n#15 0x55ec535afdfd <unknown>\n#16 0x7fbead950609 start_thread\n",
+        "time" : {
+          "start" : 1629248947471,
+          "stop" : 1629248947643,
+          "duration" : 172
+        }
+      }, {
+        "uid" : "5cf3c7ac189b1386",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/7//#testresult/5cf3c7ac189b1386",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-628', ip: '10.1.1.54', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55e9cfa2ea63 <unknown>\n#1 0x55e9cf7a3458 <unknown>\n#2 0x55e9cf7c62e3 <unknown>\n#3 0x55e9cf7c1e9f <unknown>\n#4 0x55e9cf7fbb72 <unknown>\n#5 0x55e9cf7f5fd3 <unknown>\n#6 0x55e9cf7cc514 <unknown>\n#7 0x55e9cf7cd505 <unknown>\n#8 0x55e9cfa5ae2e <unknown>\n#9 0x55e9cfa70886 <unknown>\n#10 0x55e9cfa5bd75 <unknown>\n#11 0x55e9cfa71d94 <unknown>\n#12 0x55e9cfa528eb <unknown>\n#13 0x55e9cfa8ccd8 <unknown>\n#14 0x55e9cfa8ce58 <unknown>\n#15 0x55e9cfaa6dfd <unknown>\n#16 0x7f47a54dd609 start_thread\n",
+        "time" : {
+          "start" : 1629229006301,
+          "stop" : 1629229006461,
+          "duration" : 160
+        }
+      }, {
+        "uid" : "2eb929373dfacf74",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/6//#testresult/2eb929373dfacf74",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az83-229', ip: '10.1.0.145', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x5654473a2a63 <unknown>\n#1 0x565447117458 <unknown>\n#2 0x56544713a2e3 <unknown>\n#3 0x565447135e9f <unknown>\n#4 0x56544716fb72 <unknown>\n#5 0x565447169fd3 <unknown>\n#6 0x565447140514 <unknown>\n#7 0x565447141505 <unknown>\n#8 0x5654473cee2e <unknown>\n#9 0x5654473e4886 <unknown>\n#10 0x5654473cfd75 <unknown>\n#11 0x5654473e5d94 <unknown>\n#12 0x5654473c68eb <unknown>\n#13 0x565447400cd8 <unknown>\n#14 0x565447400e58 <unknown>\n#15 0x56544741adfd <unknown>\n#16 0x7f06daa4c609 start_thread\n",
+        "time" : {
+          "start" : 1628856169013,
+          "stop" : 1628856169155,
+          "duration" : 142
+        }
+      }, {
+        "uid" : "e8c4910afe900649",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/5//#testresult/e8c4910afe900649",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-699', ip: '10.1.0.29', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x563beed84a63 <unknown>\n#1 0x563beeaf9458 <unknown>\n#2 0x563beeb1c2e3 <unknown>\n#3 0x563beeb17e9f <unknown>\n#4 0x563beeb51b72 <unknown>\n#5 0x563beeb4bfd3 <unknown>\n#6 0x563beeb22514 <unknown>\n#7 0x563beeb23505 <unknown>\n#8 0x563beedb0e2e <unknown>\n#9 0x563beedc6886 <unknown>\n#10 0x563beedb1d75 <unknown>\n#11 0x563beedc7d94 <unknown>\n#12 0x563beeda88eb <unknown>\n#13 0x563beede2cd8 <unknown>\n#14 0x563beede2e58 <unknown>\n#15 0x563beedfcdfd <unknown>\n#16 0x7ff128a44609 start_thread\n",
+        "time" : {
+          "start" : 1628855083133,
+          "stop" : 1628855083281,
+          "duration" : 148
+        }
+      }, {
+        "uid" : "55c4b25068c01e1a",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/4//#testresult/55c4b25068c01e1a",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az72-270', ip: '10.1.0.79', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55b1f09c1a63 <unknown>\n#1 0x55b1f0736458 <unknown>\n#2 0x55b1f07592e3 <unknown>\n#3 0x55b1f0754e9f <unknown>\n#4 0x55b1f078eb72 <unknown>\n#5 0x55b1f0788fd3 <unknown>\n#6 0x55b1f075f514 <unknown>\n#7 0x55b1f0760505 <unknown>\n#8 0x55b1f09ede2e <unknown>\n#9 0x55b1f0a03886 <unknown>\n#10 0x55b1f09eed75 <unknown>\n#11 0x55b1f0a04d94 <unknown>\n#12 0x55b1f09e58eb <unknown>\n#13 0x55b1f0a1fcd8 <unknown>\n#14 0x55b1f0a1fe58 <unknown>\n#15 0x55b1f0a39dfd <unknown>\n#16 0x7fd120232609 start_thread\n",
+        "time" : {
+          "start" : 1628851245384,
+          "stop" : 1628851245545,
+          "duration" : 161
+        }
+      }, {
+        "uid" : "9c60654a451b0580",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/3//#testresult/9c60654a451b0580",
+        "status" : "broken",
+        "statusDetails" : "unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az72-469', ip: '10.1.0.211', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: #0 0x55cac39a6a63 <unknown>\n#1 0x55cac371b458 <unknown>\n#2 0x55cac373e2e3 <unknown>\n#3 0x55cac3739e9f <unknown>\n#4 0x55cac3773b72 <unknown>\n#5 0x55cac376dfd3 <unknown>\n#6 0x55cac3744514 <unknown>\n#7 0x55cac3745505 <unknown>\n#8 0x55cac39d2e2e <unknown>\n#9 0x55cac39e8886 <unknown>\n#10 0x55cac39d3d75 <unknown>\n#11 0x55cac39e9d94 <unknown>\n#12 0x55cac39ca8eb <unknown>\n#13 0x55cac3a04cd8 <unknown>\n#14 0x55cac3a04e58 <unknown>\n#15 0x55cac3a1edfd <unknown>\n#16 0x7f36682f2609 start_thread\n",
+        "time" : {
+          "start" : 1628794389973,
+          "stop" : 1628794390146,
+          "duration" : 173
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3788bed8f60fef52.json",
+  "parameterValues" : [ ]
+}
