@@ -1,0 +1,133 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Keys to send should be a not null CharSequence",
+      "children" : [ {
+        "name" : "TCJ02 Testing to count Valid Job cards",
+        "uid" : "b5af995312df0bc9",
+        "parentUid" : "8863195d2002b04b9f89a669982dae2c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629296895889,
+          "stop" : 1629296908020,
+          "duration" : 12131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCJ01 Testing to count Job cards",
+        "uid" : "e76922ea93c969bc",
+        "parentUid" : "8863195d2002b04b9f89a669982dae2c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629296908117,
+          "stop" : 1629296912707,
+          "duration" : 4590
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8863195d2002b04b9f89a669982dae2c"
+    }, {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "testSigninWithIncorrectEmail()",
+        "uid" : "17689ed3094a1625",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629296912724,
+          "stop" : 1629296916010,
+          "duration" : 3286
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulSignin()",
+        "uid" : "7bf1584b4791cc65",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629296916014,
+          "stop" : 1629296919283,
+          "duration" : 3269
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testLoginWithInvalidEmailaddress()",
+        "uid" : "c329471a87c0cdcd",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629296919291,
+          "stop" : 1629296922543,
+          "duration" : 3252
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulLogin()",
+        "uid" : "f488a23036d2926e",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629296922547,
+          "stop" : 1629296925804,
+          "duration" : 3257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    }, {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.id: player-password1 (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az39-548', ip: '10.1.1.88', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.20TyXj}, goog:chromeOptions: {debuggerAddress: localhost:43577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aab777310f9d1a16b5f6116a2c5b07f2",
+      "children" : [ {
+        "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+        "uid" : "a53b92f675d54b00",
+        "parentUid" : "c3fb5f84c6898d694f071b697d1e9f43",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629296962089,
+          "stop" : 1629296975899,
+          "duration" : 13810
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c3fb5f84c6898d694f071b697d1e9f43"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <Hibás formátumú e-mail cím lett megadva. Helyes formátum: nev@pelda.com.> but was: <Invalid value specified for `email`. Expecting email in `name@example.com` format>",
+      "children" : [ {
+        "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+        "uid" : "4fe725c400b2a4f3",
+        "parentUid" : "d42bd3f2b7943b2d76353202195ed27c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629296925828,
+          "stop" : 1629296936427,
+          "duration" : 10599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d42bd3f2b7943b2d76353202195ed27c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
