@@ -2,19 +2,17 @@ package gameTest;
 
 import OlimpiaGamePagesV2.*;
 import base.BaseTests;
-import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import utils.FileUtils;
-import utils.Methods;
-import utils.Popups;
 import utils.Hash;
+import utils.Popups;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 
-public class GLoginTest extends BaseTests {
+public class GLogInTest extends BaseTests {
     final String URL_GAME = "https://www.professionjatekok.hu/v2/main";
     final String URL_TEST_DEV = "https://test.dev.profession.hu/";
     final String URL_PROF = "https://profession.hu/";
@@ -23,43 +21,88 @@ public class GLoginTest extends BaseTests {
     FileUtils utils = new FileUtils();
     HashMap<String, String> user = new HashMap<String, String>();
 
-    @Test
-    @DisplayName("TCG05	Sikertelen regisztráció hibás jelszó miatt")
-    public void testTermOfUseIsEnable() throws InterruptedException {
+
+    /*
+    @Test // OK
+    @DisplayName("TCG01	Regisztrációnál az Felhasználási Feltételek dokumentum elérhető")
+    public void testEnsureToPrivacyPolicyIsEnable() {
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
-        user = utils.userData("user1.txt");
-        //Methods.takeScreenshot(driver);
+        user = utils.userData("user2.txt");
+
         choosePrice.choosePrice(user.get("choosenPrice"));
         Q020HasJob hasJob = choosePrice.clickNextButton();
-        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("haveJob"));
+        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
         Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
-        login.clickCheckbox("RrsCheckbox");
+        login.clickButton("termOfUse");
+
+        String actualURL = login.getPrivacyPolicyLink();
+        String expectedURL = "https://www.profession.hu/docs/upload/felhasznalasifeltetelek_20201008.pdf";
+        Assertions.assertEquals(actualURL, expectedURL);
+    }
+
+    @Test // OK
+    @DisplayName("TCG02	Sikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt")
+    public void testUnableToRegistringByMissingRSExpectation() {
+        choosePrice = new Q010ChoosePrice(driver);
+        driver.navigate().to(URL_GAME);
+        user = utils.userData("user1.txt");
+
+        choosePrice.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = choosePrice.clickNextButton();
+        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
+        Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
+        Popups.popupClose(driver);
+        Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
+        //login.clickCheckbox("RrsCheckbox");
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
         login.clickButton("Rnext");
-        login.fill("Rpassword1", Hash.revert(user.get("password")));
-        login.fill("Rpassword2", (user.get("password")));
 
-        M01_step02 portrait = login.clickButton(driver,"Rsubmit");
-        String actualMessage = login.getAlertText();
-        String expectedMessage = "A két jelszó nem egyezik meg, vagy rövidebbek, mint 6 karakter, esetleg nem tartalmaz számot!";
+        String actualMessage = login.getAlertBoxText();
+        String expectedMessage = "Kérjük minden kötelező mezőt adjon meg!";
+        login.acceptAlertBox();
 
         Assertions.assertEquals(actualMessage, expectedMessage);
     }
 
-    @Test
-    @DisplayName("TCG06	Sikeres AKTÍV álláskereső regisztráció")
-    public void testRegisterActiveEmployee() {
+    @Test // OK
+    @DisplayName("TCG03	Sikertelen regisztráció Játékstabályzat elfogadás hiánya miatt")
+    public void testUnableToRegistringByMissingSSxpectation() {
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
         user = utils.userData("user1.txt");
+
+        choosePrice.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = choosePrice.clickNextButton();
+        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
+        Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
+        Popups.popupClose(driver);
+        Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
+        login.clickCheckbox("RrsCheckbox");
+        //login.clickCheckbox("RssCheckbox");
+        login.fill("Remail", user.get("email"));
+        login.clickButton("Rnext");
+
+        String actualMessage = login.getAlertBoxText();
+        String expectedMessage = "Kérjük minden kötelező mezőt adjon meg!";
+
+        Assertions.assertEquals(actualMessage, expectedMessage);
+    }
+
+
+    @Test // MINTA
+    @DisplayName("TCG07	Sikeres PASSZÍV álláskereső regisztráció")
+    public void testRegisterPassiveEmployee() {
+        choosePrice = new Q010ChoosePrice(driver);
+        driver.navigate().to(URL_GAME);
+        user = utils.userData("user2.txt");
         //Methods.takeScreenshot(driver);
         choosePrice.choosePrice(user.get("choosenPrice"));
         Q020HasJob hasJob = choosePrice.clickNextButton();
-        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("haveJob"));
+        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
         Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
@@ -70,24 +113,26 @@ public class GLoginTest extends BaseTests {
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", Hash.revert(user.get("password")));
 
-        M01_step02 portrait = login.clickButton(driver,"Rsubmit");
+        M01_step02 portrait = login.clickButton(driver, "Rsubmit");
         String actualURL = portrait.getUrl();
+        System.out.println(actualURL);
         String expectedURL = "m01_step02_nevezesi-lap";
 
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }
+
     @Test
-    @DisplayName("TCG01 Testing to successful login")
+    @DisplayName("TCG08 Sikeres belépés regisztrált felhasználóként")
     // HappyPath
 
-    public void testSuccessfullLogin() throws InterruptedException {
+    public void testSuccessfullLogin() {
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
         user = utils.userData("user1.txt");
         //Methods.takeScreenshot(driver);
         choosePrice.choosePrice(user.get("choosenPrice"));
         Q020HasJob hasJob = choosePrice.clickNextButton();
-        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("haveJob"));
+        Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
         Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton(user.get("registred"));
@@ -97,7 +142,7 @@ public class GLoginTest extends BaseTests {
         login.clickButton("next");
         login.fill("password", Hash.revert(user.get("password")));
 
-        M01_step02 portrait = login.clickButton(driver,"submit");
+        M01_step02 portrait = login.clickButton(driver, "submit");
         String actualName = portrait.getName();
         String expectedName = user.get("name");
 

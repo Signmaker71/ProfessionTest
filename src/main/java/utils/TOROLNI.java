@@ -1,4 +1,4 @@
-package OlimpiaGamePagesV2;
+package utils;
 
 public class TOROLNI {
 }

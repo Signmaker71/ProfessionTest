@@ -26,12 +26,12 @@ public class Q050LoginAndRegistration {
     public final By REGISTER_SUBMIT_BUTTON = By.xpath("//*[@id=\"register-form-v4\"]/div[3]/div[3]/button");
     public final By REGISTER_TEXT_DANGER = By.cssSelector("#register-form-v4 > p > strong");
 
-    public final By TERM_OF_USE_LINK = By.xpath("//*[@id=\"login-form-v4\"]/div[4]/div/div[1]/div/label/a[1]");
-    public final By PRIVACY_POLICY_LINK = By.xpath("//*[@id=\"login-form-v4\"]/div[4]/div/div[1]/div/label/a[2]");
+    public final By TERM_OF_USE_LINK = By.xpath("//*[@id=\"register-form-v4\"]/div[2]/div/div[1]/div/label/a[1]");
+    public final By PRIVACY_POLICY_LINK = By.xpath("//*[@id=\"register-form-v4\"]/div[2]/div/div[1]/div/label/a[2]");
     public final By PRIVACY_POLICY_TEXT = By.xpath("//*[@id=\"preambulum\"]/div");
     public final By PRIVACY_POLICY_HEADERS = By.xpath("//*[@id=\"sidemenu-prof\"]/div/p");
-    public final By GAME_RULES_LINK = By.xpath("//*[@id=\"login-form-v4\"]/div[4]/div/div[2]/label/a[1]");
-    public final By SWEEPSTAKES_STATEMENT_LINK = By.xpath("//*[@id=\"login-form-v4\"]/div[4]/div/div[2]/label/a[2]");
+    public final By GAME_RULES_LINK = By.xpath("//*[@id=\"register-form-v4\"]/div[2]/div/div[2]/label/a[1]");
+    public final By SWEEPSTAKES_STATEMENT_LINK = By.xpath("//*[@id=\"register-form-v4\"]/div[2]/div/div[2]/label/a[2]");
 
 
     public Q050LoginAndRegistration(WebDriver driver) {
@@ -75,6 +75,16 @@ public class Q050LoginAndRegistration {
     public String getAlertText() {
         return Methods.waitForElement(driver, REGISTER_TEXT_DANGER).getText();
     }
+
+    public String getAlertBoxText() {
+        return Methods.getAlertText(driver);
+    }
+
+    public void acceptAlertBox() {
+        Methods.acceptAlert(driver);
+    }
+
+
 
 
     private By getLocator(String name){

@@ -54,6 +54,9 @@ public class Q030WorkingStatus {
             case "job starter":
                 buttonBy = JOB_STARTER_BUTTON;
                 break;
+            case "not open":
+                buttonBy = NOT_OPEN_BUTTON;
+                break;
             default:
                 buttonBy = NOT_OPEN_BUTTON;
                 break;

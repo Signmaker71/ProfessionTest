@@ -29,6 +29,18 @@ public class M01_step02 {
         return fullName;
     }
 
+    public String setName(String lastName, String firstName){
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(FIRSTNAME));
+
+        driver.findElement(LASTNAME).sendKeys(lastName);
+        driver.findElement(FIRSTNAME).sendKeys(firstName);
+        firstName = driver.findElement(FIRSTNAME).getAttribute("value");
+        //fullName =  lastName + " " + firstName;
+        //return fullName;
+        return null;
+    }
+
     public String getUrl(){
         String url = driver.getCurrentUrl();
         return url;
