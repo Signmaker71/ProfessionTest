@@ -148,7 +148,7 @@ public class GSignInTest extends BaseTests {
 
     @Test // OK
     @DisplayName("TCG06	Sikeres AKTÍV álláskereső regisztráció")
-    public void testRegisterActiveEmployee() {
+    public void testRegisterActiveEmployee() throws InterruptedException {
         choosePrice = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
         user = utils.userData("user1.txt");
@@ -170,6 +170,10 @@ public class GSignInTest extends BaseTests {
         String actualURL = portrait.getUrl();
         System.out.println(actualURL);
         String expectedURL = "/allaskereso/m01_step02_nevezesi-lap";
+        portrait.setName(user.get("name"));
+        Thread.sleep(3000);
+        portrait.clickNext();
+        Thread.sleep(3000);
 
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }
