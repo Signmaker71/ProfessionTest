@@ -37,7 +37,7 @@ public class BaseTests {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--window-size=1920,1080");
         //options.addArguments("--start-maximized");
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
