@@ -1,13 +1,10 @@
+email = szpetertester+o1007@gmail.com
 username = Teszt Passzív Pál
-email = szpetertester+o1004@gmail.com
 password = ÉØÐÝæ¼ ¤
-test1 = ÌÕÛ
-test2 = ÕÆØÕÖ¸Ý
 choosenPrice = Tesco
 haveJob = no
 workingStatus = job starter
 registred = not registred
-name = Teszter Retesz
 city = Nagykovácsi
 position = ács
 language1 = angol

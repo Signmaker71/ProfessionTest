@@ -25,7 +25,7 @@ public class BaseTests {
 
     public WebDriverWait wait;
     FileUtils utils = new FileUtils();
-    protected HashMap<String, String> userData = utils.userData("user1.txt");
+    protected HashMap<String, String> userData;
     protected Popups popups = new Popups(driver);
 
     @BeforeEach
@@ -48,7 +48,7 @@ public class BaseTests {
 
     @AfterEach
     public void tearDown(){
-        //driver.quit();
+        driver.quit();
     }
 
 }

@@ -38,18 +38,10 @@ public class Methods {
     }
 
     public static void fillTextToField(WebDriver driver, By field, String text) {
-        waitForElementFillable(driver, field).sendKeys(text);
-        try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(field));
-        } catch (Exception ignored) {
-        }
+            waitForElement(driver, field).sendKeys(text);
     }
 
-    public static WebElement waitForElementFillable(WebDriver driver, By value) {
-        WebDriverWait wait = new WebDriverWait(driver, 3);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(value));
-        return driver.findElement(value);
-    }
+
 public static WebElement waitForElement(WebDriver driver, By value) {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(value));

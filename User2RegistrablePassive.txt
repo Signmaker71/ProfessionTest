@@ -1,13 +1,10 @@
+email = szpetertester+o2016@gmail.com
 username = Teszt Aktív Anna
-email = szpetertester+o1004@gmail.com
 password = ÉØÐÝæ¼ ¤
-test1 = ÌÕÛ
-test2 = ÕÆØÕÖ¸Ý
 choosenPrice = DECATHLON
 haveJob = yes
 workingStatus = not open
 registred = not registred
-name = Teszter Retesz
 city = Nagykovácsi
 position = ács
 language1 = angol

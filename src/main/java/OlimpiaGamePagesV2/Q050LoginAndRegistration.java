@@ -40,8 +40,7 @@ public class Q050LoginAndRegistration {
 
     public void fill(String locatorName, String name) {
         By locator = getLocator(locatorName);
-
-        //Methods.waitForElementFillable(driver, locator);
+        Methods.waitForElement(driver, locator);
         Methods.fillTextToField(driver,locator, name);
     }
 
@@ -175,16 +174,13 @@ public class Q050LoginAndRegistration {
         return result;
     }
 
-    public String getPrivacyPolicyLink() {
+    public String getPrivacyPolicyLink(){
         String result;
+        Methods.waitForElement(driver, PRIVACY_POLICY_LINK).click();
         Set<String> handlesSet = driver.getWindowHandles();
         List<String> handlesList = new ArrayList<String>(handlesSet);
-
-        driver.findElement(PRIVACY_POLICY_LINK).click();
-
         driver.switchTo().window(handlesList.get(1));
         result = driver.getCurrentUrl();
-
         driver.close();
         driver.switchTo().window(handlesList.get(0));
         return result;

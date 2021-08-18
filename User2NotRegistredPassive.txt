@@ -1,0 +1,15 @@
+email = szpetertester+o2005@gmail.com
+username = Teszt Aktív Anna
+password = ÉØÐÝæ¼ ¤
+choosenPrice = DECATHLON
+haveJob = yes
+workingStatus = not open
+registred = not registred
+city = Nagykovácsi
+position = ács
+language1 = angol
+languageLevel1 = középfok
+bornDate = 1971
+phone = +36305555555
+dreamPosition = automata tesztelő
+drivingLicence = A,B

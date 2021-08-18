@@ -19,11 +19,11 @@ public class HomePageHU extends PageHeaderMenuHU {
     }
 
     public void fillSearchByKeywordField(String position){
-        Methods.waitForElementFillable(driver, SearchByKeywordField);
-        driver.findElement(SearchByKeywordField).sendKeys(position);
+        Methods.waitForElement(driver, SearchByKeywordField).sendKeys(position);
     }
 
     public void fillSearchLocationField(String location){
+        Methods.fillTextToField(driver, SearchLocationField, location);
         driver.findElement(SearchLocationField).sendKeys(location);
     }
 

@@ -40,7 +40,7 @@ public class GLogInTest extends BaseTests {
 
         String actualURL = login.getPrivacyPolicyLink();
         String expectedURL = "https://www.profession.hu/docs/upload/felhasznalasifeltetelek_20201008.pdf";
-        Assertions.assertEquals(actualURL, expectedURL);
+        Assertions.assertEquals(expectedURL, actualURL);
     }
 
     @Test // OK
@@ -65,7 +65,7 @@ public class GLogInTest extends BaseTests {
         String expectedMessage = "Kérjük minden kötelező mezőt adjon meg!";
         login.acceptAlertBox();
 
-        Assertions.assertEquals(actualMessage, expectedMessage);
+        Assertions.assertEquals(expectedMessage, actualMessage);
     }
 
     @Test // OK
@@ -89,7 +89,7 @@ public class GLogInTest extends BaseTests {
         String actualMessage = login.getAlertBoxText();
         String expectedMessage = "Kérjük minden kötelező mezőt adjon meg!";
 
-        Assertions.assertEquals(actualMessage, expectedMessage);
+        Assertions.assertEquals(expectedMessage, actualMessage);
     }
 
 
