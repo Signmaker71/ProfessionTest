@@ -1,0 +1,121 @@
+[ {
+  "uid" : "74c76b435c5c0489",
+  "name" : "TCG01\tRegisztrációnál az Felhasználási Feltételek dokumentum elérhető",
+  "time" : {
+    "start" : 1629332575743,
+    "stop" : 1629332589156,
+    "duration" : 13413
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e28181f48193aa2",
+  "name" : "TCP01\tSikeres belépés regisztrált felhasználóként",
+  "time" : {
+    "start" : 1629332504093,
+    "stop" : 1629332522262,
+    "duration" : 18169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9ebe2630f24d11e",
+  "name" : "TCP02\tSikertelen belépés hibás jelszóval",
+  "time" : {
+    "start" : 1629332490281,
+    "stop" : 1629332504089,
+    "duration" : 13808
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38119eea76d29c99",
+  "name" : "TCJ01 Testing to count Job cards",
+  "time" : {
+    "start" : 1629332470699,
+    "stop" : 1629332490250,
+    "duration" : 19551
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "850871c4f51ec20",
+  "name" : "TCJ02 Testing to count Valid Job cards",
+  "time" : {
+    "start" : 1629332427353,
+    "stop" : 1629332470559,
+    "duration" : 43206
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6bfbffc04fb588d5",
+  "name" : "TCP02\tSikeres kijelentkezés - Logout",
+  "time" : {
+    "start" : 1629332522271,
+    "stop" : 1629332547863,
+    "duration" : 25592
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80db0f61736c87d1",
+  "name" : "TCG07\tSikeres PASSZÍV álláskereső regisztráció",
+  "time" : {
+    "start" : 1629332560209,
+    "stop" : 1629332575740,
+    "duration" : 15531
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ad572432385e473",
+  "name" : "TCG05\tSikertelen regisztráció hibás jelszó páros miatt",
+  "time" : {
+    "start" : 1629332625132,
+    "stop" : 1629332640068,
+    "duration" : 14936
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5771f4ef45a28d96",
+  "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+  "time" : {
+    "start" : 1629332589160,
+    "stop" : 1629332602913,
+    "duration" : 13753
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e8a0a0481e184ede",
+  "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+  "time" : {
+    "start" : 1629332547869,
+    "stop" : 1629332560199,
+    "duration" : 12330
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "21b1bbe380da96c",
+  "name" : "TCG03\tSikertelen regisztráció Játékstabályzat elfogadás hiánya miatt",
+  "time" : {
+    "start" : 1629332602918,
+    "stop" : 1629332613916,
+    "duration" : 10998
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d78a4fb079fb9fa",
+  "name" : "TCG02\tSikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt",
+  "time" : {
+    "start" : 1629332613919,
+    "stop" : 1629332625129,
+    "duration" : 11210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
