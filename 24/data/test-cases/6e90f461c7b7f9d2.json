@@ -1,0 +1,188 @@
+{
+  "uid" : "6e90f461c7b7f9d2",
+  "name" : "TCJ01 Testing to count Job cards",
+  "fullName" : "Search.SearchTest.testSimpleSearch",
+  "historyId" : "88903b984e0d13365b3cc550b3ce61ba",
+  "time" : {
+    "start" : 1629377495562,
+    "stop" : 1629377518493,
+    "duration" : 22931
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629377495565,
+      "stop" : 1629377495746,
+      "duration" : 181
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6f8327c333f2b13a",
+      "name" : "Screenshot",
+      "source" : "6f8327c333f2b13a.png",
+      "type" : "image/png",
+      "size" : 172290
+    }, {
+      "uid" : "7be3020719f425fe",
+      "name" : "Screenshot",
+      "source" : "7be3020719f425fe.png",
+      "type" : "image/png",
+      "size" : 139288
+    }, {
+      "uid" : "df66fa80484f80fc",
+      "name" : "Screenshot",
+      "source" : "df66fa80484f80fc.png",
+      "type" : "image/png",
+      "size" : 141594
+    }, {
+      "uid" : "2730bc26a14395d8",
+      "name" : "Screenshot",
+      "source" : "2730bc26a14395d8.png",
+      "type" : "image/png",
+      "size" : 94006
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629377518422,
+      "stop" : 1629377518493,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az39-457"
+  }, {
+    "name" : "thread",
+    "value" : "2993@fv-az39-457.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSimpleSearch"
+  }, {
+    "name" : "suite",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "9d283ad306fcaa1a",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/23//#testresult/9d283ad306fcaa1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629370024874,
+          "stop" : 1629370044077,
+          "duration" : 19203
+        }
+      }, {
+        "uid" : "a6c238277511ae3",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/22//#testresult/a6c238277511ae3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629369026094,
+          "stop" : 1629369044346,
+          "duration" : 18252
+        }
+      }, {
+        "uid" : "5da2898664a20f0e",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/21//#testresult/5da2898664a20f0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629368110065,
+          "stop" : 1629368129301,
+          "duration" : 19236
+        }
+      }, {
+        "uid" : "38119eea76d29c99",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/19//#testresult/38119eea76d29c99",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629332470699,
+          "stop" : 1629332490250,
+          "duration" : 19551
+        }
+      }, {
+        "uid" : "96aba10227c329f7",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/20//#testresult/96aba10227c329f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629332525570,
+          "stop" : 1629332543326,
+          "duration" : 17756
+        }
+      }, {
+        "uid" : "fc0ec31e5918c645",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/18//#testresult/fc0ec31e5918c645",
+        "status" : "broken",
+        "statusDetails" : "Keys to send should be a not null CharSequence",
+        "time" : {
+          "start" : 1629328719552,
+          "stop" : 1629328723397,
+          "duration" : 3845
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6e90f461c7b7f9d2.json",
+  "parameterValues" : [ ]
+}
