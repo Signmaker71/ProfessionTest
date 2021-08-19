@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <60> but was: <59>",
+      "children" : [ {
+        "name" : "TCJ02 Testing to count Valid Job cards",
+        "uid" : "259ac7e62f6abe1b",
+        "parentUid" : "68f43bab911e2976097b6ed31ff583c3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629368985354,
+          "stop" : 1629369025997,
+          "duration" : 40643
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "68f43bab911e2976097b6ed31ff583c3"
+    }, {
+      "name" : "expected: <Hibás formátumú e-mail cím lett megadva. Helyes formátum: nev@pelda.com.> but was: <Invalid value specified for `email`. Expecting email in `name@example.com` format>",
+      "children" : [ {
+        "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+        "uid" : "5af2993cd610d328",
+        "parentUid" : "d42bd3f2b7943b2d76353202195ed27c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629369104302,
+          "stop" : 1629369115553,
+          "duration" : 11251
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d42bd3f2b7943b2d76353202195ed27c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.id: player-password1 (tried for 2 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-368', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.bKKppm}, goog:chromeOptions: {debuggerAddress: localhost:41611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8bc72a67307a04cb2cc798db4d9d56e9",
+      "children" : [ {
+        "name" : "TCG07\tSikeres PASSZÍV álláskereső regisztráció",
+        "uid" : "f08596c336861b42",
+        "parentUid" : "bf13df011065112b4f12f1685b20ba84",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629369115559,
+          "stop" : 1629369127447,
+          "duration" : 11888
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bf13df011065112b4f12f1685b20ba84"
+    }, {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.id: player-password1 (tried for 2 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-368', ip: '10.1.0.139', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.d7ADPR}, goog:chromeOptions: {debuggerAddress: localhost:37281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dc4e25e31e304bdfdb8c8d0a4745be98",
+      "children" : [ {
+        "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+        "uid" : "c19efa4c22133c14",
+        "parentUid" : "e8447157ed1d01480a5bbb9a58863a60",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629369140126,
+          "stop" : 1629369151658,
+          "duration" : 11532
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e8447157ed1d01480a5bbb9a58863a60"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
