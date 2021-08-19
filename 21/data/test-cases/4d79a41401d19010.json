@@ -1,0 +1,125 @@
+{
+  "uid" : "4d79a41401d19010",
+  "name" : "TCG03\tSikertelen regisztráció Játékstabályzat elfogadás hiánya miatt",
+  "fullName" : "gameTest.GSignInTest.testUnableToRegistringByMissingSSxpectation",
+  "historyId" : "b9f44d13f11d884ccad921da7cc4a88a",
+  "time" : {
+    "start" : 1629368163542,
+    "stop" : 1629368173090,
+    "duration" : 9548
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629368163542,
+      "stop" : 1629368163694,
+      "duration" : 152
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629368173022,
+      "stop" : 1629368173090,
+      "duration" : 68
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-368"
+  }, {
+    "name" : "thread",
+    "value" : "2850@fv-az47-368.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testUnableToRegistringByMissingSSxpectation"
+  }, {
+    "name" : "suite",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "21b1bbe380da96c",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/19//#testresult/21b1bbe380da96c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629332602918,
+          "stop" : 1629332613916,
+          "duration" : 10998
+        }
+      }, {
+        "uid" : "ebc5d30735a16f93",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/20//#testresult/ebc5d30735a16f93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629332589048,
+          "stop" : 1629332598891,
+          "duration" : 9843
+        }
+      }, {
+        "uid" : "65683e477d586518",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/18//#testresult/65683e477d586518",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629328817297,
+          "stop" : 1629328826721,
+          "duration" : 9424
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4d79a41401d19010.json",
+  "parameterValues" : [ ]
+}
