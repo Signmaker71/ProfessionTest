@@ -110,6 +110,9 @@ public class GSignInTest extends BaseTests {
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
         Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
+
+        Methods.TakeScreenshot(driver);
+
         login.clickCheckbox("RrsCheckbox");
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", "email");
@@ -144,6 +147,9 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
         login.clickButton("Rnext");
+
+        Methods.TakeScreenshot(driver);
+
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", (user.get("password")));
 
@@ -163,7 +169,8 @@ public class GSignInTest extends BaseTests {
         System.out.println(utils.upgradeUserEmail(userFile));
         user = utils.userData(userFile);
 
-        //Methods.takeScreenshot(driver);
+        Methods.TakeScreenshot(driver);
+
         choosePrice.choosePrice(user.get("choosenPrice"));
         Q020HasJob hasJob = choosePrice.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
@@ -174,7 +181,9 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
         login.clickButton("Rnext");
-        Methods.scrollDown(driver);
+
+        Methods.TakeScreenshot(driver);
+
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", Hash.revert(user.get("password")));
 
@@ -184,7 +193,9 @@ public class GSignInTest extends BaseTests {
         String expectedURL = "/allaskereso/m01_step02_nevezesi-lap";
         portrait.setName(user.get("username"));
         portrait.clickNext();
-        Methods.scrollDown(driver);
+
+        Methods.TakeScreenshot(driver);
+
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }
 
@@ -197,7 +208,7 @@ public class GSignInTest extends BaseTests {
         System.out.println(utils.upgradeUserEmail(userFile));
         user = utils.userData(userFile);
 
-        //Methods.takeScreenshot(driver);
+        Methods.takeScreenshot(driver);
         choosePrice.choosePrice(user.get("choosenPrice"));
         Q020HasJob hasJob = choosePrice.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
@@ -208,7 +219,9 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
         login.clickButton("Rnext");
-        Methods.scrollDown(driver);
+
+        Methods.TakeScreenshot(driver);
+
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", Hash.revert(user.get("password")));
 

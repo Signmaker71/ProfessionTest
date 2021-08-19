@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.FileUtils;
+import utils.Methods;
 import utils.Popups;
 
 import java.io.ByteArrayInputStream;
@@ -25,14 +26,6 @@ public class SearchTest extends BaseTests {
     FileUtils utils = new FileUtils();
     String fileName = "User1RegistrableActive.txt";
     String position = utils.userData(fileName).get("position");
-
-
-    @Step("TakeScreenshot")
-    public void TakeScreenshot(){
-        Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        System.out.println(driver.getCurrentUrl());
-    }
-
 
 
     // count and check elements and their contents
@@ -54,7 +47,7 @@ public class SearchTest extends BaseTests {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        TakeScreenshot();
+        Methods.TakeScreenshot(driver);
         Assertions.assertEquals(expextedJobsCount, actualJobsCount);
     }
 
