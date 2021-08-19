@@ -4,6 +4,7 @@ import OlimpiaGamePagesV2.*;
 import base.BaseTests;
 import org.junit.jupiter.api.*;
 import utils.FileUtils;
+import utils.Methods;
 import utils.Popups;
 import utils.Hash;
 
@@ -173,6 +174,7 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
         login.clickButton("Rnext");
+        Methods.scrollDown(driver);
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", Hash.revert(user.get("password")));
 
@@ -182,7 +184,7 @@ public class GSignInTest extends BaseTests {
         String expectedURL = "/allaskereso/m01_step02_nevezesi-lap";
         portrait.setName(user.get("username"));
         portrait.clickNext();
-
+        Methods.scrollDown(driver);
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }
 
@@ -206,6 +208,7 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
         login.clickButton("Rnext");
+        Methods.scrollDown(driver);
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", Hash.revert(user.get("password")));
 

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: professionPageTest.DropdownTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.201 s <<< FAILURE! - in professionPageTest.DropdownTest
+testLogout  Time elapsed: 1.186 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.length()" because "hashedPsw" is null
+	at professionPageTest.DropdownTest.testLogout(DropdownTest.java:28)
+

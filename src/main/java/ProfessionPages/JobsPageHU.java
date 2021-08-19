@@ -69,12 +69,13 @@ public class JobsPageHU extends HomePageHU {
                 nextButton = Methods.waitForElement(driver, NEXT_PAGE_OF_JOBS_BUTTON);
                 Popups.popupClose(driver);
                 Methods.scrollDown(driver);
-                //actions.moveToElement(nextButton);
+                actions.moveToElement(nextButton);
                 if (nextButton.isDisplayed()) {
                     thereIsNextPage = true;
-                    Methods.TakeScreenshot(driver);
                     Methods.waitForElementClickable(driver, NEXT_PAGE_OF_JOBS_BUTTON);
+                    Methods.TakeScreenshot(driver);
                     Methods.clickButton(driver, NEXT_PAGE_OF_JOBS_BUTTON);
+                    Methods.scrollDown(driver);
 
                 } else thereIsNextPage = false;
             } catch (Exception e) {

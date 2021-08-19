@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: professionPageTest.PLoginTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 9.633 s <<< FAILURE! - in professionPageTest.PLoginTests
+testLoginFailedDueToIncorrectPassword  Time elapsed: 8.531 s  <<< ERROR!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at professionPageTest.PLoginTests.testLoginFailedDueToIncorrectPassword(PLoginTests.java:59)
+
+testSuccessfulLogin  Time elapsed: 1.093 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.length()" because "hashedPsw" is null
+	at professionPageTest.PLoginTests.testSuccessfulLogin(PLoginTests.java:29)
+

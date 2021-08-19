@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: gameTest.GSignInTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 28.187 s <<< FAILURE! - in gameTest.GSignInTest
+testUnableToRegistringByWrongEmail  Time elapsed: 9.595 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "selection" is null
+	at gameTest.GSignInTest.testUnableToRegistringByWrongEmail(GSignInTest.java:106)
+
+testRegisterPassiveEmployee  Time elapsed: 2.962 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.split(String)" because "originalEmail" is null
+	at gameTest.GSignInTest.testRegisterPassiveEmployee(GSignInTest.java:195)
+
+testEnsureToPrivacyPolicyIsEnable  Time elapsed: 3.246 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "selection" is null
+	at gameTest.GSignInTest.testEnsureToPrivacyPolicyIsEnable(GSignInTest.java:35)
+
+testRegisterActiveEmployee  Time elapsed: 2.974 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.split(String)" because "originalEmail" is null
+	at gameTest.GSignInTest.testRegisterActiveEmployee(GSignInTest.java:162)
+
+testUnableToRegistringByMissingSSxpectation  Time elapsed: 3.519 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "selection" is null
+	at gameTest.GSignInTest.testUnableToRegistringByMissingSSxpectation(GSignInTest.java:81)
+
+testUnableToRegistringByMissingRSExpectation  Time elapsed: 2.589 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "selection" is null
+	at gameTest.GSignInTest.testUnableToRegistringByMissingRSExpectation(GSignInTest.java:56)
+
+testUnableToRegistringByWrongPassword  Time elapsed: 3.076 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "selection" is null
+	at gameTest.GSignInTest.testUnableToRegistringByWrongPassword(GSignInTest.java:136)
+
