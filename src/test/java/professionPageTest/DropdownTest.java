@@ -2,6 +2,7 @@ package professionPageTest;
 import ProfessionPages.EmployeeLoginHU;
 import ProfessionPages.HomePageHU;
 import base.BaseTests;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,6 +21,7 @@ public class DropdownTest extends BaseTests {
 
 
     @Test
+    @Description("TCP02	Sikeres kijelentkezés - Logout")
     @DisplayName("TCP02	Sikeres kijelentkezés - Logout")
     public void testLogout() {
         String userFile = "User2RegistredPassive.txt";

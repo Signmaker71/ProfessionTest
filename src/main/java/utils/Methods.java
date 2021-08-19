@@ -61,6 +61,18 @@ public static WebElement waitForElement(WebDriver driver, By value) {
         return driver.findElement(value);
     }
 
+    @Step("TakeScreenshot")
+    public static void TakeScreenshot(WebDriver driver){
+        Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+        System.out.println(driver.getCurrentUrl());
+    }
+
+
+    public static void scrollDown(WebDriver driver) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, 1000)");
+    }
+
     public static String getAlertText(WebDriver driver) {
         String message;
         try {
