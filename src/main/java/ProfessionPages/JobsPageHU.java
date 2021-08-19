@@ -73,6 +73,7 @@ public class JobsPageHU extends HomePageHU {
                 if (nextButton.isDisplayed()) {
                     thereIsNextPage = true;
                     Methods.TakeScreenshot(driver);
+                    Methods.waitForElementClickable(driver, NEXT_PAGE_OF_JOBS_BUTTON);
                     Methods.clickButton(driver, NEXT_PAGE_OF_JOBS_BUTTON);
 
                 } else thereIsNextPage = false;
