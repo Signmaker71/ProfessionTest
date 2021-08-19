@@ -1,0 +1,108 @@
+{
+  "uid" : "96aba10227c329f7",
+  "name" : "TCJ01 Testing to count Job cards",
+  "fullName" : "Search.SearchTest.testSimpleSearch",
+  "historyId" : "88903b984e0d13365b3cc550b3ce61ba",
+  "time" : {
+    "start" : 1629332525570,
+    "stop" : 1629332543326,
+    "duration" : 17756
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629332525572,
+      "stop" : 1629332525780,
+      "duration" : 208
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629332543254,
+      "stop" : 1629332543325,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-628"
+  }, {
+    "name" : "thread",
+    "value" : "2911@fv-az47-628.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSimpleSearch"
+  }, {
+    "name" : "suite",
+    "value" : "Search.SearchTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "fc0ec31e5918c645",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/18//#testresult/fc0ec31e5918c645",
+        "status" : "broken",
+        "statusDetails" : "Keys to send should be a not null CharSequence",
+        "time" : {
+          "start" : 1629328719552,
+          "stop" : 1629328723397,
+          "duration" : 3845
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "96aba10227c329f7.json",
+  "parameterValues" : [ ]
+}

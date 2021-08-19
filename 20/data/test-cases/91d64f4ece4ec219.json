@@ -1,0 +1,107 @@
+{
+  "uid" : "91d64f4ece4ec219",
+  "name" : "TCG01\tRegisztrációnál az Felhasználási Feltételek dokumentum elérhető",
+  "fullName" : "gameTest.GSignInTest.testEnsureToPrivacyPolicyIsEnable",
+  "historyId" : "355c3d1eb592e87757bf9de0d6f8d3b",
+  "time" : {
+    "start" : 1629332566508,
+    "stop" : 1629332577199,
+    "duration" : 10691
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629332566509,
+      "stop" : 1629332566674,
+      "duration" : 165
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629332577128,
+      "stop" : 1629332577199,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-628"
+  }, {
+    "name" : "thread",
+    "value" : "2911@fv-az47-628.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testEnsureToPrivacyPolicyIsEnable"
+  }, {
+    "name" : "suite",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "ab28d37f23e2a4dc",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/18//#testresult/ab28d37f23e2a4dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629328790052,
+          "stop" : 1629328801229,
+          "duration" : 11177
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "91d64f4ece4ec219.json",
+  "parameterValues" : [ ]
+}
