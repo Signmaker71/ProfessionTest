@@ -1,0 +1,108 @@
+{
+  "uid" : "56818a69a44a7019",
+  "name" : "TCP02\tSikeres kijelentkezés - Logout  - @DisplayName",
+  "fullName" : "professionPageTest.DropdownTest.testLogout",
+  "historyId" : "2ff7dc19061c6f9913acb8e90b5b65dc",
+  "time" : {
+    "start" : 1629481365751,
+    "stop" : 1629481388969,
+    "duration" : 23218
+  },
+  "description" : "TCP02\tSikeres kijelentkezés - Logout  - @Description",
+  "descriptionHtml" : "<p>TCP02\tSikeres kijelentkezés - Logout  - @Description</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629481365764,
+      "stop" : 1629481365937,
+      "duration" : 173
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629481388898,
+      "stop" : 1629481388969,
+      "duration" : 71
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-486"
+  }, {
+    "name" : "thread",
+    "value" : "2895@fv-az47-486.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "professionPageTest.DropdownTest"
+  }, {
+    "name" : "testClass",
+    "value" : "professionPageTest.DropdownTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLogout"
+  }, {
+    "name" : "suite",
+    "value" : "professionPageTest.DropdownTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "5ab8bb65666cd127",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/26//#testresult/5ab8bb65666cd127",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629480924777,
+          "stop" : 1629480943972,
+          "duration" : 19195
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "56818a69a44a7019.json",
+  "parameterValues" : [ ]
+}

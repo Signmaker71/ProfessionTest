@@ -1,0 +1,124 @@
+{
+  "uid" : "c89a9773a28c57b8",
+  "name" : "TCG07\tSikeres PASSZÍV álláskereső regisztráció",
+  "fullName" : "gameTest.GSignInTest.testRegisterPassiveEmployee",
+  "historyId" : "f4593e11cb525dc93a0eded8b41e455e",
+  "time" : {
+    "start" : 1629481403492,
+    "stop" : 1629481416912,
+    "duration" : 13420
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629481403493,
+      "stop" : 1629481405628,
+      "duration" : 2135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "516d0a2ba501d947",
+      "name" : "Screenshot",
+      "source" : "516d0a2ba501d947.png",
+      "type" : "image/png",
+      "size" : 2443504
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629481416843,
+      "stop" : 1629481416911,
+      "duration" : 68
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az47-486"
+  }, {
+    "name" : "thread",
+    "value" : "2895@fv-az47-486.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testRegisterPassiveEmployee"
+  }, {
+    "name" : "suite",
+    "value" : "gameTest.GSignInTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "51548fcd3e920779",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/26//#testresult/51548fcd3e920779",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629480957915,
+          "stop" : 1629480972477,
+          "duration" : 14562
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c89a9773a28c57b8.json",
+  "parameterValues" : [ ]
+}

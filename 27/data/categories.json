@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <60> but was: <59>",
+      "children" : [ {
+        "name" : "TCJ02 Testing to count Valid Job cards",
+        "uid" : "375ba8349160426e",
+        "parentUid" : "68f43bab911e2976097b6ed31ff583c3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629481328118,
+          "stop" : 1629481347857,
+          "duration" : 19739
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "68f43bab911e2976097b6ed31ff583c3"
+    }, {
+      "name" : "expected: <Hibás formátumú e-mail cím lett megadva. Helyes formátum: nev@pelda.com.> but was: <Invalid value specified for `email`. Expecting email in `name@example.com` format>",
+      "children" : [ {
+        "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+        "uid" : "1522dcb90a2f1aa2",
+        "parentUid" : "d42bd3f2b7943b2d76353202195ed27c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629481388976,
+          "stop" : 1629481403487,
+          "duration" : 14511
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d42bd3f2b7943b2d76353202195ed27c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"content\"]/div/div[1]/div[1]/div\"}\n  (Session info: headless chrome=92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-486', ip: '10.1.0.158', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.JtMqgE}, goog:chromeOptions: {debuggerAddress: localhost:39491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 908ab9bb34fefedc916e3367132999e7\n*** Element info: {Using=xpath, value=//*[@id=\"content\"]/div/div[1]/div[1]/div}",
+      "children" : [ {
+        "name" : "TCJ01 Testing to count Job cards",
+        "uid" : "871a4e8d09e36ba",
+        "parentUid" : "e80989cabe4ab857e760c923134f7e50",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629481347936,
+          "stop" : 1629481352172,
+          "duration" : 4236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e80989cabe4ab857e760c923134f7e50"
+    }, {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a (tried for 2 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "TCP01\tSikeres belépés regisztrált felhasználóként",
+        "uid" : "ee0c7379e1626037",
+        "parentUid" : "1781a67c3c13da9fa1509e482068f770",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629481361555,
+          "stop" : 1629481365746,
+          "duration" : 4191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1781a67c3c13da9fa1509e482068f770"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

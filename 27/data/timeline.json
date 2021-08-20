@@ -1,0 +1,169 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az47-486",
+    "children" : [ {
+      "name" : "2895@fv-az47-486.ForkJoinPool-1-worker-1(12)",
+      "children" : [ {
+        "name" : "TCG05\tSikertelen regisztráció hibás jelszó páros miatt",
+        "uid" : "894bc6390762b540",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481465282,
+          "stop" : 1629481477258,
+          "duration" : 11976
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+        "uid" : "e61ba5f3fbe6425a",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481428084,
+          "stop" : 1629481446140,
+          "duration" : 18056
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCJ02 Testing to count Valid Job cards",
+        "uid" : "375ba8349160426e",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629481328118,
+          "stop" : 1629481347857,
+          "duration" : 19739
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCP02\tSikeres kijelentkezés - Logout  - @DisplayName",
+        "uid" : "56818a69a44a7019",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481365751,
+          "stop" : 1629481388969,
+          "duration" : 23218
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+        "uid" : "1522dcb90a2f1aa2",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629481388976,
+          "stop" : 1629481403487,
+          "duration" : 14511
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG07\tSikeres PASSZÍV álláskereső regisztráció",
+        "uid" : "c89a9773a28c57b8",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481403492,
+          "stop" : 1629481416912,
+          "duration" : 13420
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG02\tSikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt",
+        "uid" : "f5bbc0776ec206a8",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481455825,
+          "stop" : 1629481465280,
+          "duration" : 9455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG03\tSikertelen regisztráció Játékstabályzat elfogadás hiánya miatt",
+        "uid" : "547966be52030f21",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481446142,
+          "stop" : 1629481455823,
+          "duration" : 9681
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCP02\tSikertelen belépés hibás jelszóval",
+        "uid" : "e9380a7a4ecab6e7",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481352179,
+          "stop" : 1629481361551,
+          "duration" : 9372
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCJ01 Testing to count Job cards",
+        "uid" : "871a4e8d09e36ba",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629481347936,
+          "stop" : 1629481352172,
+          "duration" : 4236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCP01\tSikeres belépés regisztrált felhasználóként",
+        "uid" : "ee0c7379e1626037",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1629481361555,
+          "stop" : 1629481365746,
+          "duration" : 4191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TCG01\tRegisztrációnál az Felhasználási Feltételek dokumentum elérhető",
+        "uid" : "c7cf8b0e298af42f",
+        "parentUid" : "9005dac2446844e3602cfb12fff793dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629481416917,
+          "stop" : 1629481428080,
+          "duration" : 11163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9005dac2446844e3602cfb12fff793dd"
+    } ],
+    "uid" : "8b665f6047917d88a8b13b6894530b0f"
+  } ],
+  "name" : "timeline"
+}
