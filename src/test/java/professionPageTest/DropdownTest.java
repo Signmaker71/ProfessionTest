@@ -22,6 +22,7 @@ public class DropdownTest extends BaseProfessionTests {
 
 
     // Succesfull logout test
+    // Requirements 02, 07, 11
     @Test
     @Description("TCP02	Sikeres kijelentkezés - Logout  - @Description")
     @DisplayName("TCP02	Sikeres kijelentkezés - Logout  - @DisplayName")

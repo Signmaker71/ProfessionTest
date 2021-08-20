@@ -8,25 +8,19 @@ import utils.Methods;
 import utils.Popups;
 import utils.Hash;
 
-import static org.junit.Assert.fail;
-
-
 import java.util.HashMap;
 
 
 public class GSignInTest extends BaseGameTests {
 
-
    FileUtils utils = new FileUtils();
-    //HashMap<String, String> user = new HashMap<String, String>();
 
-    //
+    // Testing to Privacy Policy document is enable
+    // Requirements 03, 07
     @Test // OK
     @DisplayName("TCG01	Regisztrációnál az Felhasználási Feltételek dokumentum elérhető")
     public void testEnsureToPrivacyPolicyIsEnable() {
         String userFile = "User2RegistrablePassive.txt";
-        /*starterPage = new Q010ChoosePrice(driver);
-        driver.navigate().to(URL_GAME);*/
         user = utils.userData(userFile);
 
         starterPage.choosePrice(user.get("choosenPrice"));
@@ -42,6 +36,8 @@ public class GSignInTest extends BaseGameTests {
         Assertions.assertEquals(expectedURL, actualURL);
     }
 
+
+    // Requirements 01, 03, 06, 07
     @Test // OK
     @DisplayName("TCG02	Sikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt")
     public void testUnableToRegistringByMissingRSExpectation() {
@@ -66,6 +62,7 @@ public class GSignInTest extends BaseGameTests {
         Assertions.assertEquals(expectedMessage, actualMessage);
     }
 
+    // Requirements 01, 03, 06, 07
     @Test // OK
     @DisplayName("TCG03	Sikertelen regisztráció Játékstabályzat elfogadás hiánya miatt")
     public void testUnableToRegistringByMissingSSxpectation() {
@@ -91,6 +88,7 @@ public class GSignInTest extends BaseGameTests {
     }
 
 
+    // Requirements 01, 03, 06, 07
     @Test // OK - Helyesen FAIL a teszt, angol nyelvű alert szöveg miatt
     @DisplayName("TCG04	Sikertelen regisztráció hibás e-mail cím miatt")
     public void testUnableToRegistringByWrongEmail() {
@@ -123,6 +121,7 @@ public class GSignInTest extends BaseGameTests {
     }
 
 
+    // Requirements 01, 03, 06, 07
     @Test // OK
     @DisplayName("TCG05	Sikertelen regisztráció hibás jelszó páros miatt")
     public void testUnableToRegistringByWrongPassword() {
@@ -150,6 +149,7 @@ public class GSignInTest extends BaseGameTests {
         Assertions.assertEquals(expectedMessage, actualMessage);
     }
 
+    // Requirements 01, 03, 06, 07
     @Test // OK
     @DisplayName("TCG06	Sikeres AKTÍV álláskereső regisztráció")
     public void testRegisterActiveEmployee() {
@@ -185,15 +185,16 @@ public class GSignInTest extends BaseGameTests {
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }
 
+    // Requirements 01, 03, 06, 07
     @Test // OK
     @DisplayName("TCG07	Sikeres PASSZÍV álláskereső regisztráció")
     public void testRegisterPassiveEmployee() {
         String userFile = "User2RegistrablePassive.txt";
         starterPage = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
-        System.out.println(utils.upgradeUserEmail(userFile));
         user = utils.userData(userFile);
         String newEmail = utils.modifyEmailAppendix(user.get("email"));
+        System.out.println(utils.upgradeUserEmail(userFile, newEmail));
         user.replace("email", newEmail );
         System.out.println("Registrated e-mail is: " + user.get("email"));
 

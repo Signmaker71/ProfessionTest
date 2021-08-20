@@ -23,13 +23,13 @@ public class FileUtils extends Hash {
 
 
     // change the e-mail in the file
-    public static String upgradeUserEmail(String fileName){
+    public static String upgradeUserEmail(String fileName, String newEmail){
         String fullText = getFileToString(fileName);
         HashMap<String, String> user = new HashMap<String, String>();
         user = userData(fileName);
 
         String originalEmail = user.get("email");
-        String newEmail = modifyEmailAppendix(user.get("email"));
+        //String newEmail = modifyEmailAppendix(user.get("email"));
         System.out.println("User email has incremented in file: " + fileName);
         System.out.println("from: "+ originalEmail);
         System.out.println("to  : "+ newEmail);

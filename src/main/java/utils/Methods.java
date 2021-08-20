@@ -63,8 +63,10 @@ public static WebElement waitForElement(WebDriver driver, By value) {
 
     @Step("TakeScreenshot")
     public static void TakeScreenshot(WebDriver driver){
-        Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        System.out.println(driver.getCurrentUrl());
+        try {
+            Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+            System.out.println(driver.getCurrentUrl());
+        } catch (Exception e) {}
     }
 
 

@@ -1,18 +1,14 @@
 package gameTest;
 
 import OlimpiaGamePagesV2.*;
-import base.BaseTests;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import base.BaseGameTests;
+
 import utils.FileUtils;
-import utils.Hash;
-import utils.Popups;
 
 import java.util.HashMap;
 
 
-public class GLogInTest extends BaseTests {
+public class GLogInTest extends BaseGameTests {
     final String URL_GAME = "https://www.professionjatekok.hu/v2/main";
     final String URL_TEST_DEV = "https://test.dev.profession.hu/";
     final String URL_PROF = "https://profession.hu/";

@@ -1,4 +1,4 @@
-email = szpetertester+o2017@gmail.com
+email = szpetertester+o8050@gmail.com
 username = Teszt Aktív Anna
 password = ÉØÐÝæ¼ ¤
 choosenPrice = DECATHLON

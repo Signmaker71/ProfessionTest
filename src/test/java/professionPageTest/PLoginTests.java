@@ -19,7 +19,7 @@ public class PLoginTests extends BaseProfessionTests {
     HashMap<String, String> user = new HashMap<String, String>();
     FileUtils utils = new FileUtils();
 
-
+    // Requirements 02, 07
     @Test // OK
     @DisplayName("TCP01	Sikeres belépés regisztrált felhasználóként")
     public void testSuccessfulLogin() {
@@ -41,7 +41,7 @@ public class PLoginTests extends BaseProfessionTests {
         Assertions.assertEquals(username, employeeLoginHU.getUserName());
     }
 
-
+    // Requirements 02, 07
     @Test //OK
     @DisplayName("TCP02	Sikertelen belépés hibás jelszóval")
     public void testLoginFailedDueToIncorrectPassword() {
