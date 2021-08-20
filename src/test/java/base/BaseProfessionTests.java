@@ -1,21 +1,21 @@
 package base;
 
+import OlimpiaGamePagesV2.Q010ChoosePrice;
+import ProfessionPages.HomePageHU;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.AfterEach;
-
-import ProfessionPages.HomePageHU;
 import utils.FileUtils;
 import utils.Popups;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
-public class BaseTests {
+public class BaseProfessionTests {
 
     protected WebDriver driver;
     protected HomePageHU homePage;
@@ -27,6 +27,8 @@ public class BaseTests {
     FileUtils utils = new FileUtils();
     protected HashMap<String, String> userData;
     protected Popups popups = new Popups(driver);
+    protected final String URL_GAME = "https://www.professionjatekok.hu/v2/main";
+    protected Q010ChoosePrice starterPage;
 
 
     @BeforeEach
@@ -45,6 +47,7 @@ public class BaseTests {
         wait = new WebDriverWait(driver,3);
         homePage = new HomePageHU(driver);
         //driver.manage().window().maximize();
+
     }
 
     @AfterEach

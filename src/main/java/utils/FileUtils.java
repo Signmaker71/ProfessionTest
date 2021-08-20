@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.UUID;
 
 import static java.lang.Integer.parseInt;
 
@@ -21,58 +22,48 @@ public class FileUtils extends Hash {
     }
 
 
-    private static String getFileToString(String fileName) {
-        String text = "";
-        try {
-            File myUser = new File(fileName);
-            Scanner scanner = new Scanner(myUser);
-            while (scanner.hasNextLine()) {
-                String row = scanner.nextLine();
-                text += row + "\n";
-            }
-            scanner.close();
-        } catch (
-                FileNotFoundException e) {
-            System.out.println(e.getMessage());
-            text = e.getMessage();
-        }
-        return text;
-    }
-
-
+    // change the e-mail in the file
     public static String upgradeUserEmail(String fileName){
         String fullText = getFileToString(fileName);
         HashMap<String, String> user = new HashMap<String, String>();
         user = userData(fileName);
-        String originalText = user.get("email");
-        String newText = incrementEmailAppendix(user.get("email"));
+
+        String originalEmail = user.get("email");
+        String newEmail = modifyEmailAppendix(user.get("email"));
         System.out.println("User email has incremented in file: " + fileName);
-        System.out.println("from: "+ originalText);
-        System.out.println("to  : "+ newText);
+        System.out.println("from: "+ originalEmail);
+        System.out.println("to  : "+ newEmail);
         System.out.print("result: ");
-        fullText = fullText.replace(originalText, newText );
+        fullText = fullText.replace(originalEmail, newEmail );
         return saveStringToFile(fileName, fullText);
     }
 
-    public static String saveStringToFile(String fileName, String text) {
-        try {
-            FileWriter textFile = new FileWriter(fileName);
-            textFile.append(text);
-            textFile.close();
-            return "OK";
-        } catch (IOException e) {
-            return e.getMessage();
-        }
+
+    // modifying the e-mail address for a new registration
+    public static String modifyEmailAppendix(String email) {
+        String newEmail = "";
+        String[] part2 = email.split("@");
+        String[] part1 = part2[0].split("\\+o");
+
+        // newEmail = part1[0] + "+o" + incrementNumericString(part1[2] + "@" + part2[1];
+        newEmail = part1[0] + "+o" + generateRandomString() + "@" + part2[1];
+        return newEmail;
     }
 
-    private static String incrementEmailAppendix(String originalEmail) {
-        String newEmail = "";
-        String[] part2 = originalEmail.split("@");
-        String[] part1 = part2[0].split("\\+o");
-        int num = Integer.parseInt(part1[1]);
+    // in local environment the numbering of an e-mail address is most better, because
+    // at the tester can follow the registrations by the number rart of the e-mail
+    // At the Github CI/CD running the file writeing not possible in tge repo, that's why
+    // I changed the method which generating a random part in the e-mail address,
+    // that is why this incremention method unused
+    private static String incrementNumericString(String originalNumber) {
+        int num = Integer.parseInt(originalNumber);
         num++;
-        newEmail = part1[0] + "+o" + String.format("%04d", num) + "@" + part2[1];
-        return newEmail;
+        return String.format("%04d", num);
+    }
+private static String generateRandomString() {
+    UUID uuid = UUID.randomUUID();
+
+        return uuid.toString().substring(19,23);
     }
 
 
@@ -95,14 +86,25 @@ public class FileUtils extends Hash {
         return userData;
     }
 
+    // Input - Output methods
+
+    // Save - Append string to a file
+    public static String saveStringToFile(String fileName, String text) {
+        try {
+            FileWriter textFile = new FileWriter(fileName);
+            textFile.append(text);
+            textFile.close();
+            return "OK";
+        } catch (IOException e) {
+            return e.getMessage();
+        }
+    }
 
     // append to a file method, 2 parameters
     public static String appendToFile(String fileName, String text) {
         try {
             FileWriter textFile = new FileWriter(fileName, true);
-
             textFile.append(text + "\n");
-
             textFile.close();
             return "OK";
         } catch (IOException e) {
@@ -114,9 +116,7 @@ public class FileUtils extends Hash {
     public static String appendToFile(String fileName, String title, String text) {
         try {
             FileWriter textFile = new FileWriter(fileName, true);
-
             textFile.append(title + " : \n  " + text + "\n");
-
             textFile.close();
             return "OK";
         } catch (IOException e) {
@@ -124,6 +124,26 @@ public class FileUtils extends Hash {
         }
 
     }
+
+    // import whole file to a string
+    private static String getFileToString(String fileName) {
+        String text = "";
+        try {
+            File myUser = new File(fileName);
+            Scanner scanner = new Scanner(myUser);
+            while (scanner.hasNextLine()) {
+                String row = scanner.nextLine();
+                text += row + "\n";
+            }
+            scanner.close();
+        } catch (
+                FileNotFoundException e) {
+            System.out.println(e.getMessage());
+            text = e.getMessage();
+        }
+        return text;
+    }
+
 
     // get the last line from a file
     public static String getLastRecord(String fileName) {
@@ -141,6 +161,8 @@ public class FileUtils extends Hash {
         }
         return result;
     }
+
+    // Reporting Methods
 
     // generate the Bug report string uses a new ID and other informations from getted parameters
  public static String generateReport(String tcID, String logText) {

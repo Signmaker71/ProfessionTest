@@ -1,5 +1,5 @@
 # ProfessionTest
-###Az automata tesztek során a Profession.hu, Magyarország legkeresettebb álláskereső portáljának néhány funkcióját tesztelem.
+### Az automata tesztek során a Profession.hu, Magyarország legkeresettebb álláskereső portáljának néhány funkcióját tesztelem.
 A portál célja, hogy álláshirdetőket álláskeresőkkel kapcsoljon össze. A sikeres működtetéshez fontos, hogy az álláshirdetők és az álláskeresők részletes adatokat adjanak meg, ez segíti a backendben a megfelelő találatok párosítását.
 Az adatok hibás tárolása, vagy nem megfelelő feldolgozása, hibás , azaz nem releváns találatokhoz vezet, ekkor egy álláshirdető számára valamely szempont szerint nem megfelelő jelöltet, vagy egy álláskereső számára nem a számára értékes állásajánlatot küld a rendszer.
 
@@ -12,9 +12,9 @@ Az adatok hibás tárolása, vagy nem megfelelő feldolgozása, hibás , azaz ne
 - A játék elindulásakor kérdésekre kell válaszolni, a válaszok alapján az új kérdések eltérőek lehetnek.
 - A Profession.hu oldalon lehetőség van regisztrációra, a felhasználói fiókba történő belépésre, álláshirdetések listázására, ezek között keresésre, az önéletrajzi adatok megtekintésére, illetve különféle beállításaira, és számos egyéb, a feladat szempontjából a scope-ba nem tartozó funkciókra.
 
-###Tesztelés 
+### Tesztelés 
 - A vizsgaremek szempontjából főbb feladatok már a játéknak az első szakaszán megvalósulnak, így csak 
-  egy bizonyos szakaszig megy végig a tesztprogram, ebben a szakaszban kerülnek be, illetve módosulnak az önélerajzi adatok, 
+  egy bizonyos rész-folyamaton megy végig a tesztprogram, ebben a szakaszban kerülnek be, illetve módosulnak az önélerajzi adatok, 
   ezután a Profession.hu oldalon történik a további tesztelés.
 - Regisztált felhasználóként a játék ismételten elkezdhető, a módosítások az önéletrajzban meg kell hogy jelenjenek.
 - A regisztrációhoz, a mezők kitöltéséhez, gombok lekattintásához meghatározott txt file-okból olvassa a teszprogram az adatokat,

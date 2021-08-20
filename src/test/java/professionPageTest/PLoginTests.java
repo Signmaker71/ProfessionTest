@@ -1,7 +1,7 @@
 package professionPageTest;
 
 import ProfessionPages.HomePageHU;
-import base.BaseTests;
+import base.BaseProfessionTests;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ import utils.Hash;
 import utils.Popups;
 import java.util.HashMap;
 
-public class PLoginTests extends BaseTests {
+public class PLoginTests extends BaseProfessionTests {
     private final String URL_HOME = "https://www.profession.hu/";
     private final String EMAIL_FAIL_MESSAGE = "Sajnos a megadott email és jelszó kombinációval nem találtunk felhasználói fiókot.\n" +
             "Kérjük próbálja meg ismét vagy módosítsa a jelszavát.";

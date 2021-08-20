@@ -1,7 +1,7 @@
 package gameTest;
 
 import OlimpiaGamePagesV2.*;
-import base.BaseTests;
+import base.BaseGameTests;
 import org.junit.jupiter.api.*;
 import utils.FileUtils;
 import utils.Methods;
@@ -14,27 +14,23 @@ import static org.junit.Assert.fail;
 import java.util.HashMap;
 
 
-public class GSignInTest extends BaseTests {
-    final String URL_GAME = "https://www.professionjatekok.hu/v2/main";
-    final String URL_TEST_DEV = "https://test.dev.profession.hu/";
-    final String URL_PROF = "https://profession.hu/";
+public class GSignInTest extends BaseGameTests {
 
-    private Q010ChoosePrice choosePrice;
-    FileUtils utils = new FileUtils();
-    HashMap<String, String> user = new HashMap<String, String>();
 
+   FileUtils utils = new FileUtils();
+    //HashMap<String, String> user = new HashMap<String, String>();
 
     //
     @Test // OK
     @DisplayName("TCG01	Regisztrációnál az Felhasználási Feltételek dokumentum elérhető")
     public void testEnsureToPrivacyPolicyIsEnable() {
         String userFile = "User2RegistrablePassive.txt";
-        choosePrice = new Q010ChoosePrice(driver);
-        driver.navigate().to(URL_GAME);
+        /*starterPage = new Q010ChoosePrice(driver);
+        driver.navigate().to(URL_GAME);*/
         user = utils.userData(userFile);
 
-        choosePrice.choosePrice(user.get("choosenPrice"));
-        Q020HasJob hasJob = choosePrice.clickNextButton();
+        starterPage.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = starterPage.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
@@ -50,12 +46,10 @@ public class GSignInTest extends BaseTests {
     @DisplayName("TCG02	Sikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt")
     public void testUnableToRegistringByMissingRSExpectation() {
         String userFile = "User1NotRegistredActive.txt";
-        choosePrice = new Q010ChoosePrice(driver);
-        driver.navigate().to(URL_GAME);
         user = utils.userData(userFile);
 
-        choosePrice.choosePrice(user.get("choosenPrice"));
-        Q020HasJob hasJob = choosePrice.clickNextButton();
+        starterPage.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = starterPage.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
@@ -75,12 +69,12 @@ public class GSignInTest extends BaseTests {
     @Test // OK
     @DisplayName("TCG03	Sikertelen regisztráció Játékstabályzat elfogadás hiánya miatt")
     public void testUnableToRegistringByMissingSSxpectation() {
-        choosePrice = new Q010ChoosePrice(driver);
-        driver.navigate().to(URL_GAME);
-        user = utils.userData("User1NotRegistredActive.txt");
+        String userFile = "User1NotRegistredActive.txt";
+        user = utils.userData(userFile);
 
-        choosePrice.choosePrice(user.get("choosenPrice"));
-        Q020HasJob hasJob = choosePrice.clickNextButton();
+        starterPage = new Q010ChoosePrice(driver);
+        starterPage.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = starterPage.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
@@ -100,18 +94,17 @@ public class GSignInTest extends BaseTests {
     @Test // OK - Helyesen FAIL a teszt, angol nyelvű alert szöveg miatt
     @DisplayName("TCG04	Sikertelen regisztráció hibás e-mail cím miatt")
     public void testUnableToRegistringByWrongEmail() {
-        choosePrice = new Q010ChoosePrice(driver);
-        driver.navigate().to(URL_GAME);
-        user = utils.userData("User1NotRegistredActive.txt");
+        String userFile = "User1NotRegistredActive.txt";
+        user = utils.userData(userFile);
 
-        choosePrice.choosePrice(user.get("choosenPrice"));
-        Q020HasJob hasJob = choosePrice.clickNextButton();
+        starterPage = new Q010ChoosePrice(driver);
+        starterPage.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = starterPage.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
         Q050LoginAndRegistration login = hasRegistration.clickHaveRegistrationButton("not registred");
 
-        Methods.TakeScreenshot(driver);
 
         login.clickCheckbox("RrsCheckbox");
         login.clickCheckbox("RssCheckbox");
@@ -119,6 +112,7 @@ public class GSignInTest extends BaseTests {
         login.clickButton("Rnext");
 
         String actualMessage = login.getAlertBoxText();
+        Methods.TakeScreenshot(driver);
         login.acceptAlertBox();
         String expectedMessage = "Hibás formátumú e-mail cím lett megadva. Helyes formátum: nev@pelda.com.";
 
@@ -133,12 +127,10 @@ public class GSignInTest extends BaseTests {
     @DisplayName("TCG05	Sikertelen regisztráció hibás jelszó páros miatt")
     public void testUnableToRegistringByWrongPassword() {
         String userFile = "User1NotRegistredActive.txt";
-        choosePrice = new Q010ChoosePrice(driver);
-        driver.navigate().to(URL_GAME);
         user = utils.userData(userFile);
 
-        choosePrice.choosePrice(user.get("choosenPrice"));
-        Q020HasJob hasJob = choosePrice.clickNextButton();
+        starterPage.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = starterPage.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
@@ -147,8 +139,6 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
         login.clickButton("Rnext");
-
-        Methods.TakeScreenshot(driver);
 
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", (user.get("password")));
@@ -164,15 +154,14 @@ public class GSignInTest extends BaseTests {
     @DisplayName("TCG06	Sikeres AKTÍV álláskereső regisztráció")
     public void testRegisterActiveEmployee() {
         String userFile = "User1RegistrableActive.txt";
-        choosePrice = new Q010ChoosePrice(driver);
-        driver.navigate().to(URL_GAME);
-        System.out.println(utils.upgradeUserEmail(userFile));
+        //System.out.println(utils.upgradeUserEmail(userFile));
         user = utils.userData(userFile);
+        String newEmail = utils.modifyEmailAppendix(user.get("email"));
+        user.replace("email", newEmail );
+        System.out.println("Registrated e-mail is: " + user.get("email"));
 
-        Methods.TakeScreenshot(driver);
-
-        choosePrice.choosePrice(user.get("choosenPrice"));
-        Q020HasJob hasJob = choosePrice.clickNextButton();
+        starterPage.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = starterPage.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
@@ -180,9 +169,8 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RrsCheckbox");
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
-        login.clickButton("Rnext");
-
         Methods.TakeScreenshot(driver);
+        login.clickButton("Rnext");
 
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", Hash.revert(user.get("password")));
@@ -194,8 +182,6 @@ public class GSignInTest extends BaseTests {
         portrait.setName(user.get("username"));
         portrait.clickNext();
 
-        Methods.TakeScreenshot(driver);
-
         Assertions.assertTrue(actualURL.contains(expectedURL));
     }
 
@@ -203,14 +189,16 @@ public class GSignInTest extends BaseTests {
     @DisplayName("TCG07	Sikeres PASSZÍV álláskereső regisztráció")
     public void testRegisterPassiveEmployee() {
         String userFile = "User2RegistrablePassive.txt";
-        choosePrice = new Q010ChoosePrice(driver);
+        starterPage = new Q010ChoosePrice(driver);
         driver.navigate().to(URL_GAME);
         System.out.println(utils.upgradeUserEmail(userFile));
         user = utils.userData(userFile);
+        String newEmail = utils.modifyEmailAppendix(user.get("email"));
+        user.replace("email", newEmail );
+        System.out.println("Registrated e-mail is: " + user.get("email"));
 
-        Methods.takeScreenshot(driver);
-        choosePrice.choosePrice(user.get("choosenPrice"));
-        Q020HasJob hasJob = choosePrice.clickNextButton();
+        starterPage.choosePrice(user.get("choosenPrice"));
+        Q020HasJob hasJob = starterPage.clickNextButton();
         Q030WorkingStatus workingStatus = hasJob.selectHaveJobButton(user.get("workingStatus"));
         Q040HasRegistration hasRegistration = workingStatus.selectJobStatus(user.get("workingStatus"));
         Popups.popupClose(driver);
@@ -218,9 +206,8 @@ public class GSignInTest extends BaseTests {
         login.clickCheckbox("RrsCheckbox");
         login.clickCheckbox("RssCheckbox");
         login.fill("Remail", user.get("email"));
-        login.clickButton("Rnext");
-
         Methods.TakeScreenshot(driver);
+        login.clickButton("Rnext");
 
         login.fill("Rpassword1", Hash.revert(user.get("password")));
         login.fill("Rpassword2", Hash.revert(user.get("password")));

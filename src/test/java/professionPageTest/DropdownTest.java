@@ -1,7 +1,8 @@
 package professionPageTest;
+
 import ProfessionPages.EmployeeLoginHU;
 import ProfessionPages.HomePageHU;
-import base.BaseTests;
+import base.BaseProfessionTests;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -13,16 +14,17 @@ import utils.Methods;
 import utils.Popups;
 import java.util.HashMap;
 
-public class DropdownTest extends BaseTests {
+public class DropdownTest extends BaseProfessionTests {
     FileUtils utils = new FileUtils();
     HashMap<String, String> user = new HashMap<String, String>();
     private final String URL_HOME = "https://www.profession.hu";
     private final By HEADER_LOGIN_BUTTON = By.xpath("//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a ");
 
 
+    // Succesfull logout test
     @Test
-    @Description("TCP02	Sikeres kijelentkezés - Logout")
-    @DisplayName("TCP02	Sikeres kijelentkezés - Logout")
+    @Description("TCP02	Sikeres kijelentkezés - Logout  - @Description")
+    @DisplayName("TCP02	Sikeres kijelentkezés - Logout  - @DisplayName")
     public void testLogout() {
         String userFile = "User2RegistredPassive.txt";
         user = utils.userData(userFile);
@@ -41,7 +43,5 @@ public class DropdownTest extends BaseTests {
         System.out.println(employeeLoginHU.logoutUser() + " has logged out.");
 
         Assertions.assertTrue(Methods.waitForElement(driver, HEADER_LOGIN_BUTTON).isDisplayed());
-
-
     }
 }
