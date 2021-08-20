@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://Signmaker71.github.io/ProfessionTest",
+  "buildOrder" : 26,
+  "buildName" : "GitHub Actions Run #1151539696",
+  "buildUrl" : "https://github.com/Signmaker71/ProfessionTest/actions/runs/1151539696",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/26/"
+} ]
