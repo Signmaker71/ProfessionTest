@@ -1,23 +1,20 @@
 package ProfessionPages;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-
 import org.openqa.selenium.interactions.Actions;
 import utils.Methods;
 import utils.FileUtils;
 import utils.Popups;
+import utils.Report;
 
 public class JobsPageHU extends HomePageHU {
+
+    // CONSTANSES
     private final By NEXT_PAGE_OF_JOBS_BUTTON = By.xpath("//*[contains(@class,'next btn')]");
-    private final By JobsTitle = By.xpath("//*[@id=\"content\"]/div/a");
+    private final By JOBS_TITLE = By.xpath("//*[@id=\"content\"]/div/a");
     private final By JOBS_COUNT = By.xpath("//*[@id=\"content\"]/div/div[1]/div[1]/div");
     private final By JOBS_ELEMENTS = By.xpath("//*[@class=\"job-cards\"]/li");
     private final By JOB_CARD_TITLE = By.xpath("./div[1]/div[1]/div[2]/div/h2/a");
@@ -25,14 +22,17 @@ public class JobsPageHU extends HomePageHU {
     private final By JOB_CARD_ADDRESS = By.xpath("./div[1]/div[1]/div[2]/div/div[2]");
     private final By JOB_CARD_TEXT = By.xpath("./div[1]/div[2]/div[1]");
 
-    FileUtils utils = new FileUtils();
+    // PROPERTIES
+    //FileUtils utils = new FileUtils();
     Actions actions;
 
-
+    // CONSTRUCTOR
     public JobsPageHU(WebDriver driver) {
         super(driver);
         this.driver = driver;
     }
+
+    // METHODS
 
     public int getJobsCount() {
         String[] jobsCountString = driver.findElement(JOBS_COUNT).getText().split(" ");
@@ -122,7 +122,7 @@ public class JobsPageHU extends HomePageHU {
                     reportText += "Text: " + cardText + "\n";
                     System.out.println(reportText);
 
-                    utils.generateReport("TCJ02", reportText);
+                    Report.generateReport("TCP04", reportText);
                 }
             }
 

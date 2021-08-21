@@ -4,40 +4,42 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.Methods;
-import utils.Popups;
 
 public class HomePageHU extends PageHeaderMenuHU {
 
+    // CONSTANSES
+    public final By KEYWORD_SEARCH_FIELD = By.id("header_keyword");
+    public final By LOCATION_SEARCH_FIELD = By.id("header_location");
+    public final By SEARCH_BUTTON = By.id("search-bar-search-button");
+    public final By SEARCH_BY_DETAILS_BUTTON = By.id("tour_det_search");
+    private final By CV_BUTTON = By.id("oneletrajz_feltoltese");
+
+    // PROPERTIES
     public WebDriver driver;
 
-    public  By SearchByKeywordField = By.id("header_keyword");
-    public  By SearchLocationField = By.id("header_location");
-    public  By SearchButton = By.id("search-bar-search-button");
-    public  By SearchDetailedButton = By.id("tour_det_search");
-
+    // CONSTRUCTOR
     public HomePageHU(WebDriver driver) {
         this.driver = driver;
     }
 
+    // METHODS
     public void fillSearchByKeywordField(String position){
-        Methods.waitForElement(driver, SearchByKeywordField).sendKeys(position);
+        Methods.waitForElement(driver, KEYWORD_SEARCH_FIELD).sendKeys(position);
     }
 
-
-
     public void fillSearchLocationField(String location) {
-        Methods.fillTextToField(driver, SearchLocationField, location);
-        driver.findElement(SearchLocationField).sendKeys(location);
+        Methods.fillTextToField(driver, LOCATION_SEARCH_FIELD, location);
+        driver.findElement(LOCATION_SEARCH_FIELD).sendKeys(location);
     }
 
     public JobsPageHU clickSearchButton(){
-        driver.findElement(SearchButton).click();
+        driver.findElement(SEARCH_BUTTON).click();
         return  new JobsPageHU(driver);
     }
 
-    public DetailedSearchHU clickSearchDetailedButton(){
-        driver.findElement(SearchDetailedButton).click();
-        return  new DetailedSearchHU(driver);
+    public CV_Page getCV_Page(){
+        Methods.clickButton(driver, CV_BUTTON);
+        return new CV_Page(driver);
     }
 
 }

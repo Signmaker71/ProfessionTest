@@ -1,5 +1,5 @@
 email = szpetertester+o1015@gmail.com
-username = Teszt Passzív Pál
+username = Teszt Aktív Anna
 password = ÉØÐÝæ¼ ¤
 choosenPrice = Tesco
 haveJob = no

@@ -81,3 +81,17 @@ Title: CNC-marós
 Address: LEIER MONOLIT KFT.
 Text: Gép önálló kezelése, napi karbantartások elvégzése Szerszámok összerakása, mérése, korrekciója Munkadarab bemérése tapintóval/mérőórával
 
+BUG0014 : 
+  nagykovácsi is missing from this card:
+Adverise ID: 1-1688616
+Title: Kiskedvenc tanácsadó, eladó
+Address: ALPHA ZOO Kft.
+Text: Mit fogsz csinálni? Mivel fog telni a napod?   üzlet rendben tartása, ha kell takarítással (te se szeretsz piszkos helyre belépni) termék rakodás, rendezés, hogy legyen mit eladni (árufeltöltés) pontos, precíz pénztárgépkezelés, kasszázás kiszolgálni a vásárlókat úgy, hogy mosoll...
+
+BUG0015 : 
+  nagykovácsi is missing from this card:
+Adverise ID: 1-1688616
+Title: Kiskedvenc tanácsadó, eladó
+Address: ALPHA ZOO Kft.
+Text: Mit fogsz csinálni? Mivel fog telni a napod?   üzlet rendben tartása, ha kell takarítással (te se szeretsz piszkos helyre belépni) termék rakodás, rendezés, hogy legyen mit eladni (árufeltöltés) pontos, precíz pénztárgépkezelés, kasszázás kiszolgálni a vásárlókat úgy, hogy mosoll...
+

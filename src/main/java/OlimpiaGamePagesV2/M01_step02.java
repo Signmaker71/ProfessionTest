@@ -6,21 +6,22 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Methods;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class M01_step02 {
 
+    // CONSTANSES
     public final By LASTNAME = By.xpath("//*[@id=\"player-lastname\"]");
     public final By FIRSTNAME = By.id("player-firstname");
     public final By STEP_02_SUBMIT_BUTTON = By.id("step-02-submit");
 
+    // PROPERTIES
     WebDriver driver;
 
+    // CONSTRUCTOR
     public M01_step02(WebDriver driver) {
         this.driver = driver;
     }
 
+    // METHODS
     public void setName(String name){
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(FIRSTNAME));
@@ -41,17 +42,13 @@ public class M01_step02 {
         return fullName;
     }
 
-
     public M01_step03 clickNext() {
         Methods.clickButton(driver, STEP_02_SUBMIT_BUTTON);
         return new M01_step03(driver);
     }
 
-
     public String getUrl(){
         String url = driver.getCurrentUrl();
         return url;
     }
-
-
 }

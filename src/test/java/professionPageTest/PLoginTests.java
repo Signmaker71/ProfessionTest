@@ -12,17 +12,22 @@ import utils.Popups;
 import java.util.HashMap;
 
 public class PLoginTests extends BaseProfessionTests {
+    // CONSTANSES
     private final String URL_HOME = "https://www.profession.hu/";
     private final String EMAIL_FAIL_MESSAGE = "Sajnos a megadott email és jelszó kombinációval nem találtunk felhasználói fiókot.\n" +
             "Kérjük próbálja meg ismét vagy módosítsa a jelszavát.";
 
+    // PROPERTIES
     HashMap<String, String> user = new HashMap<String, String>();
     FileUtils utils = new FileUtils();
 
+    // TESTS
+
+    // Testing successfull login
     // Requirements 02, 07
     @Test // OK
     @DisplayName("TCP01	Sikeres belépés regisztrált felhasználóként")
-    public void testSuccessfulLogin() {
+    public void testSuccessfulLogin() throws InterruptedException{
         String userFile = "User2RegistredPassive.txt";
         user = utils.userData(userFile);
         String email = user.get("email");
@@ -39,8 +44,10 @@ public class PLoginTests extends BaseProfessionTests {
 
         Popups.popupClose(driver);
         Assertions.assertEquals(username, employeeLoginHU.getUserName());
+        employeeLoginHU.logoutUser();
     }
 
+    // Testing unsuccessfull login
     // Requirements 02, 07
     @Test //OK
     @DisplayName("TCP02	Sikertelen belépés hibás jelszóval")

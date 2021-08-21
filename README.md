@@ -16,10 +16,10 @@ Az adatok hibás tárolása, vagy nem megfelelő feldolgozása, hibás , azaz ne
 - A vizsgaremek szempontjából főbb feladatok már a játéknak az első szakaszán megvalósulnak, így csak 
   egy bizonyos rész-folyamaton megy végig a tesztprogram, ebben a szakaszban kerülnek be, illetve módosulnak az önélerajzi adatok, 
   ezután a Profession.hu oldalon történik a további tesztelés.
-- Regisztált felhasználóként a játék ismételten elkezdhető, a módosítások az önéletrajzban meg kell hogy jelenjenek.
+- Regisztált felhasználóként a játék során bevitt adatok az önéletrajzban meg kell hogy jelenjenek.
 - A regisztrációhoz, a mezők kitöltéséhez, gombok lekattintásához meghatározott txt file-okból olvassa a teszprogram az adatokat,
   illetve az utoljára regisztrált e-mail címet módosítja és át is írja a program, ezzel biztosítva, hogy ugyanazzal az e-mail címmel 
-  már ne próbáljon újra regisztrálni.
+  már ne próbáljon újra regisztrálni. (sajnos ez a funkció blokkolta a CI/CD futását, így ez részben módosításra került)
 - Az önéletrajzban a bejelentkezett felhasználó ellenőrizheti és módosíthatja adatait.
 - Az állások listájában regisztráció nélkül is lehet az állásajánlatok között keresni, a keresés során lehetőség van 
   a hirdetésben szereplő kulcsszavak alapján, és/vagy lokáció alapján szűrni. Hibás eredménynek tekinthető, 
@@ -37,4 +37,36 @@ Az automata tesztek elkészítéséhez POM struktúrában dolgoztam, a teszhez s
 az src/main/java mappa alatti package-ekben vannak, míg a tesztesetek az src/test/java alatti package-ekben találhatóak.
 
 A játék során az üzemeltetés különböző funkciókat módosít, javít, így az idővel eltérő működés elkerülése érdekében a játék V2-es változatára írtam a teszteket. A Profession.hu oldalról történő kattintással a játékbaban megjelenő oldalak ettől a folyamattól a vizsga napján eltérhetnek, remélhetőleg a V2-es folyamat továbbra is elérhető marad.
+
+### Vizsgált weboldalak:
+https://www.professionjatekok.hu/v2/index
+https://www.profession.hu
+
+### A teszteseteket és a hibajegyeket az alábbi táblázat külön füleken tartalmazza:
+https://docs.google.com/spreadsheets/d/1j4OSNjDw0RgM63geX_KR5iPWyX7orF3_yfqT0D0RJQk/edit?usp=sharing
+
+### A program Java nyelven készült, a tesztek Selenium és JUnit 5 -ben készültek, a repository címe:
+  https://github.com/Signmaker71/ProfessionTest/
+
+### A használt tesztadat- és log file-ok 
+kiterjesztésük txt, a repositoryban a pipeline lefutásakor nem, de lokális környezetben futtatva 
+bizonyos tesztek esetén módosulnak. 
+
+A tesztek futásakor két vizsgált folyamatnál készülnek automatikusan hibajegyek, itt a file-ban rögzített 
+utolsó hibajegy azonosítóját egyel növelve, új azonosítóval rögzítésre kerül a hiba ideje, a teszteset száma,
+külön file-ban pedig az azonosító, a teszteset száma és neve, valamint az eltérő adatok, a hibás működés megismeréséhez.
+- az egyedi azonosítók listája a logIndex.txt fileban szerepelnek , itt a hibajegy létrehozásának dátuma és
+  a hiba feltárásával kapcsolatos teszteset száma is megtalálható.
+- a logRecords.txt tartalmazza egy egyedi azonosítót, és a hibával kapcsolatos adatokat.
+
+
+
+
+
+
+
+
+
+
+
 

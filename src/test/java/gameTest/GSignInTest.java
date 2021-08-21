@@ -3,12 +3,7 @@ package gameTest;
 import OlimpiaGamePagesV2.*;
 import base.BaseGameTests;
 import org.junit.jupiter.api.*;
-import utils.FileUtils;
-import utils.Methods;
-import utils.Popups;
-import utils.Hash;
-
-import java.util.HashMap;
+import utils.*;
 
 
 public class GSignInTest extends BaseGameTests {
@@ -117,7 +112,7 @@ public class GSignInTest extends BaseGameTests {
         Assertions.assertEquals(expectedMessage, actualMessage);
 
         String report = "AssertionFailedError: \n" + "Expected :" + expectedMessage + "\n" + "Actual   :" + actualMessage;
-        utils.generateReport("TCG04", report);
+        Report.generateReport("TCG04", report);
     }
 
 

@@ -1,5 +1,5 @@
 email = szpetertester+o2005@gmail.com
-username = Teszt Aktív Anna
+username = Teszt Passzív Pál
 password = ÉØÐÝæ¼ ¤
 choosenPrice = DECATHLON
 haveJob = yes
@@ -10,6 +10,6 @@ position = ács
 language1 = angol
 languageLevel1 = középfok
 bornDate = 1971
-phone = +36305555555
+phone = +36305555455
 dreamPosition = automata tesztelő
 drivingLicence = A,B

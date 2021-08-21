@@ -1,5 +1,5 @@
-email = szpetertester+o2010@gmail.com
-username = Teszt Aktív Anna
+email = szpetertester+o1010@gmail.com
+username = Teszt Passzív Pál
 password = ÉØÐÝæ¼ ¤
 choosenPrice = DECATHLON
 haveJob = yes
@@ -7,6 +7,8 @@ workingStatus = not open
 registred = not registred
 city = Nagykovácsi
 position = ács
+salary = 480000
+classifications = Teljes munkaidő
 language1 = angol
 languageLevel1 = középfok
 bornDate = 1971

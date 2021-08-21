@@ -10,7 +10,8 @@ import java.util.List;
 import java.util.Set;
 
 public class Q050LoginAndRegistration {
-    private WebDriver driver;
+
+    // CONSTANSES
     public final By LOGIN_EMAIL = By.id("player-mail-1");
     public final By REGISTER_EMAIL = By.id("player-mail-2");
     public final By LOGIN_PASSWORD = By.id("player-password");
@@ -33,10 +34,15 @@ public class Q050LoginAndRegistration {
     public final By GAME_RULES_LINK = By.xpath("//*[@id=\"register-form-v4\"]/div[2]/div/div[2]/label/a[1]");
     public final By SWEEPSTAKES_STATEMENT_LINK = By.xpath("//*[@id=\"register-form-v4\"]/div[2]/div/div[2]/label/a[2]");
 
+    // PROPERTIES
+    private WebDriver driver;
 
+    // CONSTRUCTOR
     public Q050LoginAndRegistration(WebDriver driver) {
         this.driver = driver;
     }
+
+    // METHODS
 
     public void fill(String locatorName, String name) {
         By locator = getLocator(locatorName);
@@ -60,8 +66,7 @@ public class Q050LoginAndRegistration {
         return alertText;
     }
 
-
-    public void clickButton(String name)  { // Overrided method -
+    public void clickButton(String name)  { // Overloaded method -
         Methods.waitForElementClickable(driver, getLocator(name)).click();
     }
 
@@ -82,8 +87,6 @@ public class Q050LoginAndRegistration {
     public void acceptAlertBox() {
         Methods.acceptAlert(driver);
     }
-
-
 
 
     private By getLocator(String name){
@@ -150,10 +153,8 @@ public class Q050LoginAndRegistration {
                 locator = REGISTER_TEXT_DANGER;
                 break;
 
-
             default:
                 locator = LOGIN_NEXT_BUTTON;
-
         }
         return locator;
     }
@@ -189,7 +190,7 @@ public class Q050LoginAndRegistration {
     //GDPR text getter
     // átnézni
 
-    public List<String> getPrivacyPolicyText() throws InterruptedException {
+    public List<String> getPrivacyPolicyText() {
         List<String> result = new ArrayList<String>();
         List<WebElement> gdprElements;
 
@@ -204,8 +205,6 @@ public class Q050LoginAndRegistration {
             }
             result.add(header + "\n");
         }
-        Thread.sleep(5000);
-
         return result;
 
     }

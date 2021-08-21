@@ -7,7 +7,7 @@ import utils.Popups;
 
 
 public class EmployeeLoginHU extends PageHeaderMenuHU {
-    private WebDriver driver;
+    // CONSTANSES
     private final By LOGIN_EMAIL_FIELD = By.id("login_e_mail");
     private final By LOGIN_PASSWORD_FIELD = By.id("login_passwd");
     private final By HEADER_LOGIN_BUTTON = By.xpath("//*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a ");
@@ -16,10 +16,15 @@ public class EmployeeLoginHU extends PageHeaderMenuHU {
     private final By LOGOUT_BUTTON = By.id("employee_menu_dropdown_12");
     private final By PASSWORD_ERROR_MESSAGE = By.xpath("//*[@id=\"content\"]/div/form/div[1]/div[2]/ul/li");
 
+    // PROPERTIES
+    private WebDriver driver;
 
+    // CONSTRUCTOR
     public EmployeeLoginHU(WebDriver driver) {
         this.driver = driver;
     }
+
+    // METHODS
 
     public void setEmail(String email) {
         Methods.waitForElement(driver, LOGIN_EMAIL_FIELD).sendKeys(email);
@@ -46,6 +51,7 @@ public class EmployeeLoginHU extends PageHeaderMenuHU {
             Popups.popupClose(driver);
             setEmail(email);
             setPassword(password);
+            // Thread.sleep(30000);   // cause ReCaptcha needs
             clickLogin();
         }
         return new LoggedInHomePageHU(driver);

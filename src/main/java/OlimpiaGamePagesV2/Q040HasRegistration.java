@@ -6,16 +6,20 @@ import utils.Methods;
 
 public class Q040HasRegistration {
 
-    private WebDriver driver;
-
+    // CONSTANSES
     private final By REGISTRED_BUTTON = By.xpath("//*[contains(text(),'megyek')]");
     private final By NOT_REMEMBER_BUTTON = By.xpath("//*[contains(text(),'emlékszem')]");
     private final By NOT_REGISTRED_BUTTON = By.xpath("//*[contains(text(),'Nincs')]");
 
+    // PROPERTIES
+    private WebDriver driver;
+
+    // CONSTRUCTOR
     public Q040HasRegistration(WebDriver driver) {
         this.driver = driver;
     }
 
+    // METHODS
     public By getLocator (String haveRegistration) {
         By locator;
         switch (haveRegistration) {

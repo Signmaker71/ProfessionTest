@@ -23,6 +23,7 @@ public class Q010ChoosePrice {
     public final By DECATHLON = By.xpath("//*[@id=\"first\"]/div[1]/div/div/div[3]/div[1]/div[1]/div[2]/div");
     public final By CHOOSE_PRICE_NEXT_BUTTON = By.id("check-voucher");
 
+    // PROPERTIES
     Methods methods;
     private WebDriver driver;
 

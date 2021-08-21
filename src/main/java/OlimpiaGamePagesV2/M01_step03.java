@@ -8,16 +8,20 @@ import utils.Methods;
 
 public class M01_step03 {
 
+    // CONSTANSES
     public final By LASTNAME = By.xpath("//*[@id=\"player-lastname\"]");
     public final By FIRSTNAME = By.id("player-firstname");
     public final By STEP_03_SUBMIT_BUTTON = By.id("step-02-submit");
 
+    // PROPERTIES
     WebDriver driver;
 
+    // CONSTRUCTOR
     public M01_step03(WebDriver driver) {
         this.driver = driver;
     }
 
+    // METHODS
     public String getName(){
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(FIRSTNAME));
@@ -31,7 +35,6 @@ public class M01_step03 {
     }
 
     public void setPosition(String name){
-
         Methods.waitForElement(driver,FIRSTNAME);
         String[] fullName = name.split(" ");
         String lastName = fullName[0] + " " + fullName[1];
