@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <3> but was: <2>",
+      "children" : [ {
+        "name" : "TCP06 Keresési eredmények tartalmának ellenőrzése2",
+        "uid" : "6df65df4b7aad459",
+        "parentUid" : "84ab1320440a459eb06f3cb9ef64367f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629587346560,
+          "stop" : 1629587354981,
+          "duration" : 8421
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84ab1320440a459eb06f3cb9ef64367f"
+    }, {
+      "name" : "expected: <Hibás formátumú e-mail cím lett megadva. Helyes formátum: nev@pelda.com.> but was: <Invalid value specified for `email`. Expecting email in `name@example.com` format>",
+      "children" : [ {
+        "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+        "uid" : "9cadb0f098943925",
+        "parentUid" : "d42bd3f2b7943b2d76353202195ed27c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629587454328,
+          "stop" : 1629587468577,
+          "duration" : 14249
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d42bd3f2b7943b2d76353202195ed27c"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

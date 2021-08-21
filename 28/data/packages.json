@@ -1,0 +1,207 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "professionPageTest",
+    "children" : [ {
+      "name" : "SearchTest",
+      "children" : [ {
+        "name" : "testSimpleSearch",
+        "uid" : "589640959b6210ed",
+        "parentUid" : "2ad1234fe0a4a7c7226b02a2e91719da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587302562,
+          "stop" : 1629587329417,
+          "duration" : 26855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testCardsContent01",
+        "uid" : "8e5342d41435b238",
+        "parentUid" : "2ad1234fe0a4a7c7226b02a2e91719da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587329503,
+          "stop" : 1629587346555,
+          "duration" : 17052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testCardsContent02",
+        "uid" : "6df65df4b7aad459",
+        "parentUid" : "2ad1234fe0a4a7c7226b02a2e91719da",
+        "status" : "failed",
+        "time" : {
+          "start" : 1629587346560,
+          "stop" : 1629587354981,
+          "duration" : 8421
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ad1234fe0a4a7c7226b02a2e91719da"
+    }, {
+      "name" : "PLoginTests",
+      "children" : [ {
+        "name" : "testLoginFailedDueToIncorrectPassword",
+        "uid" : "ecea29d46a5dd0a1",
+        "parentUid" : "fd967327165f3976ad3d65b7473d3649",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587355011,
+          "stop" : 1629587364872,
+          "duration" : 9861
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulLogin",
+        "uid" : "b0fbdf19684eb2ab",
+        "parentUid" : "fd967327165f3976ad3d65b7473d3649",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587364875,
+          "stop" : 1629587386587,
+          "duration" : 21712
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fd967327165f3976ad3d65b7473d3649"
+    }, {
+      "name" : "CV_PageTest",
+      "children" : [ {
+        "name" : "testPhoneNumberFormats",
+        "uid" : "abd9673abed55140",
+        "parentUid" : "fc85820a159a856e89dc3579040a49e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587386598,
+          "stop" : 1629587425671,
+          "duration" : 39073
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulLogin",
+        "uid" : "a5b39d36c0cef94d",
+        "parentUid" : "fc85820a159a856e89dc3579040a49e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587425679,
+          "stop" : 1629587454321,
+          "duration" : 28642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fc85820a159a856e89dc3579040a49e9"
+    } ],
+    "uid" : "5777bcf61d044bbc351d2a035aaf26b9"
+  }, {
+    "name" : "gameTest.GSignInTest",
+    "children" : [ {
+      "name" : "testUnableToRegistringByWrongEmail",
+      "uid" : "9cadb0f098943925",
+      "parentUid" : "6a3ba705151faf9782338c8687a0774e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1629587454328,
+        "stop" : 1629587468577,
+        "duration" : 14249
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRegisterPassiveEmployee",
+      "uid" : "9ecc5544b02b2467",
+      "parentUid" : "6a3ba705151faf9782338c8687a0774e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629587468582,
+        "stop" : 1629587483952,
+        "duration" : 15370
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testEnsureToPrivacyPolicyIsEnable",
+      "uid" : "24c5aeb4866875f2",
+      "parentUid" : "6a3ba705151faf9782338c8687a0774e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629587483955,
+        "stop" : 1629587495102,
+        "duration" : 11147
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRegisterActiveEmployee",
+      "uid" : "a3fafd831b5409e7",
+      "parentUid" : "6a3ba705151faf9782338c8687a0774e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629587495105,
+        "stop" : 1629587515902,
+        "duration" : 20797
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testUnableToRegistringByMissingSSxpectation",
+      "uid" : "5870bfe062f618f",
+      "parentUid" : "6a3ba705151faf9782338c8687a0774e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629587515904,
+        "stop" : 1629587525597,
+        "duration" : 9693
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testUnableToRegistringByMissingRSExpectation",
+      "uid" : "e400a15893a5f5f0",
+      "parentUid" : "6a3ba705151faf9782338c8687a0774e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629587525599,
+        "stop" : 1629587535531,
+        "duration" : 9932
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testUnableToRegistringByWrongPassword",
+      "uid" : "1100387e9757c974",
+      "parentUid" : "6a3ba705151faf9782338c8687a0774e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629587535534,
+        "stop" : 1629587548826,
+        "duration" : 13292
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "gameTest.GSignInTest"
+  } ],
+  "name" : "packages"
+}

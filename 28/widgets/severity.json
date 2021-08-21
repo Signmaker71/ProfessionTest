@@ -1,0 +1,141 @@
+[ {
+  "uid" : "1100387e9757c974",
+  "name" : "TCG05\tSikertelen regisztráció hibás jelszó páros miatt",
+  "time" : {
+    "start" : 1629587535534,
+    "stop" : 1629587548826,
+    "duration" : 13292
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9cadb0f098943925",
+  "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+  "time" : {
+    "start" : 1629587454328,
+    "stop" : 1629587468577,
+    "duration" : 14249
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "24c5aeb4866875f2",
+  "name" : "TCG01\tRegisztrációnál az Felhasználási Feltételek dokumentum elérhető",
+  "time" : {
+    "start" : 1629587483955,
+    "stop" : 1629587495102,
+    "duration" : 11147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "589640959b6210ed",
+  "name" : "TCP04 Keresési eredmények számának ellenőrzése",
+  "time" : {
+    "start" : 1629587302562,
+    "stop" : 1629587329417,
+    "duration" : 26855
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3fafd831b5409e7",
+  "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+  "time" : {
+    "start" : 1629587495105,
+    "stop" : 1629587515902,
+    "duration" : 20797
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ecea29d46a5dd0a1",
+  "name" : "TCP02\tSikertelen belépés hibás jelszóval",
+  "time" : {
+    "start" : 1629587355011,
+    "stop" : 1629587364872,
+    "duration" : 9861
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e400a15893a5f5f0",
+  "name" : "TCG02\tSikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt",
+  "time" : {
+    "start" : 1629587525599,
+    "stop" : 1629587535531,
+    "duration" : 9932
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ecc5544b02b2467",
+  "name" : "TCG07\tSikeres PASSZÍV álláskereső regisztráció",
+  "time" : {
+    "start" : 1629587468582,
+    "stop" : 1629587483952,
+    "duration" : 15370
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5b39d36c0cef94d",
+  "name" : "TCP07\tTelefonszám módosítása az önéletrajzi adatokban",
+  "time" : {
+    "start" : 1629587425679,
+    "stop" : 1629587454321,
+    "duration" : 28642
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5870bfe062f618f",
+  "name" : "TCG03\tSikertelen regisztráció Játékstabályzat elfogadás hiánya miatt",
+  "time" : {
+    "start" : 1629587515904,
+    "stop" : 1629587525597,
+    "duration" : 9693
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abd9673abed55140",
+  "name" : "TCP08\tTelefonszám formátumok elfogadásának ellenőrzése sorozatos adatmódosítással",
+  "time" : {
+    "start" : 1629587386598,
+    "stop" : 1629587425671,
+    "duration" : 39073
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0fbdf19684eb2ab",
+  "name" : "TCP01\tSikeres belépés regisztrált felhasználóként",
+  "time" : {
+    "start" : 1629587364875,
+    "stop" : 1629587386587,
+    "duration" : 21712
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6df65df4b7aad459",
+  "name" : "TCP06 Keresési eredmények tartalmának ellenőrzése2",
+  "time" : {
+    "start" : 1629587346560,
+    "stop" : 1629587354981,
+    "duration" : 8421
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e5342d41435b238",
+  "name" : "TCP05 Keresési eredmények tartalmának ellenőrzése1",
+  "time" : {
+    "start" : 1629587329503,
+    "stop" : 1629587346555,
+    "duration" : 17052
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,117 @@
+{
+  "uid" : "b0fbdf19684eb2ab",
+  "name" : "TCP01\tSikeres belépés regisztrált felhasználóként",
+  "fullName" : "professionPageTest.PLoginTests.testSuccessfulLogin",
+  "historyId" : "b0ae0aec9ed42a42b2a60b082540b6c2",
+  "time" : {
+    "start" : 1629587364875,
+    "stop" : 1629587386587,
+    "duration" : 21712
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629587364875,
+      "stop" : 1629587365046,
+      "duration" : 171
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629587386511,
+      "stop" : 1629587386587,
+      "duration" : 76
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az72-349"
+  }, {
+    "name" : "thread",
+    "value" : "2916@fv-az72-349.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "professionPageTest.PLoginTests"
+  }, {
+    "name" : "testClass",
+    "value" : "professionPageTest.PLoginTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSuccessfulLogin"
+  }, {
+    "name" : "suite",
+    "value" : "professionPageTest.PLoginTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "ee0c7379e1626037",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/27//#testresult/ee0c7379e1626037",
+        "status" : "broken",
+        "statusDetails" : "Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=\"header\"]/div/div[3]/nav/div/div/ul/li[4]/a (tried for 2 second(s) with 500 milliseconds interval)",
+        "time" : {
+          "start" : 1629481361555,
+          "stop" : 1629481365746,
+          "duration" : 4191
+        }
+      }, {
+        "uid" : "81a88c519e0c4650",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/26//#testresult/81a88c519e0c4650",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629480911991,
+          "stop" : 1629480924772,
+          "duration" : 12781
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b0fbdf19684eb2ab.json",
+  "parameterValues" : [ ]
+}

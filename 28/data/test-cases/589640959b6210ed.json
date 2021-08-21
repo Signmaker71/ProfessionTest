@@ -1,0 +1,116 @@
+{
+  "uid" : "589640959b6210ed",
+  "name" : "TCP04 Keresési eredmények számának ellenőrzése",
+  "fullName" : "professionPageTest.SearchTest.testSimpleSearch",
+  "historyId" : "9420acbd88fad010e647e3c75e37d94a",
+  "time" : {
+    "start" : 1629587302562,
+    "stop" : 1629587329417,
+    "duration" : 26855
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629587302581,
+      "stop" : 1629587309737,
+      "duration" : 7156
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "db4b42fc6be75f7",
+      "name" : "Screenshot",
+      "source" : "db4b42fc6be75f7.png",
+      "type" : "image/png",
+      "size" : 240343
+    }, {
+      "uid" : "bedd4ab0636fc118",
+      "name" : "Screenshot",
+      "source" : "bedd4ab0636fc118.png",
+      "type" : "image/png",
+      "size" : 90620
+    }, {
+      "uid" : "fa8c7b5129f1fdfb",
+      "name" : "Screenshot",
+      "source" : "fa8c7b5129f1fdfb.png",
+      "type" : "image/png",
+      "size" : 99837
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629587329338,
+      "stop" : 1629587329410,
+      "duration" : 72
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az72-349"
+  }, {
+    "name" : "thread",
+    "value" : "2916@fv-az72-349.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSimpleSearch"
+  }, {
+    "name" : "suite",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "589640959b6210ed.json",
+  "parameterValues" : [ ]
+}
