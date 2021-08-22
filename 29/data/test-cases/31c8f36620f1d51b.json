@@ -1,0 +1,136 @@
+{
+  "uid" : "31c8f36620f1d51b",
+  "name" : "TCP04 Keresési eredmények számának ellenőrzése",
+  "fullName" : "professionPageTest.SearchTest.testSimpleSearch",
+  "historyId" : "9420acbd88fad010e647e3c75e37d94a",
+  "time" : {
+    "start" : 1629663775045,
+    "stop" : 1629663807183,
+    "duration" : 32138
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629663775085,
+      "stop" : 1629663784567,
+      "duration" : 9482
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c4fb94de2cc78c57",
+      "name" : "Screenshot",
+      "source" : "c4fb94de2cc78c57.png",
+      "type" : "image/png",
+      "size" : 240343
+    }, {
+      "uid" : "89fbc62dc58b5162",
+      "name" : "Screenshot",
+      "source" : "89fbc62dc58b5162.png",
+      "type" : "image/png",
+      "size" : 90620
+    }, {
+      "uid" : "23ffdfea238d995c",
+      "name" : "Screenshot",
+      "source" : "23ffdfea238d995c.png",
+      "type" : "image/png",
+      "size" : 99837
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629663807094,
+      "stop" : 1629663807170,
+      "duration" : 76
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az83-444"
+  }, {
+    "name" : "thread",
+    "value" : "2963@fv-az83-444.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSimpleSearch"
+  }, {
+    "name" : "suite",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "589640959b6210ed",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/28//#testresult/589640959b6210ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587302562,
+          "stop" : 1629587329417,
+          "duration" : 26855
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "31c8f36620f1d51b.json",
+  "parameterValues" : [ ]
+}

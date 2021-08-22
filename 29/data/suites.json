@@ -1,0 +1,203 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "professionPageTest.PLoginTests",
+    "children" : [ {
+      "name" : "TCP02\tSikertelen belépés hibás jelszóval",
+      "uid" : "715c12f8376ae470",
+      "parentUid" : "9191573e8f286c7881ae649883a9b8e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663774922,
+        "stop" : 1629663800809,
+        "duration" : 25887
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCP01\tSikeres belépés regisztrált felhasználóként",
+      "uid" : "d7774b79df3d3edd",
+      "parentUid" : "9191573e8f286c7881ae649883a9b8e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663801083,
+        "stop" : 1629663829502,
+        "duration" : 28419
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9191573e8f286c7881ae649883a9b8e8"
+  }, {
+    "name" : "professionPageTest.SearchTest",
+    "children" : [ {
+      "name" : "TCP04 Keresési eredmények számának ellenőrzése",
+      "uid" : "31c8f36620f1d51b",
+      "parentUid" : "143ba62e598f393580695600f7dd0a06",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663775045,
+        "stop" : 1629663807183,
+        "duration" : 32138
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCP05 Keresési eredmények tartalmának ellenőrzése1",
+      "uid" : "c2cb99bfd25e974e",
+      "parentUid" : "143ba62e598f393580695600f7dd0a06",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663807310,
+        "stop" : 1629663832545,
+        "duration" : 25235
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCP06 Keresési eredmények tartalmának ellenőrzése2",
+      "uid" : "17cf1b31e4319d15",
+      "parentUid" : "143ba62e598f393580695600f7dd0a06",
+      "status" : "failed",
+      "time" : {
+        "start" : 1629663832551,
+        "stop" : 1629663844480,
+        "duration" : 11929
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "143ba62e598f393580695600f7dd0a06"
+  }, {
+    "name" : "professionPageTest.CV_PageTest",
+    "children" : [ {
+      "name" : "TCP08\tTelefonszám formátumok elfogadásának ellenőrzése sorozatos adatmódosítással",
+      "uid" : "2ea616834d810620",
+      "parentUid" : "9b4724ccd06c5c11686121c778258f26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663829531,
+        "stop" : 1629663878351,
+        "duration" : 48820
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCP07\tTelefonszám módosítása az önéletrajzi adatokban",
+      "uid" : "603bb3a442169b4d",
+      "parentUid" : "9b4724ccd06c5c11686121c778258f26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663878354,
+        "stop" : 1629663911567,
+        "duration" : 33213
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9b4724ccd06c5c11686121c778258f26"
+  }, {
+    "name" : "gameTest.GSignInTest",
+    "children" : [ {
+      "name" : "TCG04\tSikertelen regisztráció hibás e-mail cím miatt",
+      "uid" : "256bf77d5ff1fb90",
+      "parentUid" : "947c58aa8e45af699ee77f019acee867",
+      "status" : "failed",
+      "time" : {
+        "start" : 1629663844511,
+        "stop" : 1629663860768,
+        "duration" : 16257
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG07\tSikeres PASSZÍV álláskereső regisztráció",
+      "uid" : "13fe92f367ea8418",
+      "parentUid" : "947c58aa8e45af699ee77f019acee867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663860773,
+        "stop" : 1629663877817,
+        "duration" : 17044
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG01\tRegisztrációnál az Felhasználási Feltételek dokumentum elérhető",
+      "uid" : "76a29ad6d8260881",
+      "parentUid" : "947c58aa8e45af699ee77f019acee867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663877821,
+        "stop" : 1629663892616,
+        "duration" : 14795
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG06\tSikeres AKTÍV álláskereső regisztráció",
+      "uid" : "c50d96cea573a6cb",
+      "parentUid" : "947c58aa8e45af699ee77f019acee867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663892621,
+        "stop" : 1629663915167,
+        "duration" : 22546
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG03\tSikertelen regisztráció Játékstabályzat elfogadás hiánya miatt",
+      "uid" : "55bc3ab422d7ff65",
+      "parentUid" : "947c58aa8e45af699ee77f019acee867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663915169,
+        "stop" : 1629663925761,
+        "duration" : 10592
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG02\tSikertelen regisztráció Felhasználási Feltételek elfogadás hiánya miatt",
+      "uid" : "edcb2fe9d46aa4d8",
+      "parentUid" : "947c58aa8e45af699ee77f019acee867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663925764,
+        "stop" : 1629663936369,
+        "duration" : 10605
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TCG05\tSikertelen regisztráció hibás jelszó páros miatt",
+      "uid" : "694f6498e27ac8ed",
+      "parentUid" : "947c58aa8e45af699ee77f019acee867",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629663936375,
+        "stop" : 1629663951328,
+        "duration" : 14953
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "947c58aa8e45af699ee77f019acee867"
+  } ],
+  "name" : "suites"
+}

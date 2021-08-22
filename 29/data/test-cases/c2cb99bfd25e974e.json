@@ -1,0 +1,107 @@
+{
+  "uid" : "c2cb99bfd25e974e",
+  "name" : "TCP05 Keresési eredmények tartalmának ellenőrzése1",
+  "fullName" : "professionPageTest.SearchTest.testCardsContent01",
+  "historyId" : "49f755577ec1fcd219a5ad5d80e68fd1",
+  "time" : {
+    "start" : 1629663807310,
+    "stop" : 1629663832545,
+    "duration" : 25235
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1629663807312,
+      "stop" : 1629663807812,
+      "duration" : 500
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1629663832468,
+      "stop" : 1629663832545,
+      "duration" : 77
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az83-444"
+  }, {
+    "name" : "thread",
+    "value" : "2963@fv-az83-444.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testCardsContent01"
+  }, {
+    "name" : "suite",
+    "value" : "professionPageTest.SearchTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8e5342d41435b238",
+        "reportUrl" : "https://Signmaker71.github.io/ProfessionTest/28//#testresult/8e5342d41435b238",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629587329503,
+          "stop" : 1629587346555,
+          "duration" : 17052
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c2cb99bfd25e974e.json",
+  "parameterValues" : [ ]
+}
